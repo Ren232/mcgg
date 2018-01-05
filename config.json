@@ -1,0 +1,16 @@
+{
+  "server": {
+    "name": "NSMineCraft",
+    "public_ip": "127.0.0.1"
+  },
+  "jar_updates": [
+    "http://s3.amazonaws.com/MinecraftDownload/launcher/minecraft_server.jar",
+    "http://dl.bukkit.org/latest-rb/craftbukkit.jar"
+  ],
+  "commands": {
+    "start": "",
+    "stop": "",
+    "exec": "",
+    "stop_all": ""
+  }
+}
