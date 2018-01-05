@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.0.0"
             },
             "require-dev": {
                 "illuminate/cookie": ">=4.0.9,<4.2",

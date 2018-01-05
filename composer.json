@@ -4,7 +4,7 @@
     "keywords": ["minecraft"],
     "license": "MIT",
     "require": {
-        "php": ">= 5.3.0",
+        "php": ">= 7.0.0",
         "slim/slim": "^3.0",
         "cartalyst/sentry" : "2.*"
     },
