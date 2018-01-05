@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f97082f4f4e1a0057598657a14fc9f6b",
+    "content-hash": "76b19bfc6b56f460473bc6b2b92b1781",
     "packages": [
         {
             "name": "cartalyst/sentry",
@@ -21,7 +21,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">=5.3.3"
             },
             "require-dev": {
                 "illuminate/cookie": ">=4.0.9,<4.2",
@@ -408,7 +408,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">= 5.3.0"
+        "php": "~7.2.0"
     },
     "platform-dev": []
 }
