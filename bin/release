@@ -2,4 +2,6 @@
 
 cat <<EOF
 ---
+default_process_types:
+  worker: bin/minecraft
 EOF
