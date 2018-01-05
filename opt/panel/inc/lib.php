@@ -670,7 +670,7 @@ function user_modify($user,$pass,$role,$home,$ram,$port,$jar='craftbukkit.jar',$
 }
 
 // List users
-function user_list() {
+/**function user_list() {
 	$h = opendir('data/users/');
 	$users = array();
 	while(($f = readdir($h)) !== false)
@@ -678,7 +678,7 @@ function user_list() {
 			$users[] = preg_replace("/\.json$/", "", $f);
 	closedir($h);
 	return $users;
-}
+}**/
 
 /*
 8888888888 d8b 888 888                    d8b
