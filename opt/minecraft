@@ -19,7 +19,7 @@ eval "$ngrok_cmd | tee ngrok.log &"
 ngrok_pid=$!
 
 # Do save dropbox config file
-echo "OAUTH_TOKEN_KEY=$DROPBOX_API_TOKEN" >> /app/.dropbox_uploader
+echo "OAUTH_TOKEN_KEY=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
 
 # Do get server files if there is
 bin/dropbox download /backup/sv.zip
@@ -31,7 +31,7 @@ eval "while true; do sleep ${AWS_SYNC_INTERVAL:-60}; bin/sync; done &"
 sync_pid=$!
 echo "Starting dropbox sync..."
 
-eval "while true; do sleep 60; zip -r sv.zip /app/; bin/dropbox upload sv.zip /backup/sv.zip; done &"
+eval "while true; do sleep 60; zip -r sv.zip server; bin/dropbox upload sv.zip /backup/sv.zip; done &"
 
 # create server config
 echo "server-port=${mc_port}" >> /app/server.properties
@@ -52,8 +52,11 @@ case $limit in
   ;;
 esac
 
+# Make server dir for easier backup
+mkdir server
+mv minecraft.jar server/minecraft.jar
 echo "Starting: minecraft ${mc_port}"
-eval "screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar minecraft.jar nogui"
+eval "screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar server/minecraft.jar nogui"
 main_pid=$!
 
 # Flush the logfile every second, and ensure that the logfile exists
