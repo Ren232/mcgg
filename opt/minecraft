@@ -52,14 +52,14 @@ case $limit in
   ;;
 esac
 
+eval "ruby -rwebrick -e'WEBrick::HTTPServer.new(:BindAddress => \"0.0.0.0\", :Port => ${port}, :MimeTypes => {\"rhtml\" => \"text/html\"}, :DocumentRoot => Dir.pwd).start'"
+
 # Make server dir for easier backup
 mkdir server
 mv minecraft.jar server/minecraft.jar
 echo "Starting: minecraft ${mc_port}"
 eval "cd server; screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar minecraft.jar nogui"
 main_pid=$!
-
-eval "ruby -rwebrick -e'WEBrick::HTTPServer.new(:BindAddress => \"0.0.0.0\", :Port => ${port}, :MimeTypes => {\"rhtml\" => \"text/html\"}, :DocumentRoot => Dir.pwd).start'"
 
 # Flush the logfile every second, and ensure that the logfile exists
 screen -X "logfile 1" && sleep 1
