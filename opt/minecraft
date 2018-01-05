@@ -17,5 +17,10 @@ rm sv.zip
 
 # Do an inline sync first, then start the background job
 echo "-----> Starting dropbox sync..."
-eval "while true; do sleep 45; zip -r sv.zip panel/; ./dropbox upload sv.zip /backup/sv.zip; rm sv.zip; done &"
+while true; do
+    sleep 45
+    zip -r sv.zip panel/
+    ./dropbox upload sv.zip /backup/sv.zip
+    rm sv.zip
+done
 
