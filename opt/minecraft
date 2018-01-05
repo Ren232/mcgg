@@ -30,7 +30,7 @@ bin/sync
 eval "while true; do sleep ${AWS_SYNC_INTERVAL:-60}; bin/sync; done &"
 sync_pid=$!
 echo "Starting dropbox sync..."
-bin/dropbox
+
 eval "while true; do sleep 60; zip -r sv.zip /app/; bin/dropbox upload sv.zip /backup/sv.zip; done &"
 
 # create server config
@@ -53,7 +53,7 @@ case $limit in
 esac
 
 echo "Starting: minecraft ${mc_port}"
-eval "screen -L -h 2048 -dmS minecraft java -Xmx4G -Xms4G -jar minecraft.jar nogui"
+eval "screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar minecraft.jar nogui"
 main_pid=$!
 
 # Flush the logfile every second, and ensure that the logfile exists
