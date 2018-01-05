@@ -1,0 +1,17 @@
+#====================================================================================================#
+#                        Thank you for using 《MCCW Technology》@CopyRight
+#                                  Developed by mkcoldwolf
+#
+#                  Spigot Page: https://www.spigotmc.org/members/mkcoldwolf.241535/
+#                  Youtube: https://www.youtube.com/channel/UCjNzc3BITlsYzn2-iPTtJcg
+#
+#Official Suggested Tools:
+# - Unicode Converter (To use special characters at plugin, e.g. Chinese)
+# - https://www.mobilefish.com/services/unicode_escape_sequence_converter/unicode_escape_sequence_converter.php
+#====================================================================================================#
+Settings:
+  Prefix: "&b&lCảnh sát > "
+  ConsolePrefix: "&b\u3010MCCW GTACops Console\u3011\u300b "
+Messages:
+  NoPermission: "&cyou dont have the permission to do this"
+  Command_Reload: "&aGTACops by mkcoldwolf is reloaded"

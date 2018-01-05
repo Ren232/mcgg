@@ -1,0 +1,57 @@
+#####################################
+#                                   #
+#        Token Slots Config         #
+#                                   #
+#####################################
+
+MaxBet: 50000 #The highest someone can bet or the /slots max
+WinTax: 0.10 #The % deducted off of the win
+WildCard: true #The paper that helps complete the row
+WildCardReward: 8 #Reward for getting x3 in a row
+SpinSound: true #The sound that plays when it spins
+SoundVolume: 10 #The volume at which the spinning sounds plays
+SpinningSound: BLOCK_NOTE_SNARE
+WinSound: ENTITY_FIREWORK_LAUNCH
+LoseSound: BLOCK_NOTE_BASS
+SpaceFiller: 'STAINED_GLASS_PANE/15'
+Items:
+  1:
+    Item: DIAMOND_BLOCK #The item appearing in the machine
+    Chance: 1 #<#> out of the sum of the others
+    Reward: 10 #<#>*(Connected - 1)*(bet*0.5)
+  2:
+    Item: EMERALD_BLOCK
+    Chance: 1
+    Reward: 10
+  3:
+    Item: GOLD_BLOCK
+    Chance: 1
+    Reward: 9
+  4:
+    Item: LAPIS_BLOCK
+    Chance: 1
+    Reward: 8
+  5:
+    Item: QUARTZ_BLOCK
+    Chance: 2
+    Reward: 8
+  6:
+    Item: IRON_BLOCK
+    Chance: 2
+    Reward: 6
+  7:
+    Item: REDSTONE_BLOCK
+    Chance: 2
+    Reward: 6
+  8:
+    Item: COAL_BLOCK
+    Chance: 2
+    Reward: 5
+  9:
+    Item: CLAY
+    Chance: 2
+    Reward: 4
+  10:
+    Item: SLIME_BLOCK
+    Chance: 2
+    Reward: 3

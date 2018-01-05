@@ -1,0 +1,29 @@
+lastAccountName: GGJohny
+timestamps:
+  login: 1514778737399
+  lastteleport: 1514775930892
+  logout: 1514777754690
+ipAddress: 127.0.0.1
+afk: false
+lastlocation:
+  world: world
+  x: -326.5
+  y: 67.86933889321097
+  z: 312.5
+  yaw: 170.55072
+  pitch: -18.9001
+logoutlocation:
+  world: base
+  x: -517.0
+  y: 4.0
+  z: -230.0
+  yaw: 0.0
+  pitch: 0.0
+homes:
+  home:
+    world: world
+    x: -326.24939867979833
+    y: 30.0
+    z: 312.3743502182269
+    yaw: 271.35074
+    pitch: -1.950108

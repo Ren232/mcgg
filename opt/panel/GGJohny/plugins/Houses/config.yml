@@ -1,0 +1,29 @@
+# +----------------------------------------------------+
+# <                   Houses config                    >
+# +----------------------------------------------------+
+# DO NOT USE TAB INDENTION. Indent with spaces instead
+# 
+# This will make players get the specified rank (permission group) for the class he/she buys 
+use-class-ranks: true
+use-class-prices: true
+autoclose-door-delay: 2.5
+home-teleport-cooldown: 3
+maximum-houses: -1
+clean-database-on-start: true
+house-builder-profit: false
+homeless: default
+sell-percentage: 75
+expired-check-timer: 60
+classes:
+  '1':
+    rank: Governor
+    price: 500000
+    per-day-cost: 20000
+    info: The best house there is
+  '5':
+    rank: Worker
+    price: 70000
+    per-day-cost: 3000
+    info: A decent house for the regular worker
+worlds:
+  display-worlds: true

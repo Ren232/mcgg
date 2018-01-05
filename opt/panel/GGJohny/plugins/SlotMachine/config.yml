@@ -1,0 +1,17 @@
+# IMPORTANT : When you need to add apostrophes : ' please add TWO apostrophes, like this '' otherwise the config file will be wiped
+debug: false
+pluginVersion: 5
+language: ENGLISH
+backupMachinesOnPluginUnload: true
+anonymouslyReportExceptionsToDevelopper: true
+permissionDenied: permission.denied
+notEnoughMoney: money.notenough
+notEnoughTokens: tokens.notenough
+notEnoughPlayerPoints: playerpoints.notenough
+notEnoughTokensManager: tokenmanager.notenough
+showItemName: true
+defaultWinMessage: '&a&lYou Won !'
+defaultLossMessage: '&c&lYou Lost, try again !'
+goodLuck: play.goodluck
+luckLevelToPercentConversion: 12.5
+badLuckLevelToPercentConversion: -12.5

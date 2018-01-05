@@ -1,0 +1,50 @@
+CSP_M320:
+    Item_Information:
+        Attachments:
+            Type: accessory
+            Toggle_Delay: 5
+            Sounds_Toggle: BLOCK_NOTE_HAT-1-2-0
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Projectile_Amount: 1
+        Projectile_Type: egg
+        Projectile_Speed: 20
+        Projectile_Damage: 1
+        Sounds_Shoot: ENTITY_GENERIC_EXPLODE-1-2-0
+    Reload:
+        Enable: true
+        Reload_Amount: 1
+        Reload_Duration: 45
+        Sounds_Reloading: BLOCK_PISTON_EXTEND-1-1-10,ENTITY_SKELETON_STEP-1-0-20,BLOCK_PISTON_CONTRACT-1-1-35
+    Particles:
+        Enable: true
+        Particle_Impact_Anything: BLOCK_BREAK-24
+    Explosions:
+        Enable: true
+        Damage_Multiplier: 10
+        Explosion_No_Grief: true
+        Explosion_Radius: 5
+        On_Impact_With_Anything: true
+        Projectile_Activation_Time: 5
+        Sounds_Shooter: ENTITY_SKELETON_SHOOT-2-2-0
+
+CSP_Tactical_Knife:
+    Item_Information:
+        Item_Name: "&eT&eactical Knife"
+        Item_Type: 293
+        Item_Lore: "&eA m&eelee attachment.|&eNot intended for standalone use.||&eSkin: No skin|&eStatTrack: 0"
+        Melee_Mode: true
+        Sounds_Acquired: ENTITY_BAT_TAKEOFF-1-1-0
+        Remove_Unused_Tag: true
+    Shooting:
+        Cancel_Left_Click_Block_Damage: true
+        Cancel_Right_Click_Interactions: true
+        Delay_Between_Shots: 20
+        Projectile_Damage: 40
+    Particles:
+        Enable: true
+        Particle_Hit: BLOCK_BREAK-55
+    Hit_Events:
+        Enable: true
+        Sounds_Shooter: ENTITY_SKELETON_SHOOT-1-0-0,ENTITY_SLIME_JUMP-1-1-1

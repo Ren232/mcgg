@@ -1,0 +1,83 @@
+CSP_CocoPops:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: PARTICLE_SMOKE
+  itemHoldEffects:
+    hideAttributes: true
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:31:30:1'
+    - '359:&dPink:null:32:30:1'
+    - '359:&4Red:null:33:30:1'
+
+CSP_Grenade:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: PARTICLE_SMOKE
+  itemHoldEffects:
+    hideAttributes: true
+  #CustomSounds:
+  #  Explode: EXPLODE~explode.grenade-3-1
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:71:70:1'
+    - '359:&dPink:null:72:70:1'
+    - '359:&4Red:null:73:70:1'
+  #CounterStrike:
+  #  SmokeGrenade: 80~explode.smokegrenade-3-1
+
+CSP_Flashbang:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: COLOURED_DUST
+    particleColor: 204-0-102
+  itemHoldEffects:
+    hideAttributes: true
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:51:50:1'
+    - '359:&dPink:null:52:50:1'
+    - '359:&4Red:null:53:50:1'
+  CounterStrike:
+    Flashbang: 12.0~12~3.0~100-3~20-1
+
+CSP_Putty:
+  itemHoldEffects:
+    hideAttributes: true
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:91:90:1'
+    - '359:&dPink:null:92:90:1'
+    - '359:&4Red:null:93:90:1'

@@ -1,0 +1,9 @@
+# ==============================
+# = Người thành lập: [ConBòTVs =
+# ==============================
+Boolean: true
+Prefix: '&c[NeverFullSlots]'
+Messages:
+  Reload: '&aKhởi động lại cấu hình thành công!'
+  Permission: '&aBạn không được phép sử dụng lệnh này!'
+  Console: '&aKhông thể sử dụng lệnh này ngoài bản diều khiển!'

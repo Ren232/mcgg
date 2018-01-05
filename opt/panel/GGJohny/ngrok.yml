@@ -1,0 +1,10 @@
+authtoken: 1234567890 
+
+region: ap 
+
+log_level: debug 
+
+log_format: logfmt 
+
+log: /app/web/srv/GGJohny/ngrok.log 
+

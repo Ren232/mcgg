@@ -1,0 +1,18 @@
+reward:
+  title:
+    '1': Head Hunter
+    '2': Head Collector
+    '3': Experienced Hunter
+    '4': Greedy Hunter
+    '5': Dead or Alive
+    '6': Bloodthirsty
+    '7': Bounty Tracker
+    '8': '%star% Bounty Hunter %star%'
+  quote:
+    '3': May Death welcome you...
+    '6': You better not steal that diamond again.
+    '10': It's a matter of gold.
+  money:
+    base: 50
+    per-lvl: 6
+bounties-needed-to-lvl-up: 5

@@ -1,0 +1,51 @@
+Version: 1
+Seed: 3181989328517774113
+Residences:
+  GGJohny:
+    LeaveMessage: Now leaving %residence.
+    BlockSellPrice: 0.3
+    EnterMessage: Welcome %player to %residence, owned by %owner.
+    Permissions:
+      PlayerFlags:
+        595be0e3-2367-3055-86c2-8604cb3c81bc:
+          container: true
+          ignite: true
+          move: true
+          shear: true
+          use: true
+          destroy: true
+          animalkilling: true
+          trade: true
+          mobkilling: true
+          build: true
+          vehicledestroy: true
+          leash: true
+      AreaFlags:
+        container: false
+        ignite: false
+        shear: false
+        firespread: false
+        use: false
+        destroy: false
+        pvp: false
+        animalkilling: false
+        hook: false
+        build: false
+        explode: false
+        vehicledestroy: false
+        tnt: false
+        leash: false
+        pistonprotection: true
+        tp: true
+        creeper: false
+      OwnerUUID: 595be0e3-2367-3055-86c2-8604cb3c81bc
+      OwnerLastKnownName: GGJohny
+    CreatedOn: 1514519061255
+    Areas:
+      main:
+        X1: 228
+        Y1: 39
+        Z1: 165
+        X2: 209
+        Y2: 21
+        Z2: 147

@@ -58,10 +58,12 @@ done
 
 mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/minecraft ]   && cp $OPT_DIR/minecraft $BUILD_DIR/bin
-[ ! -f $BUILD_DIR/sync ]        && cp $OPT_DIR/sync $BUILD_DIR/bin
-[ ! -f $BUILD_DIR/index.rhtml ] && cp $OPT_DIR/index.rhtml $BUILD_DIR
+[ ! -f $BUILD_DIR/panel/index.php ] && mv $OPT_DIR/panel $BUILD_DIR/panel
+[ ! -f $BUILD_DIR/index.php ] && mv $OPT_DIR/panel $BUILD_DIR/index.php
 [ ! -f $BUILD_DIR/dropbox ]     && cp $OPT_DIR/dropbox $BUILD_DIR/bin
 
 chmod +x $BUILD_DIR/bin/dropbox
 chmod +x $BUILD_DIR/bin/minecraft
-chmod +x $BUILD_DIR/bin/sync
+chmod 777 -R $BUILD_DIR/panel/
+chmod +x $BUILD_DIR/index.php
+

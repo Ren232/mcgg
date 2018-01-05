@@ -1,0 +1,31 @@
+Inventory_Name: '&cCongratulations!'
+Inventory_Slots: 27
+ItemAmountToAdd: 5
+Particles: true
+World: world
+LargestDinctance_X: 5000
+SmallestDinctance_X: -5000
+LargestDinctance_Y: 300
+SmallestDinctance_Y: 60
+LargestDinctance_Z: 5000
+SmallestDinctance_Z: -5000
+SpawnBroadcastMessage: |-
+  &6&l--------------------------------------
+  &cA chest has spawned at &ax: &6{X} &ay: &6{Y} &az: &6{Z}.
+  &6&l--------------------------------------
+NotAbleToBreakAchest: '&cYou cant break a loot chest!'
+BroadcastMessageOnLoot: true
+MessageOnLoot: |-
+  &6&l--------------------------------------
+  &4{Player} &clooted the chest at &ax: &6{X} &ay: &6{Y} &az: &6{Z}.
+  &6&l--------------------------------------
+SpawnChestPerTime: 3600
+KillChest: true
+KillChestAfterTime: 3600
+BroadcastKillMessage: true
+BroadcastMessage: |-
+  &6&l--------------------------------------
+  &4The chest at &ax: &6{X} &ay: &6{Y} &az: &6{Z} &4has been removed!
+  &6&l--------------------------------------
+CommandsToExecuteOnLoot:
+- eco give {player} 100

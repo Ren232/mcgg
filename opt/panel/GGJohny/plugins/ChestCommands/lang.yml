@@ -1,0 +1,11 @@
+no-points: '&cYou need {points} player points for this.'
+no-open-permission: '&cYou don''t have permission &e{permission} &cto use this menu.'
+default-no-icon-permission: '&cYou don''t have permission for this icon.'
+open-menu: '&aOpening the menu "{menu}".'
+no-exp: '&cYou need {levels} XP levels for this.'
+menu-not-found: '&cMenu not found! Please inform the staff.'
+no-money: '&cYou need {money}$ for this.'
+no-required-item: '&cYou must have &e{amount}x {material} &c(ID: {id}, data value:
+  {datavalue}) for this.'
+open-menu-others: '&aOpening the menu "{menu}" to {player}.'
+any: any

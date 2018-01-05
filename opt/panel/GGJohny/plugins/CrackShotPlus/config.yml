@@ -1,0 +1,31 @@
+Prefix: '&7░ &r&c&o[Cs&7&7&oPlus]&r&c&o - &r'
+Permissions: '&7You do not have permission to do this.'
+Configuration: '&7Configuration reloaded.'
+UnknownCommand: '&7Invalid command.'
+NoCreativeZooming: '&7You cant zoom in CREATIVE mode.'
+
+AttachmentCraftInventoryName: '&c&o------[ Attachment&r&7&oCraft ]------'
+AttachmentNoItemInHand: '&7You need to have item in hand and it needs to be gun.'
+AttachmentNoGunInHand: '&7You need to have item in hand and it needs to be gun.'
+NoAttachmentsForThisGun: '&7There is not any attachments for this weapon.'
+NoMoreAttachments: '&7You can not add more attachments for this gun.'
+AttachmentsDetachInventoryName: '&c&o------[ Attachment&r&7&oDetach ]------'
+AttachmentDetachSuccess: '&7Successfully removed %attachment% &7attachment from this gun.'
+
+AttachmentChooseInventoryName: '&c&o------[ Craft &7&oOr &c&oDetach &7&o]------'
+AttachmentCraft: 5:&a&oAdd_attachment
+AttachmentDetach: 14:&c&oDetach_attachments
+
+SkinCraftInventoryName: '&c&o------[ Skin&r&7&oCraft ]------'
+SkinNoItemInHand: '&7You need to have item in hand and it needs to be gun.'
+SkinNoGunInHand: '&7You need to have item in hand and it needs to be gun.'
+NoSkinsForThisGun: '&7There is not any skins for this weapon.'
+SkinDetachSuccess: '&7Successfully removed %skin% &7skin from this gun.'
+
+SkinChooseInventoryName: '&c&o------[ Detach &7&oOr &c&oCraft &7&o]------'
+SkinCraft: 5:&a&oAdd_skin
+SkinDetach: 14:&c&oDetach_skin
+
+SkinAndAttachmentRandom: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+
+CooldownOnChangeHeldSlot: false-3-&7You can not shoot yet!

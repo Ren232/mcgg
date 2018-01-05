@@ -1,0 +1,95 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                       #
+#  This configuration is for ServerSigns. All keys have accompanying    #
+#  comment descriptions upon file generation; these comments MAY NOT    #
+#  remain after new values are loaded by the plugin. Please be sure to  #
+#  refer to the help page for more information: http://exl.li/svsconfig #
+#                                                                       #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+# Don't touch this! It might wipe your entire config!!
+config-version: 3
+
+# A list of material names (should be in the Bukkit/Spigot Material enum form)
+# These materials define the blocks which can be used with ServerSigns
+# Refer to this page for the list: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+blocks:
+- SIGN_POST
+- WALL_SIGN
+
+# Whether or not any block can be used with ServerSigns (overrides 'blocks' list)
+any_block: false
+
+# The language key which should be used to find the languages file
+# For example, 'en' will resolve to the 'ServerSigns/translations/en.yml' file
+language: 'en_default'
+
+# The prefix used in most ServerSigns messages
+message_prefix: '&2[ServerSigns]'
+
+# The colour for most ServerSigns messages
+message_colour: '&e'
+
+# Whether or not Vault should be used for permissions granting
+vault_grant: true
+
+# The command to execute from console for setting permissions without Vault
+permission_add_command: 'pex user <player> add <permission>'
+
+# The command to execute from console for removing permissions without Vault
+permission_remove_command: 'pex user <player> remove <permission>'
+
+# Whether or not admins must be sneaking to destroy ServerSigns
+sneak_to_destroy: true
+
+# Whether or not to display a message to players when funds are removed from account
+show_funds_removed_message: true
+
+# The currency string or symbol for use in messages
+currency_string: 'dollars'
+
+# Whether or not the plugin should announce ServerSigns developers joining your server
+broadcast_developers: true
+
+# Whether or not the plugin should automatically check for the latest version and download it
+check_for_updates: true
+
+# Whether command logging to the console should be disabled
+disable_command_logging: false
+
+# Whether the plugin should listen for left clicks as well as right clicks for ServerSign activation
+# This option must be enabled to allow ServerSigns to execute different commands for left & right clicks
+allow_left_clicking: true
+
+# Whether funds remove via /svs setprice should be sent to a server bank
+send_payments_to_bank: false
+
+# The server bank name (used if send_payments_to_bank is set to true)
+deposit_bank_name: 'server'
+
+# Whether the Player#chat() function should be used instead of Player#performCommand() for commands
+# If enabled, this means commands executed through ServerSigns will fire the command pre-process event
+alternate_command_dispatching: false
+
+# Whether or not you want to opt-out of Metrics statistic gathering through www.mcstats.org
+metrics_opt_out: false
+
+# A list of commands which cannot be attached to ServerSigns (to prevent console-only command exploits)
+blocked_commands:
+- 'op'
+- 'deop'
+- 'stop'
+
+# Defines the task delay threshold (in seconds) above which tasks will be persisted to disk
+task_persist_threshold: 10
+
+# Whether or not you want to have tasks that match the defined regex pattern cancelled on player death
+# Please note that in servers with over 10,000 queued tasks, the regex search can affect performance
+cancel_tasks_on_death: false
+
+# The Regular Expression pattern used when determining which tasks to cancel upon a player's death
+# This Regex pattern will be used to compare each pending command a player has on their death; matching commands will be cancelled
+cancel_tasks_regex_pattern: 'warp .*'
+
+# The number of hours your timezone is offset from GMT/UTC - must be an integer between -12 and 12
+time_zone_offset: -5

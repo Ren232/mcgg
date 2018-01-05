@@ -1,0 +1,354 @@
+PREFIX: '&c&lBang hội > &7'
+LANG:
+  CONSOLE: Console
+  ENABLED: enabled
+  DISABLED: disabled
+TIME:
+  LESSTHAN: less than %time%
+  YEARS:
+    SINGULAR: year
+    PLURAL: years
+  MONTHS:
+    SINGULAR: month
+    PLURAL: months
+  WEEKS:
+    SINGULAR: week
+    PLURAL: weeks
+  DAYS:
+    SINGULAR: day
+    PLURAL: days
+  HOURS:
+    SINGULAR: hour
+    PLURAL: hours
+  MINUTES:
+    SINGULAR: minute
+    PLURAL: minutes
+  SECONDS:
+    SINGULAR: second
+    PLURAL: seconds
+MSG:
+  ERROR: Error occured, please contact server owner.
+  NOACCESS: You don't have access to this command.
+  PLAYERONLY: This command can be used only in the game.
+  INGANGONLY: You have to be in a gang to use this command.
+  NOGANGONLY: You can't use this command while in a gang.
+  TOOLOWRANK: You have to be at least %rank% to do this.
+  USAGE:
+    FIGHT: Invalid command usage. Please check /g help
+    GANG: Invalid command usage. Please check /g help
+    GANGADMIN: 'Invalid command usage. Correct usage: /gadmin <arena|bank|disband|reload|spy>'
+    SUBCOMMAND: 'Invalid command usage. Correct usage: %usage%'
+  MODULE:
+    DISABLED: This module has been disabled by the server owner.
+  GANGS:
+    DISABLED: Gangs have been disabled in this world.
+  INVALIDGANG: Invalid gang name specified.
+  INVALIDPLAYER: Invalid player name specified.
+  INVALIDAMOUNT: Invalid money amount specified.
+  TELEPORT:
+    TELEPORT: You will be teleported in %time%.
+    AWAITING: You are already waiting for teleportation.
+    CANCELLED: Pending teleportation request has been cancelled.
+  ALLYCHAT:
+    TOGGLED: You have %state% ally chat.
+  FIGHTS:
+    START:
+      WILLSTART: 'Your gang will begin a fight against %gang% on arena %arena% in
+        %time%. Required members amount: %membersamount%. Join the fight using &b/fight
+        join&7.'
+      CANNOT:
+        MEMBERS: There are too few players from %gang% to begin the fight, the fight has been cancelled.
+        MONEY: Gang %gang% doesn't have enough money to pay the entry fee, the fight has been cancelled.
+      STARTED:
+        BROADCAST: The fight between %gang1% and %gang2% has begun!
+        INARENA: The fight has begun!
+        INGANG: Your gang has begun the fight against %gang%!
+    END:
+      MONEY: You have won $%amount% from the fight.
+      WON:
+        BROADCAST: Gang %winner% has won the fight against %loser%!
+        INGANG: Your gang has won the fight against %gang%. $%amount% have been added to gang's bank account.
+      LOST:
+        INGANG: Your gang has lost the fight against %gang%.
+      TELEPORT: You will be teleported out of the arena in %time%.
+      ENDED:
+        BROADCAST: Fight between %gang1% and %gang2% has ended.
+    CANTUSECOMMAND: You can't use that command when fighting.
+    CANTMOVE: You can't move until the fight starts.
+    CANTLEAVEARENA: You can't leave the fight arena.
+    ELIMINATED:
+      ELIMINATED: You have been eliminated from the fight.
+      INARENA: '%player% has been eliminated! %amount% players left from %gang%.'
+    ARENASTATE:
+      NOTCONFIGURED: not configured
+      EMPTY: empty
+      WAITING: waiting for players
+      INPROGRESS: in progress
+      ENDED: restarting
+  FIGHT:
+    ACCEPT:
+      OWN: You can't fight your own gang.
+      ALLY: You can't fight an allied gang.
+      NOTCHALLENGED: '%gang% hasn''t challenged you to fight.'
+      ALREADYFIGHTING:
+        OWN: Your gang is already fighting.
+        ENEMY: '%gang% is already fighting.'
+      NOEMPTYARENA: There are no available arenas to begin the fight, please try again later.
+      NOTENOUGHMEMBERS:
+        OWN: There aren't enough online players from your gang to start the fight.
+        ENEMY: There aren't enough online players from %gang% to start the fight.
+      NOTENOUGHMONEY:
+        OWN: Your gang needs $%amount% on bank account to start the fight.
+        ENEMY: '%gang% doesn''t have enough money to start the fight.'
+      NOTENOUGHPRIVATEMONEY: You don't have enough money.
+      PAIDPRIVATEMONEY: You have paid $%amount% deposit for the fight.
+    CHALLENGE:
+      OWN: You can't challenge your own gang.
+      ALLY: You can't challenge an allied gang.
+      ALREADYCHALLENGED:
+        OWN: Your gang has already challenged %gang%.
+        ENEMY: Your gang has been already challenged by %gang%. You can accept using &b/fight accept %gang%&7.
+      INVALID:
+        MEMBERS: Invalid members amount specified.
+      MEMBERS:
+        RANGE: Please specify members amount between %min% and %max%.
+      MONEY:
+        RANGE: Please specify money amount between %min% and %max%.
+      NOTENOUGHMEMBERS: There aren't enough online players from your gang.
+      NOTENOUGHMONEY: Your gang doesn't have that much money.
+      NOTENOUGHPRIVATEMONEY: You don't have enough money.
+      PAIDPRIVATEMONEY: You have paid $%amount% deposit for the challenge.
+      CHALLENGED:
+        BY: 'Your gang has been challenged by %gang% to fight! Required members: %membersamount%,
+          entry fee: $%amount%. You can accept using &b/fight accept %gang%&7.'
+        INGANG: 'Your gang has challenged %gang% to fight! Required members: %membersamount%,
+          entry fee: $%amount%.'
+        CHALLENGED: You have challenged %gang% to fight.
+    JOIN:
+      NOTFIGHTING: Your gang isn't fighting at this moment.
+      CANNOTJOIN: You can join only fights which haven't started yet.
+      JOINED: '%player% (%gang%) has joined the fight (players from %gang%: %membersamount%).'
+    LEAVE:
+      NOTFIGHTING: Your gang isn't fighting at this moment.
+      NOTINARENA: You aren't inside any fight arena.
+      LEFT: '%player% (%gang%) has left the fight arena.'
+  GANG:
+    ALLY:
+      OWN: You can't send ally request to your own gang.
+      ALREADYALLY: This gang is already your ally.
+      REQUESTED:
+        BY: '%gang% requested for an alliance. You can accept it with /g ally %gang%'
+        INGANG: Your gang sent an alliance request to %gang%.
+        REQUESTED: Alliance request sent to %gang%.
+      ACCEPTED:
+        BY: Your alliance request has been accepted by %gang%.
+        INGANG: Your gang is now in alliance with %gang%.
+        ACCEPTED: You accepted %gang%'s alliance request.
+    CREATE:
+      CANTAFFORD: You need $%amount% to create a gang.
+      LENGTH: Specified name is either too short or too long, it may contain %min%-%max% characters.
+      SPECIALCHARS: Specified name contains banned characters.
+      SPACES: Gang name may not contain blank spaces.
+      BANNEDNAME: You can't create gang with that name.
+      ALREADYEXISTS: A gang with that name already exists.
+      COLORS: You don't have access to use colors in the gang name.
+      BROADCAST: Gang %gang% has been created by %player%.
+      CREATED: You have successfully created gang %gang%.
+    DELHOME:
+      INVALIDHOME: Invalid home specified.
+      DELETED: Home deleted.
+    DEMOTE:
+      NOTINGANG: '%player% isn''t part of your gang.'
+      LOWEST: You can't demote %player% any more.
+      HIGHEST: You can't demote the leader. Change the leader using /g leader first.
+      DEMOTED:
+        BY: You have been demoted to %rank% by %player%.
+        INGANG: '%target% has been demoted to %rank% by %player%.'
+        DEMOTED: You have demoted %target% to %rank%.
+    DEPOSIT:
+      INVALIDAMOUNT: Invalid amount of money specified.
+      CANTAFFORD: You don't have that much money.
+      DEPOSITED:
+        INGANG: '%player% has deposited $%amount% into gang bank account.'
+        DEPOSITED: You have deposited $%amount% into gang bank account.
+    DISBAND:
+      FIGHTING: You can't disband the gang during a fight.
+      BROADCAST: Gang %gang% has been disbanded by %player%.
+      DISBANDED: You have disbanded your gang.
+    FRIENDLYFIRE:
+      DISABLED: Changing friendly fire settings has been disabled by the server owner.
+      TOGGLED:
+        INGANG: '%player% has %state% friendly fire.'
+        TOGGLED: You have %state% friendly fire.
+    HELP:
+      HELP: "&7--------------------[ &bGangs+ help &7]--------------------\n&7- &b/g\
+        \ list &7- list of all gangs\n&7- &b/g top &7- gangs leaderboard\n&7- &b/g\
+        \ info <gang> &7- information about specified gang\n&7- &b/g create <name>\
+        \ &7- create a new gang\n&7- &b/g disband &7- disband your gang\n&7- &b/g\
+        \ join <gang> &7- join specified gang \n&7- &b/g invite <player> &7- invite\
+        \ player to your gang\n&7- &b/g uninvite <player> &7- cancel player's invitation\n\
+        &7- &b/g kick <player> &7- kick player out of your gang\n&7- &b/g leave &7-\
+        \ leave your gang\n&7- &b/g player <player> &7- specified player's statistics\n\
+        &7- &b/g regroup <home name>  &7- request all players to regroup at specified\
+        \ home\n&7- &b/g friendlyfire &7- toggle friendly fire in gang\n&7- &b/g levelup\
+        \ &7- level up to higher gang level\n&7- &b/g promote <player> &7- promote\
+        \ specified player to higher rank\n&7- &b/g demote <player> &7- demote specified\
+        \ player to lower rank\n&7- &b/g deposit <amount> &7- deposit money on your\
+        \ gang's bank account\n&7- &b/g withdraw <amount> &7- withdraw money from\
+        \ your gang's bank account\n&7- &b/g listhomes &7- list of all gang homes\n\
+        &7- &b/g home <home> &7- teleport to specified gang home\n&7- &b/g sethome\
+        \ <home> &7- set specified gang home's location\n&7- &b/g delhome <home> &7-\
+        \ delete specified gang home\n&7- &b/g ally <gang> &7- send alliance request\
+        \ to specified gang\n&7- &b/g neutral <gang> &7- set relation with an ally\
+        \ to neutral\n&7- &b/gc on|off &7- toggle gang chat on/off\n&7- &b/gc <message>\
+        \ &7- send a single message on gang chat\n&7- &b/ac on|off  &7- toggle ally\
+        \ chat on/off\n&7- &b/ac<message> &7- send a single message on ally chat\n\
+        &7- &b/fight challenge <players amount> <money> <gang> &7- challenge specified\
+        \ gang for a fight\n&7- &b/fight accept <gang> &7- accept fight challenge\
+        \ from specified gang\n&7- &b/fight join &7- join the fight your gang takes\
+        \ part in\n&7- &b/fight leave &7- leave the fight your gang takes part in\n"
+    HOME:
+      INVALIDHOME: Invalid home specified.
+      UNSAFE: Home's location is unsafe, teleportation cancelled.
+    INVITE:
+      FULL: Your gang has reached the maximal allowed members amount (%amount% members).
+      ALREADYINGANG: '%player% is already in a gang.'
+      ALREADYINVITED: '%player% has been already invited to your gang.'
+      INVITED:
+        BY: You have been invited to %gang% gang by %player%.
+        INVITED: You have invited %target% to your gang.
+    JOIN:
+      NOTINVITED: You aren't invited to this gang.
+      FULL: This gang is full, you can't join it.
+      JOINED:
+        BROADCAST: '%player% has joined %gang%.'
+        INGANG: '%player% has joined your gang.'
+        JOINED: You have joined %gang%.
+    KICK:
+      NOTINGANG: '%player% isn''t part of your gang.'
+      OWNSELF: You can't kick yourself. Please use /g leave instead.
+      FIGHTING: You can't kick a player who's fighting at this moment.
+      LEADER: You can't kick the leader.
+      KICKED:
+        BROADCAST: '%target% has been kicked from %gang%.'
+        INGANG: '%target% has been kicked from the gang by %player%.'
+        BY: You have been kicked from %gang% by %player%.
+        KICKED: You kicked %target% from your gang.
+    LEADER:
+      NOTINGANG: '%player% isn''t part of your gang.'
+      ALREADYLEADER: '%player% is already the leader.'
+      CHANGED:
+        BROADCAST: '%player% has given the leadership of %gang% to %target%.'
+        INGANG: '%player% has given the leadership to %target%.'
+        BY: You have been given the leadership of %gang% by %player%.
+        CHANGED: You have given the leadership of %gang% to %target%.
+    LEAVE:
+      LEADER: You can't leave the gang as leader, please give the leadership to someone else using /g leader <player> first.
+      FIGHTING: You can't leave the gang when fighting.
+      NOMEMBERS: You can't leave an empty gang, please disband it instead.
+      LEFT:
+        BROADCAST: '%player% has left %gang%.'
+        INGANG: '%player% has left the gang.'
+        LEFT: You have left %gang%.
+    LEVELUP:
+      MAX: Your gang reached the highest available level, you can't level up any more.
+      GANGCANTAFFORD: Your gang needs $%amount% on bank account to level up.
+      CANTAFFORD: You need $%amount% to level up the gang.
+      LEVELEDUP:
+        BROADCAST: Gang %gang% has been upgraded to level %level%.
+        INGANG: Your gang has been upgraded to level %level%.
+        LEVELEDUP: You have upgraded your gang to level %level%.
+    LIST:
+      NOGANGS: There are no gangs.
+      HEADER: 'Gangs list (%page%/%totalpages%):'
+      GANG: '&7- &b%name%&7, leader: %leader%, level: %level%, members: %membersamount%'
+    LISTHOMES:
+      NOHOMES: Gang %gang% doesn't have any homes.
+      HEADER: '%gang% gang homes:'
+    NEUTRAL:
+      OWN: You can't change relation to your own gang.
+      NOTALLY: Gang %gang% is already neutral to you.
+      NEUTRAL:
+        INGANG: Your gang is now neutral to %gang%.
+        NEUTRAL: You have set your gang's relation to %gang% to neutral.
+    PROMOTE:
+      NOTINGANG: '%player% isn''t part of your gang.'
+      LEADER: You can't promote %player% any more. Use /g leader %player% in order to change the leader of the gang.
+      HIGHEST: You can't promote %player% any more.
+      PROMOTED:
+        BY: You have been promoted to %rank% by %player%.
+        INGANG: '%target% has been promoted to %rank% by %player%.'
+        PROMOTED: You have promoted %target% to %rank%.
+    REGROUP:
+      INVALIDHOME: Invalid home specified.
+      INGANG: '%player% requested to regroup at home %home%.'
+    SETHOME:
+      INVALIDNAME: You can't use quotation marks in the home name.
+      UNSAFELOCATION: You can set home only in a safe location.
+      ALREADYEXISTS: Home with that name already exists.
+      BANNEDWORLD: You can't create home in this world.
+      LIMIT: 'Homes limit reached. Current amount: %current%, limit: %limit%'
+      SET: Home %home% has been set.
+    TOP:
+      HEADER: 'Top %amount% gangs (sorted by %order%):'
+      GANG: |
+        %name% - Kills: %kills%, deaths: %deaths%, KDR: %kdr%
+    UNINVITE:
+      NOTINVITED: '%player% hasn''t been invited to your gang.'
+      UNINVITED:
+        BY: Your invitation to %gang% has been cancelled by %player%.
+        UNINVITED: You cancelled %target%'s invitation to your gang.
+    WITHDRAW:
+      INVALIDAMOUNT: Invalid amount of money specified.
+      CANTAFFORD: There isn't enough money on gang bank account.
+      WITHDRAWN:
+        INGANG: '%player% has withdrawn $%amount% from gang bank account.'
+        WITHDRAWN: You have withdrawn $%amount% from gang bank account.
+  GANGCHAT:
+    TOGGLED: You have %state% gang chat.
+  GANGADMIN:
+    ARENA:
+      INVALIDARENA: Invalid arena ID specified.
+      INUSE: You can't edit an arena which is currently being used.
+      LIST:
+        NOARENAS: There are no arenas.
+        HEADER: 'Arenas list:'
+        ARENA: '- ID: %id%, name: %name%, state: %state%'
+      CREATE:
+        ALREADYEXISTS: Arena %id% already exists.
+        SPECIALCHARS: Arena ID may contain only alphanumeric characters.
+        CREATED: Arena %id% has been created. Now set the locations using &b/gadmin arena setlocation %id% <corner1|corner2|spawn1|spawn2>&7 and save it using &b/gadmin arena save %id%&7.
+      REMOVE:
+        REMOVED: Arena %id% has been removed.
+      SETLOCATION:
+        INVALIDLOCATION: 'Invalid location name specified. Valid ones: corner1, corner2,
+          spawn1, spawn2'
+        INVALIDWORLD: You can't set the location in a different world than the other locations for this arena (%world%).
+        SET: Location %location% has been set for arena %id%.
+        READYTOUSE: Arena %id% is now ready to use, save it using &b/gadmin arena save %id%&7.
+      SETNAME:
+        SPECIALCHARS: Arena name may contain only alphanumeric characters.
+        SET: Arena's %id% name has been set to %name%. Now save it using &b/gadmin arena save %id%&7.
+      SAVE:
+        CANTSAVE: 'Arena %id% couldn''t be saved. Missing locations: %locations%'
+        SAVED: Arena %id% has been saved.
+    BANK:
+      BALANCE:
+        BALANCE: '%gang%''s balance: $%amount%'
+      GIVE:
+        GIVEN: $%amount% has been added to %gang%'s bank account.
+      TAKE:
+        TAKEN: $%amount% was taken from %gang%'s bank account.
+        TOOMUCH: Gang %gang% doesn't have that much money.
+      RESET:
+        RESET: '%gang%''s bank account has been reset.'
+    DISBAND:
+      FIGHTING: You can't disband the gang during a fight.
+      DISBANDED:
+        BROADCAST: Gang %gang% has been disbanded by %player%.
+        DISBANDED: You have disbanded gang %gang%.
+    RELOAD:
+      RELOADED: Configuration has been reloaded.
+    SPY:
+      TOGGLED: You have %state% gang & ally chat spy for %player%.
+      TOGGLEDBY: Your gang & ally chat spy has been %state% by %player%.

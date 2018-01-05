@@ -1,0 +1,58 @@
+set-by: Set by &f%creator%&7.
+set-by-yourself: You set this bounty.
+reward-is: The reward is &f%reward%&7.
+kill-him-claim-bounty: Kill him to claim the bounty!
+dont-let-them-kill-u: Don't let them kill you.
+thug-player: This player is a thug!
+right-click-remove-bounty: Right click to remove this bounty.
+click-buy-compass: Click to buy the compass for %price%$.
+click-target: Click to target him.
+click-untarget: Click to untarget him.
+click-up-bounty: Shift Click to up the reward of %percent%%.
+current-hunters: There are §f%hunters% §7players tracking him.
+no-title: '&cNo title'
+gui-name: Bounties
+leaderboard-gui-name: Hunter Leaderboard
+leaderboard-gui-completed-bounties: This player has completed &f%bounties% &7bounties.
+leaderboard-gui-title: --[ &c%title% &7]--
+leaderboard-gui-level: This player is level &f%level%&7.
+error-player: That player doesn't exist or isn't online.
+target-disconnect: Your target disconnected.
+new-hunter-alert: '%hunter% now targets you.'
+empty-inv-first: Please empty your inventory first.
+in-another-world: IN ANOTHER WORLD
+not-enough-perms: You don't have enough permissions!
+already-bounty-on-player: There is already a bounty on that player.
+command-usage: 'Usage: %command%'
+not-valid-number: '&f%arg% &eis not a valid number!'
+bounty-created: You succesfully set a bounty on &f%target%&e.
+bounty-explain: The first to kill this player will receive &f%reward%&e$.
+bounty-imun: You can't set a bounty on this player.
+track-imun: You can't track this player.
+cant-set-bounty-on-yourself: You can't set a bounty on yourself!
+new-bounty-on-you: '&f%creator% &ejust set a bounty on you!'
+new-bounty-on-player: '&f%creator% &eset a bounty on &f%target%&e! Kill him to get
+  &f%reward%&e$!'
+bounty-expired: The bounty on &f%target% &ehas expired.
+wrong-reward: Reward must be between §f%min% §cand §f%max%§c!
+not-enough-money: You don't have enough money.
+bounty-claimed: '&f%killer% &eclaimed &f%target%&e''s bounty: &f%reward%&e$!'
+bounty-claimed-by-you: 'You succesfully claimed &f%target%&e''s bounty: &f%reward%&e$!'
+auto-bounty: '&f%target%&e killed a player illegaly: a bounty was set on him! Kill
+  him to get &f%reward%&e$!'
+illegal-kill: You killed a man illegaly! A bounty was set on you!
+bounty-set-restriction: You must wait &f%time% &cseconds between each bounty.
+target-set: Target set.
+target-removed: Target removed.
+bought-compass: You Succesfully bought a Tracking Compass.
+tax-explain: §f%percent%§e% of the reward (§f%price%§e) were taken as tax.
+player-must-be-connected: The player must be connected in order to be tracked.
+level-up: '&lWell done!&e You''re level &f%level% &enow!'
+level-up-2: Claim &f%bounties% &emore bounties to level up again!
+level-up-rewards: Put your cursor over this message to see your rewards!
+level-up-reward: '- &f'
+click-select: Click to select.
+successfully-selected: You successfully selected &f%item%&e.
+unlocked-titles: 'Unlocked titles:'
+unlocked-quotes: 'Unlocked quotes:'
+upped-bounty: Reward for &f%player% &eis now &f%reward%&e.

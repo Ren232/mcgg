@@ -1,0 +1,502 @@
+[22:56:30] [Server thread/INFO]: Starting minecraft server version 1.10.2
+[22:56:30] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[22:56:30] [Server thread/INFO]: Loading properties
+[22:56:30] [Server thread/INFO]: Default game type: SURVIVAL
+[22:56:32] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-72c2605-251a5b6 (MC: 1.10.2) (Implementing API version 1.10.2-R0.1-SNAPSHOT)
+[22:56:33] [Server thread/INFO]: Debug logging is disabled
+[22:56:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:56:33] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:56:34] [Server thread/INFO]: Generating keypair
+[22:56:37] [Server thread/INFO]: Starting Minecraft server on *:1337
+[22:56:37] [Server thread/INFO]: Using epoll channel type
+[22:56:42] [Server thread/WARN]: Plugin `iConomy_Recreation v8.0' uses the space-character (0x20) in its name `iConomy Recreation' - this is discouraged
+[22:56:45] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[22:57:19] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v4.0.18
+[22:57:21] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mIdentified the following dependencies: [CAFFEINE][m
+[22:57:21] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[22:57:21] [Server thread/INFO]: [TimTheEnchanter] Loading TimTheEnchanter v3.0
+[22:57:21] [Server thread/INFO]: [SketchMap] Loading SketchMap v1.0.0
+[22:57:21] [Server thread/INFO]: [Teleport] Loading Teleport v2.6
+[22:57:21] [Server thread/INFO]: [iConomy_Recreation] Loading iConomy_Recreation v8.0
+[22:57:21] [Server thread/INFO]: [Vehicles] Loading Vehicles v8.6
+[22:57:42] [Server thread/INFO]: [PlugMan] Loading PlugMan v2.1.4
+[22:57:42] [Server thread/INFO]: [CrackShot] Loading CrackShot v0.98.7
+[22:57:42] [Server thread/INFO]: [TimedItems] Loading TimedItems v2.7
+[22:57:42] [Server thread/INFO]: [RandomLootChest] Loading RandomLootChest v2.0
+[22:57:42] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
+[22:57:42] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5.0-b727
+[22:57:44] [Server thread/INFO]: [Pl3xIcons] Loading Pl3xIcons v1.1
+[22:57:44] [Server thread/INFO]: [CrackShotPlus] Loading CrackShotPlus v0.35
+[22:57:44] [Server thread/INFO]: [GTACops] Loading GTACops v0.1.0
+[22:57:44] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v1.3.0
+[22:57:45] [Server thread/INFO]: [ViaVersion] ViaVersion 1.3.0 is now loaded, injecting!
+[22:57:55] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[22:57:55] [Server thread/INFO]: [NoMelt] Loading NoMelt v1.0.0
+[22:57:55] [Server thread/INFO]: [NeverFullSlots] Loading NeverFullSlots v0.3
+[22:57:55] [Server thread/INFO]: [MyCommand] Loading MyCommand v5.3.4
+[22:57:55] [Server thread/INFO]: [DeathControl] Loading DeathControl v2.1.1
+[22:57:55] [Server thread/INFO]: [Houses] Loading Houses v1.9.1
+[22:57:55] [Server thread/INFO]: [AreaShop] Loading AreaShop v2.4.0
+[22:57:55] [Server thread/INFO]: [Essentials] Loading Essentials v2.0.1-b488
+[22:57:55] [Server thread/INFO]: [CorpseReborn] Loading CorpseReborn v2.12.1
+[22:57:55] [Server thread/INFO]: [CorpseReborn] Worldguard detected. Adding custom spawn flags
+[22:57:55] [Server thread/INFO]: [BountyHunters] Loading BountyHunters v1.4.1c
+[22:57:55] [Server thread/INFO]: [PlayerPoints] Loading PlayerPoints v2.1.4
+[22:57:55] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.3.0
+[22:58:05] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.22-SNAPSHOT (build 1487)
+[22:58:05] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v3.1.4
+[22:58:05] [Server thread/INFO]: [EssentialsProtect] Loading EssentialsProtect v2.0.1-b557
+[22:58:05] [Server thread/INFO]: [AdvancedAchievements] Loading AdvancedAchievements v5.5
+[22:58:05] [Server thread/INFO]: [GangsPlus] Loading GangsPlus v2.0.22
+[22:58:05] [Server thread/INFO]: [TokenSlots] Loading TokenSlots v3.4
+[22:58:05] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.0.1-b557
+[22:58:05] [Server thread/INFO]: [RandomTeleport] Loading RandomTeleport v5.16.4
+[22:58:05] [Server thread/INFO]: [ServerSigns] Loading ServerSigns v4.5.1
+[22:58:05] [Server thread/INFO]: [ChatEx] Loading ChatEx v1.6
+[22:58:05] [Server thread/INFO]: [CommandNPC] Loading CommandNPC v1.9.1
+[22:58:05] [Server thread/INFO]: [ServerListPlus] Loading ServerListPlus v3.4.8
+[22:58:05] [Server thread/INFO]: [SlotMachine] Loading SlotMachine v5.8.1
+[22:58:05] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.2.6
+[22:58:05] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v4.0.18
+[22:58:05] [Server thread/INFO]: [0;36;1m               __       [0;36;22m __   ___  __         __  [m
+[22:58:05] [Server thread/INFO]: [0;36;1m    |    |  | /  ` |__/ [0;36;22m|__) |__  |__)  |\/| /__` [m
+[22:58:06] [Server thread/INFO]: [0;36;1m    |___ \__/ \__, |  \ [0;36;22m|    |___ |  \  |  | .__/ [m
+[22:58:06] [Server thread/INFO]:  [m
+[22:58:06] [Server thread/INFO]: [0;32;22m  Loading version [0;36;1mv4.0.18[0;32;22m on Bukkit - CraftBukkit[m
+[22:58:06] [Server thread/INFO]: [0;30;1m  Running on server version git-Spigot-72c2605-251a5b6 (MC: 1.10.2) - 1.10.2-R0.1-SNAPSHOT[m
+[22:58:06] [Server thread/INFO]:  [m
+[22:58:06] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mLoading configuration...[m
+[22:58:08] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mIdentified the following dependencies: [H2_DRIVER][m
+[22:58:09] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mLoading storage provider... [H2][m
+[22:58:29] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mLoading internal permission managers...[m
+[22:58:30] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mPerforming initial data load...[m
+[22:58:33] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mSuccessfully enabled. (took 27709ms)[m
+[22:58:33] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[22:58:35] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[22:58:35] [Server thread/WARN]: iConomy - If you are using Flatfile storage be aware that versions 6, 7 and 8 have a CRITICAL bug which can wipe ALL iconomy data.
+[22:58:35] [Server thread/WARN]: if you're using Votifier, or any other plugin which handles economy data in a threaded manner your server is at risk!
+[22:58:35] [Server thread/WARN]: it is highly suggested to use SQL with iCo6 or to use an alternative economy plugin!
+[22:58:35] [Server thread/INFO]: [Vault] [Economy] iConomy 6 found: Waiting
+[22:58:36] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[22:58:38] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[22:58:40] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mRegistered Vault permission & chat hook.[m
+[22:58:40] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.3.0
+[22:58:41] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[22:58:43] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:58:43] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[22:58:43] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:58:43] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:58:43] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[22:58:45] [Server thread/INFO]: Preparing level "world"
+[22:58:47] [Server thread/INFO]: -------- World Settings For [world] --------
+[22:58:47] [Server thread/INFO]: Mob Spawn Range: 4
+[22:58:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Cane Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Melon Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Vine Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[22:58:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[22:58:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[22:58:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[22:58:47] [Server thread/INFO]: Random Lighting Updates: false
+[22:58:47] [Server thread/INFO]: Structure Info Saving: true
+[22:58:47] [Server thread/INFO]: Max Entity Collisions: 8
+[22:58:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[22:58:47] [Server thread/INFO]: Max TNT Explosions: 100
+[22:58:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[22:58:47] [Server thread/INFO]: Item Despawn Rate: 6000
+[22:58:47] [Server thread/INFO]: Item Merge Radius: 2.5
+[22:58:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[22:58:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[22:58:47] [Server thread/INFO]: View Distance: 10
+[22:58:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[22:58:47] [Server thread/INFO]: Experience Merge Radius: 3.0
+[22:58:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[22:59:11] [Server thread/INFO]: Preparing start region for level 0 (Seed: 76007646)
+[22:59:26] [Server thread/INFO]: Preparing spawn area: 0%
+[22:59:27] [Server thread/INFO]: Preparing spawn area: 0%
+[22:59:28] [Server thread/INFO]: Preparing spawn area: 1%
+[22:59:29] [Server thread/INFO]: Preparing spawn area: 2%
+[22:59:31] [Server thread/INFO]: Preparing spawn area: 4%
+[22:59:32] [Server thread/INFO]: Preparing spawn area: 7%
+[22:59:33] [Server thread/INFO]: Preparing spawn area: 10%
+[22:59:34] [Server thread/INFO]: Preparing spawn area: 11%
+[22:59:42] [Server thread/INFO]: Preparing spawn area: 13%
+[22:59:44] [Server thread/INFO]: Preparing spawn area: 16%
+[22:59:45] [Server thread/INFO]: Preparing spawn area: 19%
+[22:59:46] [Server thread/INFO]: Preparing spawn area: 23%
+[22:59:47] [Server thread/INFO]: Preparing spawn area: 28%
+[22:59:48] [Server thread/INFO]: Preparing spawn area: 32%
+[22:59:49] [Server thread/INFO]: Preparing spawn area: 34%
+[22:59:50] [Server thread/INFO]: Preparing spawn area: 37%
+[22:59:52] [Server thread/INFO]: Preparing spawn area: 38%
+[22:59:53] [Server thread/INFO]: Preparing spawn area: 38%
+[22:59:54] [Server thread/INFO]: Preparing spawn area: 40%
+[22:59:55] [Server thread/INFO]: Preparing spawn area: 41%
+[22:59:57] [Server thread/INFO]: Preparing spawn area: 42%
+[22:59:58] [Server thread/INFO]: Preparing spawn area: 42%
+[22:59:59] [Server thread/INFO]: Preparing spawn area: 44%
+[23:00:00] [Server thread/INFO]: Preparing spawn area: 46%
+[23:00:01] [Server thread/INFO]: Preparing spawn area: 48%
+[23:00:03] [Server thread/INFO]: Preparing spawn area: 48%
+[23:00:04] [Server thread/INFO]: Preparing spawn area: 49%
+[23:00:19] [Server thread/INFO]: Preparing spawn area: 49%
+[23:00:21] [Server thread/INFO]: Preparing spawn area: 50%
+[23:00:22] [Server thread/INFO]: Preparing spawn area: 52%
+[23:00:23] [Server thread/INFO]: Preparing spawn area: 52%
+[23:00:24] [Server thread/INFO]: Preparing spawn area: 55%
+[23:00:25] [Server thread/INFO]: Preparing spawn area: 56%
+[23:00:27] [Server thread/INFO]: Preparing spawn area: 60%
+[23:00:28] [Server thread/INFO]: Preparing spawn area: 61%
+[23:00:29] [Server thread/INFO]: Preparing spawn area: 64%
+[23:00:30] [Server thread/INFO]: Preparing spawn area: 68%
+[23:00:37] [Server thread/INFO]: Preparing spawn area: 68%
+[23:00:38] [Server thread/INFO]: Preparing spawn area: 68%
+[23:00:40] [Server thread/INFO]: Preparing spawn area: 68%
+[23:00:41] [Server thread/INFO]: Preparing spawn area: 72%
+[23:00:42] [Server thread/INFO]: Preparing spawn area: 74%
+[23:00:43] [Server thread/INFO]: Preparing spawn area: 77%
+[23:00:44] [Server thread/INFO]: Preparing spawn area: 81%
+[23:00:45] [Server thread/INFO]: Preparing spawn area: 84%
+[23:00:46] [Server thread/INFO]: Preparing spawn area: 88%
+[23:00:47] [Server thread/INFO]: Preparing spawn area: 91%
+[23:00:48] [Server thread/INFO]: Preparing spawn area: 94%
+[23:00:49] [Server thread/INFO]: Preparing spawn area: 96%
+[23:00:50] [Server thread/INFO]: Preparing spawn area: 99%
+[23:00:51] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[23:01:04] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[23:01:07] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_10_R1 as the Bukkit adapter
+[23:01:08] [Server thread/INFO]: [TimTheEnchanter] Enabling TimTheEnchanter v3.0
+[23:01:08] [Server thread/INFO]: [0;33;1m[Tim] Unused enchantments: MENDING(70) DEPTH_STRIDER(8) FROST_WALKER(9) LUCK(61) LURE(62) [m
+[23:01:08] [Server thread/INFO]: [TimTheEnchanter] There are some who call me... Tim?
+[23:01:08] [Server thread/INFO]: [SketchMap] Enabling SketchMap v1.0.0
+[23:01:08] [Server thread/INFO]: [0;32;1m|                                                   |[m
+[23:01:08] [Server thread/INFO]: [0;32;1m|        [0;36;1mSketchMap 1.0.0 has been Enabled![0;32;1m          |[m
+[23:01:08] [Server thread/INFO]: [0;32;1m|        [0;36;1m  Authors: SlipsWhitley & Fyrinlight[0;32;1m       |[m
+[23:01:08] [Server thread/INFO]: [0;32;1m|                                                   |[m
+[23:01:09] [Server thread/INFO]: [Teleport] Enabling Teleport v2.6
+[23:01:09] [Server thread/INFO]: [!] Teleport+ Enabled !
+[23:01:11] [Server thread/INFO]: [Teleport] Plugin already at new version
+[23:01:12] [Server thread/INFO]: [iConomy_Recreation] Enabling iConomy_Recreation v8.0
+[23:01:13] [Server thread/INFO]: [iConomy_Recreation - April Fools] Enabled (881 ms)
+[23:01:13] [Server thread/INFO]: [iConomy_Recreation] Hello, I'm Nijikokun. Yes, this is an April Fools joke, but '/money top' was fixed! Enjoy :) - Rare Version!
+[23:01:13] [Server thread/INFO]: [Vault][Economy] iConomy 8 hooked.
+[23:01:13] [Server thread/INFO]: [Vehicles] Enabling Vehicles v8.6
+[23:01:13] [Thread-10/INFO]: [iConomy_Recreation - April Fools] Purged accounts with default balance.
+[23:01:15] [Server thread/INFO]: Vehicles >> lang.yml loaded.
+[23:01:19] [Server thread/INFO]: [0;31;1m[Vehicles] Cracked by HotSpot@BlackSpigot.com[m
+[23:01:20] [Server thread/INFO]: [PlugMan] Enabling PlugMan v2.1.4
+[23:01:20] [Server thread/INFO]: [CrackShot] Enabling CrackShot v0.98.7
+[23:01:31] [Server thread/INFO]: [CrackShot] Gun-mode activated. Boop!
+[23:01:32] [Server thread/INFO]: [TimedItems] Enabling TimedItems v2.7
+[23:01:32] [Server thread/INFO]: [TimedItems] Spigot v1_10_R1 detected.
+[23:01:33] [Server thread/INFO]: [TimedItems] TimedItems v2.7 viet boi MasterClaus
+[23:01:33] [Server thread/INFO]: [TimedItems] Donate cho tac gia qua email themasterclaus@gmail.com neu plugin co ich.
+[23:01:33] [Server thread/INFO]: [RandomLootChest] Enabling RandomLootChest v2.0
+[23:01:33] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[23:01:37] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[23:01:37] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[23:01:37] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[23:01:37] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[23:01:37] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[23:01:37] [Server thread/INFO]: [WorldGuard] Loading region data...
+[23:01:42] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.5.0-b727
+[23:01:47] [Server thread/INFO]: -------- World Settings For [base] --------
+[23:01:47] [Server thread/INFO]: Mob Spawn Range: 4
+[23:01:47] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Cane Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Melon Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Vine Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[23:01:47] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[23:01:47] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[23:01:47] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[23:01:47] [Server thread/INFO]: Random Lighting Updates: false
+[23:01:47] [Server thread/INFO]: Structure Info Saving: true
+[23:01:47] [Server thread/INFO]: Max Entity Collisions: 8
+[23:01:47] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[23:01:47] [Server thread/INFO]: Max TNT Explosions: 100
+[23:01:47] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[23:01:47] [Server thread/INFO]: Item Despawn Rate: 6000
+[23:01:47] [Server thread/INFO]: Item Merge Radius: 2.5
+[23:01:47] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[23:01:47] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[23:01:47] [Server thread/INFO]: View Distance: 10
+[23:01:47] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[23:01:47] [Server thread/INFO]: Experience Merge Radius: 3.0
+[23:01:47] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[23:01:50] [Server thread/INFO]: Preparing start region for level 1 (Seed: 5006738745793559495)
+[23:01:51] [Server thread/INFO]: Preparing spawn area for base, 0%
+[23:01:52] [Server thread/INFO]: Preparing spawn area for base, 4%
+[23:01:53] [Server thread/INFO]: Preparing spawn area for base, 12%
+[23:02:03] [Server thread/INFO]: Preparing spawn area for base, 16%
+[23:02:04] [Server thread/INFO]: Preparing spawn area for base, 20%
+[23:02:05] [Server thread/INFO]: Preparing spawn area for base, 28%
+[23:02:06] [Server thread/INFO]: Preparing spawn area for base, 32%
+[23:02:07] [Server thread/INFO]: Preparing spawn area for base, 40%
+[23:02:08] [Server thread/INFO]: Preparing spawn area for base, 48%
+[23:02:09] [Server thread/INFO]: Preparing spawn area for base, 65%
+[23:02:10] [Server thread/INFO]: Preparing spawn area for base, 69%
+[23:02:11] [Server thread/INFO]: Preparing spawn area for base, 89%
+[23:02:13] [Server thread/INFO]: [WorldGuard] (base) TNT ignition is PERMITTED.
+[23:02:13] [Server thread/INFO]: [WorldGuard] (base) Lighters are PERMITTED.
+[23:02:13] [Server thread/INFO]: [WorldGuard] (base) Lava fire is blocked.
+[23:02:13] [Server thread/INFO]: [WorldGuard] (base) Fire spread is UNRESTRICTED.
+[23:02:13] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'base'
+[23:02:14] [Server thread/INFO]: [Multiverse-Core] 2 - World(s) loaded.
+[23:02:15] [Server thread/INFO]: [Multiverse-Core] Version 2.5.0-b727 (API v20) Enabled - By Rigby, fernferret, lithium3141, main-- and dumptruckman
+[23:02:16] [Server thread/INFO]: [Pl3xIcons] Enabling Pl3xIcons v1.1
+[23:02:18] [Server thread/INFO]: [0;36;22m[[0;35;1mPl3xIcons[0;36;22m][m Pl3xIcons v1.1 enabled![m
+[23:02:18] [Server thread/INFO]: [CrackShotPlus] Enabling CrackShotPlus v0.35
+[23:02:19] [Server thread/INFO]: [GTACops] Enabling GTACops v0.1.0
+[23:02:19] [Server thread/INFO]: [GTACops] Loading GTACops V0.1.0 Developed by mkcoldwolf
+[23:02:23] [Server thread/INFO]: [GTACops] GTACops V0.1.0 Loaded successfully
+[23:02:23] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v1.3.0
+[23:02:23] [Server thread/INFO]: [NoMelt] Enabling NoMelt v1.0.0
+[23:02:23] [Server thread/INFO]: [NoMelt] Enabled
+[23:02:23] [Server thread/INFO]: [NoMelt] - Melting is disabled.
+[23:02:23] [Server thread/INFO]: [NoMelt] - Ice will drop
+[23:02:23] [Server thread/INFO]: [NoMelt] - Freezing is Disabled.
+[23:02:23] [Server thread/INFO]: [NoMelt] - Ice will NOT turn to water upon breaking.
+[23:02:23] [Server thread/INFO]: [NeverFullSlots] Enabling NeverFullSlots v0.3
+[23:02:23] [Server thread/INFO]: [MyCommand] Enabling MyCommand v5.3.4
+[23:02:23] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-* MyCommand *-=-=-=-=-=-=-=-=-=-=-*
+[23:02:23] [Server thread/INFO]: | Vault  : Ok. Hooked on Vault 1.5.6-b49
+[23:02:23] [Server thread/INFO]: | Command file(s) found : 1
+[23:02:24] [Server thread/INFO]: | Config : Ready.
+[23:02:25] [Server thread/INFO]: | PlaceholderAPI: Not Found
+[23:02:26] [Server thread/INFO]: | Custom commands loaded : 42
+[23:02:27] [Server thread/INFO]: | Version: 5.3.4
+[23:02:27] [Server thread/INFO]: | Author : emmerrei a.k.a Ivanpro
+[23:02:42] [Server thread/INFO]: | You are running the latest version of MyCommand.
+[23:02:42] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
+[23:02:42] [Server thread/INFO]: [DeathControl] Enabling DeathControl v2.1.1
+[23:02:43] [Server thread/INFO]: [DeathControl] loaded 3 lists!
+[23:02:43] [Server thread/INFO]: [DeathControl] loaded 3 handlings!
+[23:02:44] [Server thread/INFO]: [Houses] Enabling Houses v1.9.1
+[23:02:44] [Server thread/INFO]: [Houses] Loaded 0 owned houses
+[23:02:44] [Server thread/INFO]: [Houses] Loaded 0 rentals
+[23:02:44] [Server thread/INFO]: [Houses] Loaded 0 signs
+[23:02:44] [Server thread/INFO]: [Houses] Hooked into iConomy 8
+[23:02:44] [Server thread/INFO]: [Houses] Hooked into LuckPerms
+[23:02:44] [Server thread/INFO]: [Houses] No database errors found
+[23:02:46] [Server thread/INFO]: [AreaShop] Enabling AreaShop v2.4.0
+[23:02:52] [Server thread/INFO]: [Essentials] Enabling Essentials v2.0.1-b488
+[23:02:53] [Server thread/WARN]: [Essentials] ?4Version mismatch! Please update EssentialsProtect to the same version.
+[23:02:53] [Server thread/WARN]: [Essentials] ?4Version mismatch! Please update EssentialsChat to the same version.
+[23:02:56] [Server thread/INFO]: [Essentials] Using 1.8.3+ BlockStateMeta provider as mob spawner provider.
+[23:02:56] [Server thread/INFO]: [Essentials] Using Reflection based provider as spawn egg provider.
+[23:02:58] [Server thread/INFO]: [Essentials] Using 1.9+ BasePotionData provider as potion meta provider.
+[23:03:03] [Server thread/INFO]: Using locale en_US
+[23:03:05] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[23:03:05] [Server thread/INFO]: [Vault][Economy] Essentials Economy hooked.
+[23:03:05] [Server thread/INFO]: [Essentials] Using Vault based permissions (generic)
+[23:03:05] [Server thread/INFO]: [Essentials] Payment method found (Vault - Economy: iConomy 8 version: 1.5.6-b49)
+[23:03:06] [Server thread/INFO]: [CorpseReborn] Enabling CorpseReborn v2.12.1
+[23:03:06] [Server thread/INFO]: [CorpseReborn] Version: v1_10_R1
+[23:03:06] [Server thread/INFO]: [CorpseReborn] Config successfully loaded.
+[23:03:07] [Server thread/INFO]: [CorpseReborn] No update available
+[23:03:08] [Server thread/INFO]: [CorpseReborn] Successfully sent stats!
+[23:03:08] [Server thread/INFO]: [BountyHunters] Enabling BountyHunters v1.4.1c
+[23:03:08] [Server thread/INFO]: [0;30;1m------------------------------------------------------[m
+[23:03:08] [Server thread/INFO]: [0;30;1mEnabling BountyHunters 1.4.1c...[m
+[23:03:08] [Server thread/INFO]: [0;30;1mDetected Server Version: v1_10_R1[m
+[23:03:10] [Server thread/INFO]: [0;30;1mBountyHunters 1.4.1c has been enabled![m
+[23:03:10] [Server thread/INFO]: [0;30;1m------------------------------------------------------[m
+[23:03:10] [Server thread/INFO]: [PlayerPoints] Enabling PlayerPoints v2.1.4
+[23:03:12] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.22-SNAPSHOT (build 1487)
+[23:03:16] [Server thread/INFO]: [ChestCommands] Enabling ChestCommands v3.1.4
+[23:03:16] [Server thread/INFO]: [ChestCommands] Hooked PlayerPoints
+[23:03:18] [Server thread/INFO]: [EssentialsProtect] Enabling EssentialsProtect v2.0.1-b557
+[23:03:18] [Server thread/WARN]: ?4Version mismatch! Please update all Essentials jars to the same version.
+[23:03:19] [Server thread/INFO]: [AdvancedAchievements] Enabling AdvancedAchievements v5.5
+[23:03:19] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up config.yml file...
+[23:03:21] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up lang.yml file...
+[23:03:21] [Server thread/INFO]: [AdvancedAchievements] Loading and backing up gui.yml file...
+[23:03:23] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling PetMasterGive and PetMasterReceive categories.
+[23:03:23] [Server thread/WARN]: [AdvancedAchievements] Ensure you have placed Pet Master with a minimum version of 1.4 in your plugins folder or add PetMasterGive and PetMasterReceive to the DisabledCategories list in your config.
+[23:03:23] [Server thread/WARN]: [AdvancedAchievements] Overriding configuration: disabling DistanceLlama category.
+[23:03:23] [Server thread/WARN]: [AdvancedAchievements] Llamas not available in your Minecraft version, please add DistanceLlama to the DisabledCategories list in your config.
+[23:03:23] [Server thread/INFO]: [AdvancedAchievements] Loaded 49 achievements in 44 categories.
+[23:03:23] [Server thread/INFO]: [AdvancedAchievements] 3 disabled categories: [PetMasterReceive, DistanceLlama, PetMasterGive]
+[23:03:23] [Server thread/INFO]: [AdvancedAchievements] Initialising command modules...
+[23:03:23] [Server thread/INFO]: [AdvancedAchievements] Registering event listeners...
+[23:03:26] [Server thread/INFO]: [AdvancedAchievements] Setting up custom tab completers...
+[23:03:26] [Server thread/INFO]: [AdvancedAchievements] Setting up graphical interfaces...
+[23:03:26] [Server thread/INFO]: [AdvancedAchievements] Initialising database... 
+[23:03:27] [Server thread/INFO]: [AdvancedAchievements] Launching scheduled tasks...
+[23:03:27] [Server thread/INFO]: [AdvancedAchievements] Registering permissions...
+[23:03:27] [Thread-15/INFO]: [AdvancedAchievements] Checking for plugin update...
+[23:03:28] [Server thread/INFO]: [AdvancedAchievements] Plugin has finished loading and is ready to run! Took 8962ms.
+[23:03:29] [Server thread/INFO]: [GangsPlus] Enabling GangsPlus v2.0.22
+[23:03:34] [Server thread/INFO]: [TokenSlots] Enabling TokenSlots v3.4
+[23:03:34] [Server thread/INFO]: ---------- [ Token Slots v3.4 ] ----------
+[23:03:34] [Server thread/INFO]:  
+[23:03:34] [Server thread/INFO]:                   Enabled!              
+[23:03:34] [Server thread/INFO]:  
+[23:03:34] [Server thread/INFO]: ------------------------------------------
+[23:03:34] [Server thread/INFO]: Loaded Language File and Custom Sounds
+[23:03:34] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.0.1-b557
+[23:03:34] [Server thread/WARN]: ?4Version mismatch! Please update all Essentials jars to the same version.
+[23:03:34] [Server thread/INFO]: [RandomTeleport] Enabling RandomTeleport v5.16.4
+[23:03:35] [Server thread/INFO]: [RandomTeleport] RandomTeleport version 5.16.4 is Enabled
+[23:03:35] [Server thread/INFO]: [ServerSigns] Enabling ServerSigns v4.5.1
+[23:03:41] [Server thread/INFO]: [ServerSigns] Version 4.5.1 is now enabled.
+[23:03:41] [Server thread/INFO]: [ChatEx] Enabling ChatEx v1.6
+[23:03:42] [Server thread/INFO]: [ChatEx] Loading updater by TheJeterLP. Project id: 65863
+[23:03:42] [Server thread/INFO]: [ChatEx] Loading updater-config...
+[23:03:42] [Server thread/INFO]: [ChatEx] Done!
+[23:03:42] [Server thread/INFO]: [ChatEx] Updatechecker is enabled.
+[23:03:42] [Server thread/INFO]: [ChatEx] Successfully hooked into: LuckPerms
+[23:03:42] [Server thread/INFO]: [ChatEx] Listener registered with Priority: LOWEST
+[23:03:42] [Server thread/INFO]: [ChatEx] is now enabled!
+[23:03:42] [Server thread/INFO]: [CommandNPC] Enabling CommandNPC v1.9.1
+[23:03:43] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mVault compatible economy found! Economy support for CommandNPC has been enabled.[m
+[23:03:43] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInitiating Database[m
+[23:03:43] [Thread-17/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mLoading commands complete![m
+[23:03:43] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInjecting command info into Citizens.[m
+[23:03:43] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mCommandNPC successfully loaded![m
+[23:03:43] [Server thread/INFO]: [ServerListPlus] Enabling ServerListPlus v3.4.8
+[23:03:44] [Server thread/INFO]: [ServerListPlus] [Core] Reloading configuration...
+[23:03:44] [Server thread/INFO]: [ServerListPlus] [Core] Loaded configuration: ServerStatusConf
+[23:03:44] [Server thread/INFO]: [ServerListPlus] [Core] Loaded configuration: PluginConf
+[23:03:45] [Server thread/INFO]: [ServerListPlus] [Core] Reloading saved player identities...
+[23:03:45] [Server thread/INFO]: [ServerListPlus] Successfully loaded!
+[23:03:45] [Server thread/INFO]: [ServerListPlus] ServerListPlus v3.4.8 enabled.
+[23:03:45] [Server thread/INFO]: [SlotMachine] Enabling SlotMachine v5.8.1
+[23:03:45] [Server thread/INFO]: git-Spigot-72c2605-251a5b6 (MC: 1.10.2)
+[23:03:45] [Server thread/INFO]: 1.10.2-R0.1-SNAPSHOT
+[23:03:45] [Server thread/INFO]: [SlotMachine] Adding language 'FRENCH'
+[23:03:45] [Server thread/INFO]: [SlotMachine] Adding language 'ENGLISH'
+[23:03:46] [Server thread/INFO]: [SlotMachine] Configuration version 5
+[23:03:46] [Server thread/INFO]: [SlotMachine] Detected 0 files in /machines
+[23:03:46] [Server thread/INFO]: [SlotMachine] Loading finished
+[23:03:46] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v2.2.6
+[23:03:47] [Server thread/INFO]: [HolographicDisplays] Found ProtocolLib, using new version.
+[23:03:47] [Server thread/INFO]: [HolographicDisplays] Enabled player relative placeholders with ProtocolLib.
+[23:03:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:03:52] [Server thread/INFO]: Done (307.687s)! For help, type "help" or "?"
+[23:03:52] [Server thread/INFO]: Starting GS4 status listener
+[23:03:52] [Query Listener #1/INFO]: Query running on 0.0.0.0:1337
+[23:03:53] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.10(210)
+[23:03:53] [Craft Scheduler Thread - 6/WARN]: [Pl3xIcons] Plugin Pl3xIcons v1.1 generated an exception while executing task 29
+java.lang.NoSuchMethodError: org.bukkit.Server.getOnlinePlayers()[Lorg/bukkit/entity/Player;
+	at net.pl3x.bukkit.pl3xicons.Metrics.postPlugin(Metrics.java:335) ~[?:?]
+	at net.pl3x.bukkit.pl3xicons.Metrics.access$400(Metrics.java:57) ~[?:?]
+	at net.pl3x.bukkit.pl3xicons.Metrics$1.run(Metrics.java:223) ~[?:?]
+	at org.bukkit.craftbukkit.v1_10_R1.scheduler.CraftTask.run(CraftTask.java:71) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.v1_10_R1.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:52) [spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_151]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_151]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]
+[23:03:55] [Craft Scheduler Thread - 5/INFO]: [PlugMan] No update was found.
+[23:03:56] [Server thread/INFO]: [Citizens] Loaded 0 NPCs.
+[23:03:57] [Craft Scheduler Thread - 9/INFO]: [Vault] Checking for Updates ... 
+[23:03:58] [Craft Scheduler Thread - 9/INFO]: [Vault] No new version available
+[23:04:08] [Server thread/INFO]: [ChatEx] There is no new version available. You are up-to-date!
+[23:04:10] [Timer-1/INFO]: [WorldGuard] Region data changes made in 'world' have been background saved
+[23:04:58] [Craft Scheduler Thread - 12/INFO]: [Metrics] Connection timed out (Connection timed out)
+[23:05:42] [Server thread/INFO]: Stopping the server
+[23:05:42] [Server thread/INFO]: Stopping server
+[23:05:42] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v2.2.6
+[23:05:42] [Server thread/INFO]: [SlotMachine] Disabling SlotMachine v5.8.1
+[23:05:42] [Server thread/INFO]: [SlotMachine] Removing old backup
+[23:05:42] [Server thread/INFO]: [SlotMachine] Creating a backup of /machines to /machinesLastBakup
+[23:05:42] [Server thread/INFO]: [ServerListPlus] Disabling ServerListPlus v3.4.8
+[23:05:42] [Server thread/INFO]: [ServerListPlus] ServerListPlus v3.4.8 disabled.
+[23:05:42] [Server thread/INFO]: [CommandNPC] Disabling CommandNPC v1.9.1
+[23:05:42] [Server thread/INFO]: [ChatEx] Disabling ChatEx v1.6
+[23:05:42] [Server thread/INFO]: [ChatEx] is now disabled!
+[23:05:42] [Server thread/INFO]: [ServerSigns] Disabling ServerSigns v4.5.1
+[23:05:42] [Server thread/INFO]: [ServerSigns] ServerSigns is now disabled.
+[23:05:42] [Server thread/INFO]: [RandomTeleport] Disabling RandomTeleport v5.16.4
+[23:05:42] [Server thread/INFO]: [RandomTeleport] RandomTeleport version 5.16.4 is Disabled
+[23:05:42] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.0.1-b557
+[23:05:42] [Server thread/INFO]: [TokenSlots] Disabling TokenSlots v3.4
+[23:05:42] [Server thread/INFO]: ---------- [ Token Slots v3.4 ] ----------
+[23:05:42] [Server thread/INFO]:  
+[23:05:42] [Server thread/INFO]:                  Disabled!              
+[23:05:42] [Server thread/INFO]:  
+[23:05:42] [Server thread/INFO]: ------------------------------------------
+[23:05:42] [Server thread/INFO]: [GangsPlus] Disabling GangsPlus v2.0.22
+[23:05:42] [Server thread/INFO]: [AdvancedAchievements] Disabling AdvancedAchievements v5.5
+[23:05:42] [Server thread/INFO]: [AdvancedAchievements] Remaining requests sent to database, plugin disabled.
+[23:05:42] [Server thread/INFO]: [EssentialsProtect] Disabling EssentialsProtect v2.0.1-b557
+[23:05:42] [Server thread/INFO]: [ChestCommands] Disabling ChestCommands v3.1.4
+[23:05:42] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.22-SNAPSHOT (build 1487)
+[23:05:42] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.3.0
+[23:05:43] [Server thread/INFO]: [PlayerPoints] Disabling PlayerPoints v2.1.4
+[23:05:43] [Server thread/INFO]: [BountyHunters] Disabling BountyHunters v1.4.1c
+[23:05:43] [Server thread/INFO]: [CorpseReborn] Disabling CorpseReborn v2.12.1
+[23:05:43] [Server thread/INFO]: [Essentials] Disabling Essentials v2.0.1-b488
+[23:05:43] [Server thread/INFO]: [Vault][Economy] Essentials Economy unhooked.
+[23:05:43] [Server thread/INFO]: [AreaShop] Disabling AreaShop v2.4.0
+[23:05:43] [Server thread/INFO]: [Houses] Disabling Houses v1.9.1
+[23:05:43] [Server thread/INFO]: [DeathControl] Disabling DeathControl v2.1.1
+[23:05:43] [Server thread/INFO]: [MyCommand] Disabling MyCommand v5.3.4
+[23:05:43] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-* MyCommand *-=-=-=-=-=-=-=-=-=-=-*
+[23:05:43] [Server thread/INFO]: | Tasks   : Stopped all.
+[23:05:43] [Server thread/INFO]: | Version : 5.3.4
+[23:05:43] [Server thread/INFO]: | Author  : emmerrei a.k.a Ivanpro
+[23:05:43] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*    Bye!   *-=-=-=-=-=-=-=-=-=-=-*
+[23:05:43] [Server thread/INFO]: [NeverFullSlots] Disabling NeverFullSlots v0.3
+[23:05:43] [Server thread/INFO]: [NoMelt] Disabling NoMelt v1.0.0
+[23:05:43] [Server thread/INFO]: Disabled NoMelt
+[23:05:43] [Server thread/INFO]: [Vault] Disabling Vault v1.5.6-b49
+[23:05:43] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v1.3.0
+[23:05:43] [Server thread/INFO]: [ViaVersion] ViaVersion is disabling, if this is a reload and you experience issues consider rebooting.
+[23:05:43] [Server thread/INFO]: [GTACops] Disabling GTACops v0.1.0
+[23:05:43] [Server thread/INFO]: [GTACops] Closeing GTACops V0.1.0 Developed by mkcoldwolf
+[23:05:43] [Server thread/INFO]: [GTACops] Thank you for using ?MCCW Technology?@CopyRight
+[23:05:43] [Server thread/INFO]: [CrackShotPlus] Disabling CrackShotPlus v0.35
+[23:05:43] [Server thread/INFO]: [Pl3xIcons] Disabling Pl3xIcons v1.1
+[23:05:43] [Server thread/INFO]: [0;36;22m[[0;35;1mPl3xIcons[0;36;22m][m Pl3xIcons Disabled.[m
+[23:05:43] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v2.5.0-b727
+[23:05:43] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[23:05:43] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
+[23:05:43] [Server thread/INFO]: [RandomLootChest] Disabling RandomLootChest v2.0
+[23:05:43] [Server thread/INFO]: [TimedItems] Disabling TimedItems v2.7
+[23:05:43] [Server thread/INFO]: [CrackShot] Disabling CrackShot v0.98.7
+[23:05:43] [Server thread/INFO]: [PlugMan] Disabling PlugMan v2.1.4
+[23:05:43] [Server thread/INFO]: [Vehicles] Disabling Vehicles v8.6
+[23:05:43] [Server thread/INFO]: [iConomy_Recreation] Disabling iConomy_Recreation v8.0
+[23:05:43] [Server thread/INFO]: [iConomy_Recreation] Closing general data...
+[23:05:43] [Server thread/INFO]: [iConomy_Recreation] Disabled. (0 ms)
+[23:05:43] [Server thread/INFO]: [Teleport] Disabling Teleport v2.6
+[23:05:43] [Server thread/INFO]: [!] Teleport+ Disabled !
+[23:05:43] [Server thread/INFO]: [SketchMap] Disabling SketchMap v1.0.0
+[23:05:43] [Server thread/INFO]: [TimTheEnchanter] Disabling TimTheEnchanter v3.0
+[23:05:43] [Server thread/INFO]: [TimTheEnchanter] I *warned* you, but did you listen to me? Oh, no, you *knew*, didn't you? Oh, it's just a harmless little *bunny*, isn't it? 
+[23:05:43] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.8-SNAPSHOT;cd4729f
+[23:05:43] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v4.0.18
+[23:05:43] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mClosing storage...[m
+[23:05:43] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mShutting down internal scheduler...[m
+[23:05:44] [Server thread/INFO]: [0;37;22m[21m[[0;36;1mL[0;36;22mP[0;37;22m[21m] [0;36;22mGoodbye![m
+[23:05:44] [Server thread/INFO]: Saving players
+[23:05:44] [Server thread/INFO]: Saving worlds
+[23:05:44] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[23:05:47] [Server console handler/ERROR]: Exception handling console input
+java.io.IOException: Input/output error
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:1.8.0_151]
+	at java.io.FileInputStream.read(FileInputStream.java:255) ~[?:1.8.0_151]
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246) ~[?:1.8.0_151]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265) ~[?:1.8.0_151]
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:169) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:137) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:246) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:261) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.internal.InputStreamReader.read(InputStreamReader.java:198) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at org.bukkit.craftbukkit.libs.jline.console.ConsoleReader.readLine(ConsoleReader.java:2349) ~[spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+	at net.minecraft.server.v1_10_R1.DedicatedServer$2.run(DedicatedServer.java:84) [spigot-1.10.2.jar:git-Spigot-72c2605-251a5b6]
+[23:05:47] [Server thread/INFO]: Saving chunks for level 'base'/Overworld

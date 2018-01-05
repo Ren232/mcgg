@@ -1,0 +1,17 @@
+echo '----> Installing stuff...'
+sleep 3
+apt-get update
+apt-get install software-properties-common -y
+add-apt-repository ppa:webupd8team/java -y
+apt-get update
+apt-get install oracle-java8-installer -y
+apt-get install screen
+apt-get install cron -y
+echo '----> Installing ngrok...'
+sleep 3
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+mv ngrok-stable-linux-amd64.zip ngrok.zip
+unzip ngrok.zip
+rm ngrok.zip
+mv ngrok /usr/bin/ngrok
+chmod 777 /usr/bin/ngrok

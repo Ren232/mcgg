@@ -1,0 +1,185 @@
+#====================================================================================================#
+#                        Thank you for using 《MCCW Technology》@CopyRight
+#                                  Developed by mkcoldwolf
+#
+#                  Spigot Page: https://www.spigotmc.org/members/mkcoldwolf.241535/
+#                  Youtube: https://www.youtube.com/channel/UCjNzc3BITlsYzn2-iPTtJcg
+#
+#Official Suggested Tools:
+# - Unicode Converter (To use special characters at plugin, e.g. Chinese)
+# - https://www.mobilefish.com/services/unicode_escape_sequence_converter/unicode_escape_sequence_converter.php
+#====================================================================================================#
+
+#==================================================
+# Here is the Spawn Time line Event
+# You can add wat ever more event in here
+# to spawn more cops with the Type seted at 
+# "CopsType" Section
+#==================================================
+SpawnDelay: 0
+TimeLineLong: 15
+SpawnTimeLine:
+  Spawn:
+    Cops:
+      - CopType1
+      - CopType1
+      - CopType2
+    RunTime: 0
+    Message:
+      - "&b&lCảnh sát > &cCảnh báo : Bạn đang bị truy lùng!"
+      - "&b&lCảnh sát > &cHãy chạy ngay!"
+  SecondSpawn:
+    Cops:
+      - CopType1
+      - CopType1
+      - CoType2
+    RunTime: 15
+    Message:
+      - "&b&lCảnh sát > &cTiếp viện đến!"
+  ThirdSpawn:
+    Cops:
+      - CopType1
+      - CopType2
+      - CopBoss
+    RunTime: 30
+    Message:
+      - "&b&lCảnh sát > &cTiếp viện đến!"
+  ForthSpawn:
+    Cops:
+      - CopType2
+      - CopType2
+      - CopBoss
+    RunTime: 45
+    Message:
+      - "&b&lCảnh sát > &cTiếp viện đến!"
+  LastSpawn:
+    Cops:
+      - CopBoss
+      - CopBoss
+      - CopBoss
+    RunTime: 60
+    Message:
+      - "&b&lCảnh sát > &cLệnh truy nã! Bạn đang bị săn lùng!"
+
+#==================================================
+# Here is the DeSpawn Config
+#==================================================
+DeSpawn:
+    Delay: 30
+    Message:
+      - "&b&lCảnh sát > &aBạn đã trốn thoát, lần này..."  
+
+#==================================================
+# Here is the types of cops
+# You can add wat ever more CopsTypes
+# and use it at "SpawnEvent" Section
+#==================================================
+CopsType:
+  CopType1:
+    Creature: PIG_ZOMBIE
+    CustomName: "&bCảnh sát [Lv1]"
+    ItemInHand:
+      ==: org.bukkit.inventory.ItemStack
+      type: GOLD_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "Cop Sword"
+    Helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+  CopType2:
+    Creature: PIG_ZOMBIE
+    CustomName: "&bCảnh sát [Lv2]"
+    ItemInHand:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "Cop Sword"
+    Helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+  CopBoss:
+    Creature: PIG_ZOMBIE
+    CustomName: "&bCảnh sát [Lv3]"
+    ItemInHand:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_SWORD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: "Cop Sword"
+    Helmet:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Chestplate:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Leggings:
+      ==: org.bukkit.inventory.ItemStack
+      type: IRON_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    Boots:
+      ==: org.bukkit.inventory.ItemStack
+      type: DIAMOND_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+    
+
+    
+  
+  
+  

@@ -1,0 +1,36 @@
+# enable: Should the plugin be enabled?
+# message-format: The standard message-format.
+# global-message-format: The message-format if ranged-mode is enabled.
+# ranged-mode: Should the ranged-mode be enabled?
+# chat-range: The range to talk to other players.
+# multi-prefixes: Should the multi-prefixes be enabled? See readme.txt for more info.
+# multi-suffixes: Should the multi-suffixes be enabled? See readme.txt for more info.
+# logChat: Should the chat be logged?
+# Priority: EventPriority for the ChatListener. See readme.txt for more info.
+# Debug: Enables debug mode. Enable this if you get a bug.
+# Locale: Which language do you want? (You can choose betwenn de-DE, en-EN and ru-RU by default.)
+# Ads.Enabled: Should we check for ads?
+# Ads.Bypass: A list with allowed ips or domains.
+# Ads.Log: Should the ads be loged in a file?
+# Messages.JoinAndQuit.Enabled: Do you want to change the join and the quit messages?
+
+enable: true
+message-format: '%faction %prefix%displayname%suffix &6> &f%message'
+global-message-format: '%faction &9[%world] %prefix%displayname%suffix: &e%message'
+ranged-mode: false
+chat-range: 100.0
+multi-prefixes: false
+multi-suffixes: false
+logChat: true
+Priority: LOWEST
+Debug: false
+Locale: en-EN
+Ads:
+  Enabled: true
+  Bypass:
+  - 127.0.0.1
+  - my-domain.com
+  Log: true
+Messages:
+  JoinAndQuit:
+    Enabled: false

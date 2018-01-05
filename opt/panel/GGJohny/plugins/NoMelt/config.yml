@@ -1,0 +1,5 @@
+general:
+  noMelting: true
+  iceDrop: true
+  noFreeze: true
+  iceWater: false

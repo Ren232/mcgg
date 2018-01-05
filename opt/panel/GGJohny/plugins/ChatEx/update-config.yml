@@ -1,0 +1,10 @@
+# Updater config for the plugin ChatEx. (Automaticaly generated)
+# Enabled: Is the updater enabled?
+# Update-Type: DOWNLOAD: Download the new version. ANNOUNCE: Only say that a new version was released.
+# Release-Type: ALPHA: Only download alpha files. BETA: Only download files. RELEASE: Only download release files. ALL: Download all files.
+# Debug: Toggles the debug logging
+
+Enabled: true
+Update-Type: DOWNLOAD
+Release-Type: RELEASE
+Debug: false

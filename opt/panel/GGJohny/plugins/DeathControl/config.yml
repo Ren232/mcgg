@@ -1,0 +1,51 @@
+# ====== Settings for DeathControl ======
+# IMPORTANT: Do NOT use tabs in this file! Only use spaces!
+# 
+# Documentation on how to set up this configuration can be found here:
+# http://dev.bukkit.org/bukkit-plugins/deathcontrol/pages/configuration/
+
+
+disable-permissions: false
+logging-level: standard
+
+multi-world:
+    allow-cross-world: true
+    disabled-worlds: []
+
+handlings:
+    # These are some handlings for demonstration purposes.
+    # Adjust them for your own needs.
+    demo:
+        priority-order: 1
+        timeout-on-disconnect: 15
+        conditions:
+        - cause fall suicide
+        - food-level > 0
+        actions:
+        - keep-items
+        - keep-experience
+        - message %plugin-prefix%You're &e%victim-name% &rand %death-cause-formatted%.
+        - message %plugin-prefix%&lThis is an example message
+        - message %plugin-prefix%&lwhich is adjustable in the config.
+    demo-with-price:
+        priority-order: 1
+        cancel-message: &cYou don't have enough money!
+        conditions:
+        - killer-type zombie
+        actions:
+        - required charge 100
+        - keep-items !armor
+    demo-with-command:
+        priority-order: 2
+        timeout-on-disconnect: -1
+        cancel-message: |
+            %plugin-prefix%You took too long!
+            %plugin-prefix%Your items were dropped!
+        conditions:
+        - killer-type monster
+        - -permission victim someplugin.testpermission
+        actions:
+        - message %plugin-prefix%Use &9/death back &rto get back your inventory.
+        - wait command 30s
+        - keep-items 75%
+        - keep-experience 75%

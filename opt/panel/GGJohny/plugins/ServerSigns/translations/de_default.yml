@@ -1,0 +1,120 @@
+# This file is DELETED and REGENERATED on every server restart!
+# Create a NEW FILE for custom language translations!
+# For more information, see the wiki: http://serversigns.de/cfg
+
+rightclick_bind_command: Befehl mit Rechtsklick auf Schild hinzufuegen
+set_command: Der Befehl wurde erfolgreich hinzugefuegt
+rightclick_list: Rechtsklicke ein Schild, um Befehle anzuzeigen
+rightclick_set_price: Rechtsklicke ein Schild, um den Preis zu setzen
+set_price: Der Preis wurde erfolgreich gesetzt
+rightclick_bind_permission: Rechtsklicke ein Schild, um die Rechte zu setzen
+set_permission: Die Rechte wurden erfolgreich gesetzt
+rightclick_set_cooldown: Rechtsklicke ein Schild, um cooldown zu setzen
+set_cooldown: Der cooldown wurde erfolgreich gesetzt
+rightclick_copy: Kopieren mit rechtsklick auf ein Schild
+rightclick_paste: Rechtsklick auf ein Schild zum einfuegen
+rightclick_del_command: Befehl mit Rechtsklick auf ein Schild loeschen
+del_command: Der Befehl wurde erfolgreich geloecht
+rightclick_del_permission: Rechtsklicke ein Schild, um die Rechte zu loeschen
+del_permission: Die Rechte wurden erfolgreich geloescht
+commands_removed: Alle Befehle wurden vom Schild geloescht
+edit_command: Der Befehl wurde erfolgreich editiert
+rightclick_reset_cooldown: Rechtsklick zum cooldown resetten
+reset_cooldown: Cooldowns wurden resettet
+no_number: Das ist kein gueltiger Zeitwert
+not_ready: Das Schild ist in <cooldown> wieder bereit
+line_not_found: Die angegebene Zeile wurde nicht gefunden
+not_enough_permissions: Du hast nicht genuegend Rechte
+not_enough_money: Du hast nicht genuegend Geld
+cannot_destroy: Du darfst keine ServerSigns zerstoeren
+need_confirmation_cost: Kostet <price>. /svs yes oder nochmal klicken
+need_confirmation: /svs yes oder nochmal klicken
+all_cooldowns_reset: Alle cooldowns wurden resettet
+reload_success: ServerSigns wurde neu geladen
+invalid_itemid: Ungueltige Item ID
+priceitem_success: Der Preis des Items wurde erfolgreich hinzugefuegt
+priceitem_bind: Rechtsklick irgendein Schild um ein Preis Item zu setzen
+not_enough_items: Du brauchst die folgenden Gegenstaende um dieses Schild zu benutzen...
+priceitem_remove: Rechts klicke ein Schild um das Preis Item zu entfernen
+priceitem_removed: Das Preis Item wurde erfolgreich von dem Schild entfernt
+xpcost_bind: Rechts klicke ein Schild um XP Kosten festzusetzen
+set_xp: XP Kosten erfolgreich an das Schild angebracht
+not_enough_xp: Du hast nicht genug XP um dieses Schild zu benutzen
+funds_withdrawn: '<number> <currency> wurde von deinem Konto entfernt'
+permissions_required: 'Es ist nicht moeglich fortzufahren, Vault oder config-definierte Commands werden benoetigt um dieses Feature zu benutzen'
+priceitemcriteria_boolean: 'Deine Argumente muessen *true* oder *false* sein'
+priceitemcriteria_bind: 'Rechts-Klick ein Schild um Preis Kriterium zu setzen'
+priceitemcriteria_set: 'Erfolgreich Preis Kriterium gesetzt!'
+persistance_on: Du hast den staendingen Kopiermodus aktiviert, deaktiviere ihn mit "/svs copy persist"
+persistance_off: Du hast den staendingen Kopiermodus deaktiviert
+must_sneak: Du musst Shift halten um ServerSigns zu zerstoeren
+set_event_cancellation: 'Der Ereignis Ausloeser fuer dieses Schild wurde auf <boolean> gesetzt-'
+set_confirmation: 'Schild Bestaetigung wurde auf <boolean> gesetzt'
+invalid_hand_item: 'Du musst einen Gegenstand halten'
+invalid_index: 'Es wurden bisher keine Befehle in dem index fuer dieses Schild erstellt. Bitte versuch ein anderes Schild'
+delay_greater_than_zero: 'Die Verzoegerung muss groesser als null sein'
+set_loops: 'Schleifen Information erfolgreich festgelegt'
+rightclick_bind_loops: 'Rechts-klick ein Schild um Schleifen Information zu setzen'
+loop_must_finish: 'Die derzeit laufende Schleife muss zuerst beendet werden!'
+need_confirmation_price_items: 'Das Schild wird folgende Items nehmen:'
+need_confirmation_xp: 'Das Schild wird <integer> Erfahrungs Level nehmen'
+levels_needed: 'Du brauchst <integer> mehr Level!'
+holding_bind: 'Rechts-klick ein Schild um eine Item Voraussetzung hinzuzufuegen'
+holding_success: 'Item Voraussetzung erfolgreich gesetzt'
+holding_remove: 'Rechts-klick ein Schild um alle Item Voraussetzungen zu entfernen'
+holding_removed: 'Alle Item Voraussetzungen wurden erfolgreich entfernt!'
+helditemcriteria_bind: 'Rechts-klick ein Schild um ein gehaltenes tem Kriterium zu setzen'
+helditemcriteria_set: 'Gehaltenes Item Kriterium erfolgreich gesetzt'
+need_confirmation_held_items: 'Dieses Schild setzt voraus, dass du folgende Items besitzt:'
+must_be_holding: 'Du musst eines der folgenden Items halten um das Schild zu benutzen:'
+blocked_command: 'Dieser Befehl kann nicht von ServerSigns ausgefuehrt werden!'
+player_not_found: 'Es wurde kein Spieler mit dem Namen <string> gefunden (gross kleinschreibung beachten)'
+cooldowns_reset: 'Erfolgreich alle Cooldowns gesetzt fuer <string>'
+itemcriteria_boolean: 'Die Argumente duerfen nur *true* oder *false* sein'
+long_command_again: 'Benutze /svs long wenn du bereit bist deinen Befehl zu einem Schild hinzuzufuegen'
+long_type_to_chat: 'Du kannst jetzt deinen Befehl ueber mehrere Zeilen in den Chat schreiben'
+long_cancelled: 'Du hast nichts eingegeben! Abbrechen'
+uses_greater_zero: 'Die Anzahl der number of uses muss groesser gleich als 0 sein!'
+rightclick_remove_uses: 'Rechts-klick ein Schild um das Limit zu entfernen'
+rightclick_set_uses: 'Rechts-klick ein Schild um ein Use Limit zu setzen'
+uses_success: 'Erfolgreich ein Use Limit gesetzt fuer dieses Serversign'
+set_cancel_mode: 'Das Cancel Event Mode wurde zu <mode> gesetzt fuer dieses Schild'
+rightclick_bind_cancel_permission: 'Rechts-Klicke ein Schild um die Abbrechen Permission zu setzen'
+set_cancel_permission: 'Abbrechen Permission erfolgreich fuer dieses ServerSign gesetzt'
+cancelled_due_to_permission: 'Deine derzeitigen Permissions verindern dich dieses Schild zu benutzen'
+reload_config_success: 'ServerSigns config.yml & translations erfolgreich neugeladen'
+reload_signs_success: 'Alle gespeicherten ServerSigns wurden vom Speicher geladen'
+features_not_available: 'Dieses Serversign braucht Features die es zurzeit nicht gibt - Bitte wende dich an einen Administrator'
+invalid_command: 'Befehl nicht verstanden!'
+reload_signs_fail: 'Es wurde ein Fehler entdeckt, der ServerSigns vom neuladen verhindert!'
+reload_config_fail: 'Ein Fehler trat auf werden dem Laden der Konfigurationen. Das Plugin wurde zur Sicherheit deaktiviert'
+copy_success: 'Erfolgreich Klon dieses ServerSigns kreiert'
+right_click_create: 'Rechts klicke den Block um ein neues ServerSign zu kreieren'
+create_success: 'Erfolgreich neues ServerSign kreiert'
+block_protected: 'Dieser Block wird geschuetzt von einem ServerSign!'
+list_persist_on: 'Du hast list persistance aktiviert, deaktiviere sie wieder mit "/svs list false"'
+list_persist_off: 'Du hast list persistance deaktiviert.'
+xp_removed: ' Erfahrungs Level wurden entfernt'
+silent_success: 'Der Lautlos Modus dieses ServerSign wurde aktiviert'
+right_click_select: 'Rechts-klick ein Schild um automatische Befehl Belegung zu aktivieren'
+sign_selected: 'Erfolgreich automatische Befehl Belegung aktiviert'
+sign_deselected: 'Befehle werden diesem Schild nicht mehr hinzugefuegt'
+option_label_desc_separator: ' - '
+# PENDING TRANSLATION
+timelimit_invalid: 'Invalid date & time format! Format must be DDMMYY,HHMMSS using Day Month Year, Hour Minute Second'
+timelimit_success: 'Successfully applied the specified time limit to the ServerSign'
+rightclick_apply: 'Right-click any ServerSign to apply this command'
+rightclick_view_list: 'Right-click any ServerSign to view detailed information about it'
+timelimit_expired: 'Too late! This ServerSign expired <string> ago'
+timelimit_waiting: 'This ServerSign will be available in <string>'
+option_create_w_question: 'You must declare new option ids with a question!'
+option_invalid_answer: '&cThat is not a valid answer! Please try again, or type "exit"'
+option_set: 'Sucessfully applied the specified option to the ServerSign'
+option_label_unique: 'Option answer labels must be unique!'
+unable_to_execute_cmd: '&cUnable to execute "<string>" as no matching commands were found.'
+import_file_not_found: 'File not found at that path from the server root directory'
+import_success: 'Successfully imported the file "<string>"'
+import_select_sign: 'Right-click an existing ServerSign to import the commands to'
+xp_cost_removed: 'Successfully removed the EXP cost from this ServerSign'
+xp_cost_invalid: 'The EXP level cost must be an integer greater than -1'
+permissions_removed: 'Successfully removed permissions from this sign'

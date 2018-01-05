@@ -1,0 +1,228 @@
+version=6
+
+metrics.cantconnect=SlotMachine couldn't connect to Metrics (mcstats)
+update.available=An update for %pluginName% is available at %url%
+update.available.chat=An update for %pluginName% is available for this version of Minecraft, click here to go to the download page ! (Recommended)
+update.uptodate=%pluginName% is up-to-date
+
+error.notvalidinteger=This is not a valid number (Must be an integer)
+error.notvaliddecimal=This is not a valid number (Decimals must be separated with a dot : 13.37)
+
+load.slotmachine.entitynotfound=A Slot Machine Entity (%entityUUID%) coudln't be found on its original chunk, this Slot Machine has been loaded but may not work correctly. You can try to type '/slotmachineaction updateslotmachineentitieslocations' to fix it. If you use a different plugin than Multiverse-Core or MultiWorld to handle multi-world please tell Slot Machine developper
+load.slotmachine.loading=Loading file %file%
+load.slotmachine.finished=Loading finished
+load.slotmachine.exception=An exception was caught when loading %file%
+load.slotmachine.detected=Detected %amount% files in /machines
+
+config.version=Configuration version %version%
+config.version.or=Configuration version %version1% or %version2%
+config.migrating=Migrating to configuration version %version%
+config.migrating.success=Successfully migrated to configuration version %version%
+config.migrating.error.34=An error happened during migration to configuration version 4, using version 3 until next restart or reload
+
+basic.yes=Yes
+basic.no=No
+
+permission.denied=&6&lYou can't access this slot machine :(
+money.notenough=&c&lYou don't have enough money
+tokens.notenough=&c&lYou don't have enough Tokens
+playerpoints.notenough=&c&lYou don't have enough Player Points
+tokenmanager.notenough=&c&lYou don't have enough Tokens from TokensManager
+play.goodluck=&a&lGood luck ! (Balance : $balance$)
+
+slotmachine.created=Slot Machine created (Entity UUID : %entityUUID%)
+slotmachine.created.block=Slot Machine created (Location : %location%)
+slotmachine.tokensfallback=This Slot Machine is using Tokens (instead of money) because Vault and/or an economy plugin could not be found
+slotmachine.alreadyslotmachine=This entity is already a slot machine !
+slotmachine.removed=Slot Machine removed
+slotmachine.removed.logs=Removed a Slot Machine
+slotmachine.notslotmachine=This entity is not a Slot Machine !
+slotmachine.breakblock.cant=You can't break a block that is a Slot Machine
+
+slotmachine.access.missingplayerpoints=This Slot Machine cannot be accessed because the plugin PlayerPoints is not installed
+slotmachine.access.missingtokenmanager=This Slot Machine cannot be accessed because the plugin TokensManager is not installed
+slotmachine.access.missingvault=This Slot Machine cannot be accessed because Vault and/or an economy plugin is missing
+slotmachine.access.alreadyopenned=A player openned a Slot Machine, with a slot machine openned
+
+slotmachine.instructions.setitems=Set Slot Machine Items
+slotmachine.instructions.line1=Right Click a chest with items
+slotmachine.instructions.line2=to set the Slot Machine's items
+slotmachine.instructions.setitems.successful=Successfully set items for this Slot Machine
+
+slotmachine.instructions.additems=Add Items to Slot Machine
+slotmachine.instructions.add.line1=Right Click a chest with items
+slotmachine.instructions.add.line2=to add them to the Slot Machine
+slotmachine.instructions.additems.successful=Successfully added items for this Slot Machine
+
+slotmachine.informations=Slot Machine Informations
+slotmachine.informations.entityuuid=Entity UUID
+slotmachine.informations.machineuuid=Machine UUID
+slotmachine.informations.name=Name
+slotmachine.informations.permission=Permission
+slotmachine.informations.price=Price
+slotmachine.informations.chancetowin=Chance to Win
+slotmachine.informations.spinduration=Spin Duration
+slotmachine.informations.winmessage=Custom Win Message
+slotmachine.informations.lossmessage=Custom Loss Message
+slotmachine.informations.levertitle=Lever Title
+slotmachine.informations.leverdescription=Lever Description
+slotmachine.informations.chunkx=Entity Chunk X
+slotmachine.informations.chunkz=Entity Chunk Z
+slotmachine.informations.items=Items
+slotmachine.informations.location=Machine Location
+
+slotmachine.informations.new.spinduration=New Spin Duration
+slotmachine.informations.new.chancetowin=New Chance to Win
+slotmachine.informations.new.price=New Price
+slotmachine.informations.new.permission=New Permission
+slotmachine.informations.new.name=New Name
+
+placeholders.player=Adds the player's name
+placeholders.balance=Adds the player's balance
+placeholders.price=Adds the Slot Machine's price
+placeholders.items=Adds the number of items in the Slot Machine
+placeholders.machineName=Adds the Slot Machine name (formatted)
+placeholders.pointsPlayer=Adds the amount of Player Points the player has (Will only work if PlayerPoints is installed)
+placeholders.chanceToWin=Adds the Slot Machine chance to win
+placeholders.tmTokensPlayer=Adds the amount of TokensManager Tokens the player has (Will only work if TokensManager is installed)
+
+magicwand.chatinstructions=Click on a button below
+
+magicwand.chatinstructions.createslotmachine=Create a Slot Machine
+magicwand.chatinstructions.createslotmachine.description=Transform the entity you right clicked into a Slot Machine
+
+magicwand.chatinstructions.removeslotmachine=Remove this Slot Machine
+magicwand.chatinstructions.removeslotmachine.description=Removes the Slot Machine you right clicked
+
+magicwand.chatinstructions.informations=Show Informations
+magicwand.chatinstructions.informations.description=Shows you informations about this Slot Machine
+
+magicwand.chatinstructions.rename=Rename
+magicwand.chatinstructions.rename.description=Renames the Slot Machine you right clicked
+
+magicwand.chatinstructions.changepermission=Change Permission
+magicwand.chatinstructions.changepermission.description=Changes the Permission of the Slot Machine you right clicked
+
+magicwand.chatinstructions.csgowheel=Change Visual to : CSGO-WHEEL
+magicwand.chatinstructions.csgowheel.description=Changes the way the items are displayed
+
+magicwand.chatinstructions.csgowheelvertical=Change Visual to : CSGO-WHEEL (Vertical)
+magicwand.chatinstructions.csgowheelvertical.description=Changes the way the items are displayed
+
+magicwand.chatinstructions.slotmachine=Change Visual to : SLOT MACHINE
+magicwand.chatinstructions.slotmachine.description=Changes the way the items are displayed
+
+magicwand.chatinstructions.paymenttokens=Change Payment Method to : TOKENS
+magicwand.chatinstructions.paymenttokens.description=Changes the way to pay to play
+
+magicwand.chatinstructions.paymentmoney=Change Payment Method to : MONEY
+magicwand.chatinstructions.paymentmoney.description=Changes the way to pay to play
+
+magicwand.chatinstructions.paymentmoney.unable=Payment Method : MONEY (Install Vault and/or an economy plugin)
+magicwand.chatinstructions.paymentmoney.unable.description=Please install Vault and an economy plugin for this to work
+
+magicwand.chatinstructions.paymentplayerpoints=Change Payment Method to : PLAYER POINTS
+magicwand.chatinstructions.paymentplayerpoints.description=Changes the way to pay to play
+
+magicwand.chatinstructions.paymenttokenmanager=Change Payment Method to : TOKENMANAGER
+magicwand.chatinstructions.paymenttokenmanager.description=Changes the way to pay to play
+
+magicwand.chatinstructions.changeprice=Change Price
+magicwand.chatinstructions.changeprice.description=Changes the Price of the Slot Machine you right clicked
+
+magicwand.chatinstructions.setitems=Set this Slot Machine's Items
+magicwand.chatinstructions.setitems.description=Allows you to set the Slot Machine's items
+
+magicwand.chatinstructions.additems=Add Items to this Slot Machine
+magicwand.chatinstructions.additems.description=Allows you to add Items to this Slot Machine
+
+magicwand.chatinstructions.chancetowin=Change Chance to Win
+magicwand.chatinstructions.chancetowin.description=Changes the chance to win of the Slot Machine you right clicked
+
+magicwand.chatinstructions.toggleluck=Is Affected By Luck
+magicwand.chatinstructions.toggleluck.description=Click to toggle between Yes or No
+
+magicwand.chatinstructions.spinduration=Change Spin Duration
+magicwand.chatinstructions.spinduration.description=Changes the time the Slot Machine spins
+
+magicwand.chatinstructions.winmessage=Change Win Message
+magicwand.chatinstructions.winmessage.description=Changes the win message that is displayed when a user wins a prize
+
+magicwand.chatinstructions.lossmessage=Change Loss Message
+magicwand.chatinstructions.lossmessage.description=Changes the loss message that is displayed when a user doesn't win a prize
+
+magicwand.chatinstructions.levertitle=Change Lever Title
+magicwand.chatinstructions.levertitle.description=Changes the Lever's name
+
+magicwand.chatinstructions.leverdescription=Change Lever Description
+magicwand.chatinstructions.leverdescription.description=Changes the Lever's description
+
+magicwand.chatinstructions.turnoffai=Turn Off AI
+magicwand.chatinstructions.turnoffai.description=Disables AI for the entity you right clicked
+
+magicwand.chatinstructions.turnonai=Turn On AI
+magicwand.chatinstructions.turnonai.description=Enables AI for the entity you right clicked
+
+magicwand.chatinstructions.turnoffname=Turn Off Name Visibility
+magicwand.chatinstructions.turnoffname.description=Shows this entity's name
+
+magicwand.chatinstructions.turnonname=Turn On Name Visibility
+magicwand.chatinstructions.turnonname.description=Hides this entity's name
+
+magicwand.chatinstructions.turnoffgravity=Turn Off Gravity
+magicwand.chatinstructions.turnoffgravity.description=Disables Gravity for the entity you right clicked
+
+magicwand.chatinstructions.turnongravity=Turn On Gravity
+magicwand.chatinstructions.turnongravity.description=Enables Gravity for the entity you right clicked
+
+magicwand.chatinstructions.turnonsilent=Enable Silent Mode
+magicwand.chatinstructions.turnonsilent.description=Makes this entity make no sound
+
+magicwand.chatinstructions.turnoffsilent=Disable Silent Mode
+magicwand.chatinstructions.turnoffsilent.description=Makes this entity make sound
+
+command.openmachine.noitems=This machine doesn't have any item in it
+command.openmachine.nopermissionandhelp=This player can't access this Slot Machine, add 'true' to the command to override the machine's permission
+
+command.slotmachinereload.successful=Slot Machine config.yml and languages reloaded
+
+command.setslotmachinetoken.successful=Token has been changed
+command.setslotmachinetoken.cannotbeair=Token cannot be AIR
+command.setslotmachinetoken.cannotbenull=Token cannot be be nothing
+command.setslotmachinetoken.fromgameonly=You must be a Player
+
+command.slotmachine=Slot Machine Magic Wand
+command.slotmachine.line1=Right click any entity
+command.slotmachine.line2=to show the Slot Machine menu
+
+command.slotmachineaction.rename=Please type the name you want this Slot Machine to have in the chat
+command.slotmachineaction.changepermission=Please type the permission you want this Slot Machine to have in the chat
+command.slotmachineaction.csgowheel=Visual changed to CSGO-WHEEL for this Slot Machine
+command.slotmachineaction.csgowheelvertical=Visual changed to CSGO-WHEEL (Vertical) for this Slot Machine
+command.slotmachineaction.slotmachine=Visual changed to SLOT MACHINE for this Slot Machine
+command.slotmachineaction.paymentplayerpoints=Payment changed to PLAYER POINTS for this Slot Machine
+command.slotmachineaction.paymenttokenmanager=Payment changed to TOKENSMANAGER for this Slot Machine
+command.slotmachineaction.paymenttokens=Payment changed to TOKENS for this Slot Machine
+command.slotmachineaction.paymentmoney=Payment changed to MONEY for this Slot Machine
+command.slotmachineaction.changeprice=Please type the price you want this Slot Machine to have in the chat
+command.slotmachineaction.chancetowin=Please type the chance to win you want this slot machine to have in the chat ( [0;100] )
+command.slotmachineaction.spinduration=Please type in seconds the duration you want the Slot Machine to spin (min : 1 - Current : %spinDuration%)
+command.slotmachineaction.winmessage=Please type the message you want players to receive if they win (type 'null' for no message - Current : %winmessage%)
+command.slotmachineaction.lossmessage=Please type the message you want players to receive if they lose (type 'null' for no message - Current : %lossMessage%)
+command.slotmachineaction.levertitle=Please type the title of the lever, you can add the following variables to it
+command.slotmachineaction.levertitle.current=Current title is %leverTitle%
+command.slotmachineaction.leverdescription=Please type the description of the lever, you can add the following variables to it
+command.slotmachineaction.leverdescription.current=Current title description is %leverDescription%
+command.slotmachineaction.leverdescription.newline=Creates a new line
+command.slotmachineaction.turnoffai=AI turned off for this entity
+command.slotmachineaction.turnonai=AI turned on for this entity
+command.slotmachineaction.turnoffgravity=Gravity turned off for this entity
+command.slotmachineaction.turnongravity=Gravity turned on for this entity
+command.slotmachineaction.turnoffname=Name hidden for this entity
+command.slotmachineaction.turnonname=Name shown for this entity
+command.slotmachineaction.turnoffsilent=Entity is now Silent
+command.slotmachineaction.turnonsilent=Entity is no longer silent
+
+command.tpmachine.successful=Entity teleported
+command.tpmachine.cantfindentity=The entity attached to this Slot Machine cannot be found
+command.tpmachine.cantfindmachine=This SlotMachine doesn't exists

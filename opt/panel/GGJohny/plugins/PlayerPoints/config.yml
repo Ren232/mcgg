@@ -1,0 +1,27 @@
+storage: YAML
+mysql:
+  host: localhost
+  port: 3306
+  database: minecraft
+  user: username
+  password: pass
+  table: playerpoints
+  import:
+    use: false
+    source: YAML
+  export:
+    use: false
+    source: SQLITE
+  retry: 10
+vote:
+  enabled: false
+  amount: 100
+  online: false
+restrictions:
+  autocompleteOnline: false
+  hasPlayedBefore: false
+debug:
+  database: false
+  uuid: false
+vault: false
+version: 2.1.4

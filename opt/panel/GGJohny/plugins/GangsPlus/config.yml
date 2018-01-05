@@ -1,0 +1,263 @@
+database:
+  #Database backend type, can be set to mysql or sqlite
+  type: sqlite
+  #MySQL database host
+  mySQLHost: localhost
+  #MySQL connection port number
+  mySQLPort: 3306
+  #MySQL database name
+  mySQLDatabase: db
+  #MySQL database user
+  mySQLUser: root
+  #MySQL user's password
+  mySQLPassword: ""
+  #MySQL table names
+  tableNames:
+    alliances: "alliances"
+    arenas: "arenas"
+    gangs: "gangs"
+    players: "players"
+modules:
+  #Enable alliances?
+  alliances: true
+  #Enable gang bank accounts?
+  bank: true
+  #Enable gang chat?
+  chat: true
+  #Enable fights?
+  fights: true
+  #Enable homes?
+  homes: true
+broadcasts:
+  #Choose how messages will be broadcasted. Valid values are message/title/subtitle
+  type: message
+  broadcast:
+    #Choose if certain actions should be broadcasted
+    gangCreate: true
+    gangDisband: true
+    gangDisbandByAdmin: true
+    gangJoin: true
+    gangKick: true
+    gangLeaderChange: true
+    gangLeave: true
+    gangLevelUp: true
+    fightStart: true
+    fightEnd: true
+gangs:
+  #Gang name regex, don't change it unless you know how it works
+  allowedNameCharacters: '[^a-zA-Z0-9\\ ]'
+  #Choose if spaces are allowed in gang name
+  allowSpaces: false
+  #Minimum gang name length
+  minGangNameLength: 3
+  #Maximum gang name length
+  maxGangNameLength: 32
+  #Maximal gang level
+  maxGangLevel: 5
+  #Player won't be able to create gangs with names containing following words/phrases
+  bannedNames:
+    - ass
+    - noob
+  #Choose if friendly fire is disabled or enabled
+  friendlyFire: true
+  #Choose if gang leaders are able to toggle on/off friendly fire (if value above set to false they still won't be able)
+  friendlyFireTogglableByLeader: true
+  #Show gang's bank balance to other players (even those who aren't members of that gang)? Players with gangsplus.checkbalance will be still able to see it.
+  showBankBalanceToOthers: false
+  #Choose if color codes in gang names should be parsed as colors (remember you have to add the ampersand (&) to allowedNameCharacters in order to allow using colors)
+  parseColorCodesInNames: false
+  #Choose if color codes in gang names should be ignored. For instance, when set to true &aExample will be the same as Example. It's recommended to set it to true
+  ignoreColorCodesInNames: true
+  gangNameFormat:
+    #Default gang name format (used when useLevelBased is set to false)
+    default: '&f[%gang%]'
+    #Gang name for gangless players (set to '' to display none)
+    noGang: ''
+    #Choose if you want to use the level based gang name format
+    useLevelBased: false
+    #Custom gang name format amount depending on its level. Format is LEVEL:AMOUNT
+    levelBased:
+      1: '&a[%gang%] &f'
+      2: '&b[%gang%] &f'
+      3: '&6&l[%gang%] &f'
+  maxMembers:
+    #Default amount of max members (used when useLevelBased is set to false)
+    default: 5
+    #Choose if you want to use the level based max members amount
+    useLevelBased: false
+    #Custom maximum members amount depending on its level. Format is LEVEL:AMOUNT
+    levelBased:
+      1: 5
+      2: 10
+      3: 20
+  maxHomes:
+    #Default amount of max homes (used when useLevelBased is set to false)
+    default: 5
+    #Choose if you want to use the level based max homes amount
+    useLevelBased: false
+    #Custom maximum homes amount depending on its level. Format is LEVEL:AMOUNT
+    levelBased:
+      1: 2
+      2: 5
+      3: 10
+  #Rewards for upgrading the gang to higher level. Following commands will be executed for every online gang member.
+  #Placeholders:
+  #{PLAYER} - will be replaced with name of each of online gang members
+  #{GANG} - will be replaced with gang name
+  #{LEVEL} - will be replaced with new gang's level
+  levelUpRewards:
+    1:
+      commands:
+        - msg {PLAYER} Congratulations!
+        - give {PLAYER} diamond 64
+    2: 
+      commands:
+        - msg {PLAYER} Congratulations!
+        - give {PLAYER} diamond 128
+  #All gang related commands will be disabled in these worlds
+  disableGangsInWorlds:
+    - flat
+  #Players won't be able to set gang homes in these worlds
+  disableHomesInWorlds:
+    - world_nether
+  #Friendly fire will be disabled in these worlds (regardless of per-gang settings)
+  disableFriendlyFireInWorlds:
+    - example
+fights:
+  #If set to false players won't be able to move from the beginning location until fight starts
+  freezeBeforeStart: true
+  #Delay in seconds before fight starts, players can join then so recommended value is higher than 5
+  delayBeforeStart: 30 
+  #Minimal players amount that can be chosen when challenging other gang for a fight
+  minMembersAmount: 2
+  #Maximal players amount that can be chosen when challenging other gang for a fight
+  maxMembersAmount: 5
+  #Minimal entry fee that can be chosen when challenging other gang for a fight
+  minMoneyAmount: 100.0
+  #Maximal entry fee that can be chosen when challenging other gang for a fight
+  maxMoneyAmount: 1000000.0
+  #Enable fight time limit?
+  enableFightTimeLimit: true
+  #After that time (in seconds) fight will end with no winner and loser if enableFightTimeLimit set to true. 
+  fightTimeLimit: 300
+  #Delay (in seconds) before players get teleported out of arena after winning a fight
+  delayBeforeTeleport: 15
+  #Players without gangsplus.fightcommands won't be able to use these commands during fights
+  disableCommandsDuringFight:
+    - /espawn
+    - /spawn
+    - /tpa
+    - /etpa
+cooldowns:
+  #Cooldowns before teleports, set to 0 to disable 
+  home: 5
+  fightJoin: 0
+prices:
+  #Gang's creation price
+  create: 1000000
+  #Level up price from each level. Format is FROMLEVEL:PRICE
+  levelup:
+    1: 100000
+    2: 300000
+    3: 500000
+settings:
+  #Date format; more info: https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html
+  dateFormat: "dd.MM.yyyy, HH:mm"
+  #Format of online player's name, $name will be replaced with player's nickname
+  onlinePlayerNameFormat: "&a%player%&b"
+  #How many gangs should be shown on the gangs list per page
+  gangsPerPage: 10
+  #How many gangs should be shown in /g top
+  gangsTopLimit: 10
+  #Choose the default order criteria for /g top. Valid values: ALL, KILLS, DEATHS, KDR, WON, LOST, WLR, LEVEL, MEMBERS, MEMBERS_ONLINE, BANK, MONEY
+  gangsTopDefaultOrder: LEVEL
+  #Players who damaged the player within these X seconds before them getting killed will be given an assist
+  assistDamageDelay: 60
+  #Choose if all data should be saved instantly or periodically (every X minutes set in dataSaveInterval)
+  saveDataPeriodically: false
+  #Periodical save interval (in minutes), takes effect when saveDataPeriodically is set to true
+  dataSaveInterval: 1
+  #Choose if gang home locations should be checked if they're safe before teleporting the player/setting the home
+  safeCheckHomes: true
+messages:
+  #Format of messages sent by the plugin to gang members. Placeholders: %gang%, %message%
+  inGang: "&b%gang% > &7%message%"
+  #Format of messages sent by the plugin to players present in certain fight arena. Placeholders: %arena%, %message%
+  inArena: "&bFight > &7%message%"
+  #Format of gang chat messages. Placeholders: %gang%, %rank%, %player%, %message%
+  gangChatFormat: "&a[%gang%]&7 %rank% &b%player%&7: %message%"
+  #Format of ally chat messages. Placeholders: %gang%, %rank%, %player%, %message%
+  allyChatFormat: "&b[%gang%]&7 %rank% %player%: %message%"
+commands:
+  #Format of /g info output
+  #Placeholders: %date%, %level%, %kills%, %deaths%, %assists%, %kdr%, %fightswon%, %fightslost%, %wlr%, %leader%, %membersamount%, %members%, %onlinemembersamount%, %onlinemembers%, %bank%
+  info:
+    - "&7----------------[ &3%name% profile &7]----------------"
+    - "&7- Created on: &b%date%"
+    - "&7- Level: &b%level%"
+    - "&7- Kills: &b%kills%&7, deaths: &b%deaths%&7, assists: &b%assists%&7, K/D ratio: &b%kdr%"
+    - "&7- Fights won: &b%fightswon%&7, lost: &b%fightslost%&7, W/L ratio: &b%wlr%"
+    - "&7- Leader: &b%leader%"
+    - "&7- Members (%membersamount%): &b%members%"
+    - "&7- Online members (%onlinemembersamount%): &b%onlinemembers%"
+    - "&7- Bank account: &b$%bank%"
+    - "&7- Allied gangs: &b%allies%"
+  #Format of /g player output
+  #Placeholders: %date%, %kills%, %deaths%, %assists%, %kdr%, %gang%, %gangrank%
+  #Use the {INGANG} tag to make particular line be displayed only when the player is in a gang
+  playerinfo:
+    - "&7----------------[ &3%name% profile &7]----------------"
+    - "&7- Registered on: &b%date%"
+    - "&7- Kills: &b%kills%&7, deaths: &b%deaths%&7, assists: &b%assists%&7, K/D ratio: &b%kdr%"
+    - "{INGANG}&7- Gang: &b%gang%"
+    - "{INGANG}&7- Rank in gang: &b%gangrank%"
+ranks:
+  #Ranks numbers and their names, you can add as many as you want
+  ranks:
+    1: "Newbie"
+    2: "Rookie"
+    3: "Veteran"
+    4: "Officer"
+    5: "Leader"
+  #Numbers of required ranks to perform certain actions/commands
+  requiredRanks:
+    fightAccept: 4
+    fightChallenge: 4
+    fightJoin: 1
+    fightLeave: 1
+    ally: 4
+    delhome: 4
+    demote: 5
+    deposit: 1
+    disband: 5
+    friendlyfire: 4
+    home: 2
+    invite: 3
+    kick: 5
+    leave: 1
+    levelup: 4
+    listhomes: 4
+    neutral: 4
+    promote: 5
+    regroup: 2
+    sethome: 4
+    uninvite: 4
+    withdraw: 4
+#Alliances settings
+alliances:
+  #Enable pvp between allied factions?
+  allowPvp: false
+  #Allow fights between allied factions (allowPvp value doesn't matter, they will be always able hurt to each other during the fight)
+  allowFights : true
+  #Enable ally chat?
+  enableAllyChat: true
+#Logging settings
+log:
+  #Choose whether the gang chat will be logged in your server log
+  gangChatLogEnable: false
+  #Set the format of logged gang chat messages
+  gangChatLogFormat: "%gang% %player%: %message%"
+  #Choose whether the gang chat will be logged in your server log
+  allyChatLogEnable: false
+  #Set the format of logged gang chat messages
+  allyChatLogFormat: "%gang% %player%: %message%"

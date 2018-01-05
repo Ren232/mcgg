@@ -1,0 +1,488 @@
+CSP_AK-47:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CRIT
+  Random:
+    hideProjectiles: true
+    noKnock: true
+    damageHologram: true
+    projectileFix: true
+  firstZoom:
+    noJumpWhileZooming: true
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: -0.01
+  CustomSounds:
+    Shoot: shoot.ak-3-1
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 3
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eEXTENDED_CLIP:null:1'
+    - '359:&eFMJ:null:1'
+    - '359:&eRAPID_FIRE:null:1'
+    - '359:&eFAST_MAG:null:1'
+    - '359:&eHIGH_CALIBER_ROUNDS:null:1'
+    - '359:&eLIGHTWEIGHT:null:1'
+    - '359:&eGRIP:null:1'
+    AttachmentsAffect:
+    - 'CAPACITY:EXTENDED_CLIP:6'
+    - 'DAMAGE:FMJ:4'
+    - 'FIRERATE:RAPID_FIRE:3'
+    - 'RELOAD:FAST_MAG:21:ITEM_FLINTANDSTEEL_USE-1-1-0,BLOCK_WOODEN_DOOR_OPEN-1-2-4,ITEM_FLINTANDSTEEL_USE-1-1-8,ENTITY_PLAYER_HURT-1-0-12,BLOCK_WOODEN_DOOR_CLOSE-1-2-16'
+    - 'HEADSHOT:HIGH_CALIBER_ROUNDS:6'
+    - 'GUNWEIGHT:LIGHTWEIGHT:0.01'
+    - 'PRESHOOT:GRIP:0.0025'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:2:1:1'
+    - '359:&dPink:null:3:1:1'
+    - '359:&4Red:null:4:1:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+    BulletSpread: 0.001-0.002~0.0025-0.2~0.0045-0.3~0.0065-0.5~0.015-0.8~0.020-0.9~0.35-0.45~800-2000~40
+
+CSP_Bazooka:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CLOUD
+    Settings: 0.05-2
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: -0.02
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  ProjectileControl:
+    ControlAccessAfterTicks: 20
+    loseControlTicks: 100
+    loseControlDistance: 70
+    lostControlMessage: '&7&lYou lost your control to %weapon%!'
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 1
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eLIGHTWEIGHT:null:1'
+    AttachmentsAffect:
+    - 'GUNWEIGHT:LIGHTWEIGHT:0.015'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:11:10:1'
+    - '359:&dPink:null:12:10:1'
+    - '359:&4Red:null:13:10:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Carbine:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: FLAME
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: 0.0087
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 2
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eEXTENDED_CLIP:null:1'
+    - '359:&eGRIP:null:1'
+    - '359:&eLIGHTWEIGHT:null:1'
+    AttachmentsAffect:
+    - 'CAPACITY:EXTENDED_CLIP:2'
+    - 'PRESHOOT:GRIP:0.2'
+    - 'GUNWEIGHT:LIGHTWEIGHT:0.015'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:21:20:1'
+    - '359:&dPink:null:22:20:1'
+    - '359:&4Red:null:23:20:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Deagle:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CRIT
+  Random:
+    hideProjectiles: true
+    noKnock: true
+    damageHologram: true
+    projectileFix: true
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  breakAnimation:
+    breakAnimationMinAmount: 4
+    breakAnimationMaxAmount: 5
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: 0.009
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 1
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eEXTENDED_CLIP:null:1'
+    - '359:&eGRIP:null:1'
+    AttachmentsAffect:
+    - 'CAPACITY:EXTENDED_CLIP:1'
+    - 'PRESHOOT:GRIP:0.3'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:41:40:1'
+    - '359:&dPink:null:42:40:1'
+    - '359:&4Red:null:43:40:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Gauss:
+  Trails:
+    trailsWeaponType: ENERGY
+    Trail: COLOURED_DUST
+    TrailType: CIRCLE
+    TrailTypeSize: 0.8
+    particleColor: 31-31-31
+    Radius: 40
+    goThrough: players
+  Random:
+    damageHologram: true
+    fireworkSpawn: 31-31-31-BALL
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: 0.008
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 1
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eFMJ:null:1'
+    AttachmentsAffect:
+    - 'DAMAGE:FMJ:6'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:61:60:1'
+    - '359:&dPink:null:62:60:1'
+    - '359:&4Red:null:63:60:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Hunting:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CRIT
+    howOften: 8.0
+  Random:
+    hideProjectiles: true
+    HeadshotTitle: '&4&lHEADSHOT-null'
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  firstZoom:
+    pumpkinOnZoom: true
+    fogOnZoom: true
+    noJumpWhileZooming: true
+  secondZoom:
+    secondZoomEnable: true
+    secondZoomFirstAmount: 3
+    secondZoomSecondAmount: 5
+    secondZoomFogOnZoom: true
+    secondZoomBulletSpread: 0.0
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: -0.015
+  breakAnimation:
+    breakAnimationMinAmount: 7
+    breakAnimationMaxAmount: 8
+  CustomSounds:
+    CustomSoundsEnable: true
+    Shoot: shoot.sniper-5-1
+    Zoom: scope.sniper-1-1
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 1
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eHIGH_CALIBER_ROUNDS:null:1'
+    AttachmentsAffect:
+    - 'HEADSHOT:HIGH_CALIBER_ROUNDS:4'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:134:130:1'
+    - '359:&dPink:null:138:130:1'
+    - '359:&4Red:null:142:130:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Olympia:
+  Random:
+    BounceAmount: 1
+  breakAnimation:
+    breakAnimationMinAmount: 5
+    breakAnimationMaxAmount: 6
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: 0.01
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 1
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eLIGHTWEIGHT:null:1'
+    AttachmentsAffect:
+    - 'GUNWEIGHT:LIGHTWEIGHT:0.015'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:81:80:1'
+    - '359:&dPink:null:82:80:1'
+    - '359:&4Red:null:83:80:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Python:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CRIT
+  Random:
+    hideProjectiles: true
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  breakAnimation:
+    breakAnimationMinAmount: 3
+    breakAnimationMaxAmount: 3
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: 0.01
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 2
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eFMJ:null:1'
+    - '359:&eHIGH_CALIBER_ROUNDS:null:1'
+    AttachmentsAffect:
+    - 'DAMAGE:FMJ:3'
+    - 'HEADSHOT:HIGH_CALIBER_ROUNDS:4'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:101:100:1'
+    - '359:&dPink:null:102:100:1'
+    - '359:&4Red:null:103:100:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'
+
+CSP_Type95:
+  Trails:
+    trailsWeaponType: PROJECTILES
+    Trail: CRIT
+  Random:
+    hideProjectiles: true
+    noKnock: true
+    damageHologram: true
+  ActionBarReload:
+    ReloadMessage: '&7&l%weapon% RELOADING... %reloadbar% &7&l%timeleft%s'
+    ReloadCompleteMessage: '&7&lRELOAD COMPLETED'
+    Color1: RED
+    Color2: GRAY
+    ReloadSymbol: ░
+    ReloadSymbolAmount: 8
+  itemHoldEffects:
+    hideAttributes: true
+    GunWeight: -0.015
+  breakAnimation:
+    breakAnimationMinAmount: 7
+    breakAnimationMaxAmount: 7
+  Attachments:
+    AttachmentWord: '&eAttachments:'
+    NoAttachmentWord: 'No_attachments'
+    AttachmentLimit: 2
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oAdd_attachment
+      Disagree: 14:&c&oDon't_add_attachment
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    AttachmentsList:
+    - '359:&eEXTENDED_CLIP:null:1'
+    - '359:&eFMJ:null:1'
+    - '359:&eHIGH_CALIBER_ROUNDS:null:1'
+    - '359:&eLIGHTWEIGHT:null:1'
+    AttachmentsAffect:
+    - 'CAPACITY:EXTENDED_CLIP:12'
+    - 'DAMAGE:FMJ:6'
+    - 'HEADSHOT:HIGH_CALIBER_ROUNDS:6'
+    - 'GUNWEIGHT:LIGHTWEIGHT:0.015'
+  Skins:
+    SkinWord: '&eSkin:'
+    NoSkinWord: 'No_skin'
+    Command:
+      CraftCompleteSound: ENTITY_FIREWORK_LAUNCH-1-1
+      CraftCompleteEffect: HAPPY_VILLAGER
+      Agree: 5:&a&oSet_skin
+      Disagree: 14:&c&oDon't_set_skin
+      Random: 0:&7&o-&c&o*&7&o-&c&o*&7&o-
+    SkinsList:
+    - '359:&3Blue:null:121:120:1'
+    - '359:&dPink:null:122:120:1'
+    - '359:&4Red:null:123:120:1'
+  CounterStrike:
+    StatTrack: 'false~&eStatTrack:'

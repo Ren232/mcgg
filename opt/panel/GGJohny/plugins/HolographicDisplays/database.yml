@@ -1,0 +1,15 @@
+welcome:
+  location: world, 439.460, 71.545, 476.048
+  lines:
+  - '&6&lChào mừng {player} đến với GGCraft'
+  - '&7 Hiện có {online} người online'
+ggjohnyhome:
+  location: world, 553.330, 79.783, 294.791
+  lines:
+  - '&6&lGGJohny''s Apartment'
+  - '&7===== Not for sell ====='
+legomehotel:
+  location: world, 204.481, 7.289, -442.446
+  lines:
+  - '&6&l< Khách sạn Le Góme >'
+  - '&7Thuê khách sạn giá từ 25000$'

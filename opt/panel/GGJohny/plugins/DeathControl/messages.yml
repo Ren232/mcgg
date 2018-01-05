@@ -1,0 +1,50 @@
+# ====== Custom messages for DeathControl ======
+# IMPORTANT: Do NOT use tabs in this file! Only use spaces!
+# 
+# Documentation about this file can be found here:
+# http://dev.bukkit.org/server-mods/deathcontrol/pages/configuration/messages-yml/
+
+notification:
+  no-cross-world: |
+    &4You are in a different world, your items were dropped!
+
+command:
+  nothing-stored: |
+    &cYou don't have anything stored!
+  cancelled: |
+    Your stored death was cancelled!
+  context:
+    no-permission: |
+      &cYou don't have permission to do that!
+    player-context-required: |
+      &cYou have to be a player to do this!
+    not-enough-arguments: |
+      &cYou did not provide enough arguments!
+    number-expected: |
+      &cA number was expected!
+    invalid-player-arg: |
+      &cThe given player is not online or does not exist!
+
+
+cause-reasons:
+  cactus: you died of a cactus
+  drowning: you drowned
+  explosion: you exploded
+  fall: you died of falling
+  fallingblock: you died of a falling block
+  fire: you died of fire
+  firetick: you died of fire
+  lava: you died of lava
+  lightning: you were struck by lightning
+  magic: you were killed by magic
+  mob: you were killed by a mob
+  monster: you were killed by a monster
+  player: you were killed by a player
+  poison: you were killed by poison
+  starvation: you starved
+  suffocation: you suffocated
+  suicide: you committed suicide
+  thorns: you committed suicide
+  void: you died in the void
+  wither: you withered away
+  unknown: you don't know why you died

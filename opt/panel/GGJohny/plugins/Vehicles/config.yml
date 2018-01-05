@@ -1,0 +1,740 @@
+allowedWorlds:
+ - 'world'
+vehicleHealthEnabled: true
+#When a player dismounts the vehicle he will keep the vehicle speed if this is activated
+keepVehicleMomentum: false
+removeBikeOnRiderDie: false
+removeCarOnRiderDie: false
+removeTrainOnRiderDie: false
+removeRaftOnRiderDie: false
+removePlaneOnRiderDie: false
+removeParachuteOnRiderDie: false
+removeHelicopterOnRiderDie: false
+removeTankOnRiderDie: false
+removeSubmarineOnRiderDie: false
+removeBroomOnRiderDie: false
+removeBikeOnDismount: false
+removeCarOnDismount: false
+removeTrainOnDismount: false
+removeRaftOnDismount: false
+removePlaneOnDismount: false
+removeParachuteOnDismount: false
+removeHelicopterOnDismount: false
+removeTankOnDismount: false
+removeSubmarineOnDismount: false
+removeBroomOnDismount: false
+soundsEnabled: true
+bike-shopsize: 9
+bike-shoptitle: '&6Bike Shop'
+bike-shopslots:
+ '1':
+  bikeType: 'BLACK'
+  price: 30
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7Black Bike'
+  itemLore:
+   - '&7A standard black bike'
+   - '&6Price: &730'
+ '4':
+  bikeType: 'ORANGE'
+  price: 60
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&6Orange Bike'
+  itemLore:
+   - '&7A standard orange bike'
+   - '&6Price: &760'
+ '7':
+  bikeType: 'RED'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cRed Bike'
+  itemLore:
+   - '&7A standard red bike'
+   - '&6Price: &770'
+car-shopsize: 9
+car-shoptitle: '&6Car Shop'
+car-shopslots:
+ '1':
+  carType: 'BLACK'
+  price: 50
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7Black Car'
+  itemLore:
+   - '&7A standard black car'
+   - '&6Price: &750'
+ '4':
+  carType: 'YELLOW'
+  price: 80
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eYellow Car'
+  itemLore:
+   - '&7A standard yellow car'
+   - '&6Price: &780'
+ '7':
+  carType: 'MAGENTA'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&dMagenta Car'
+  itemLore:
+   - '&7A standard magenta car'
+   - '&6Price: &7100'
+train-shopsize: 9
+train-shoptitle: '&6Train Shop'
+train-shopslots:
+ '1':
+  trainType: 'T1'
+  price: 50
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7Slow Train'
+  itemLore:
+   - '&7A standard slow train'
+   - '&6Price: &750'
+ '4':
+  trainType: 'T2'
+  price: 80
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eRegular Train'
+  itemLore:
+   - '&7A standard regular train'
+   - '&6Price: &780'
+ '7':
+  trainType: 'T3'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aFast Train'
+  itemLore:
+   - '&7A standard fast train'
+   - '&6Price: &7100'
+raft-shopsize: 9
+raft-shoptitle: '&6Raft Shop'
+raft-shopslots:
+ '1':
+  raftType: 'OLD'
+  price: 50
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eOld Raft'
+  itemLore:
+   - '&7An old used raft'
+   - '&6Price: &750'
+ '4':
+  raftType: 'NETHER'
+  price: 80
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cNether Raft'
+  itemLore:
+   - '&7A nether raft'
+   - '&6Price: &780'
+ '7':
+  raftType: 'PIRATE'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7Pirate Raft'
+  itemLore:
+   - '&7Dead men tell no tales'
+   - '&6Price: &7100'
+plane-shopsize: 9
+plane-shoptitle: '&6Plane Shop'
+plane-shopslots:
+ '1':
+  planeType: 'P1'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&2Ki-61 Plane'
+  itemLore:
+   - '&7A plane from Japan'
+   - '&6Price: &770'
+ '4':
+  planeType: 'P2'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&6YAK-3 Plane'
+  itemLore:
+   - '&7A plane from Russia'
+   - '&6Price: &7100'
+ '7':
+  planeType: 'P3'
+  price: 150
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7P-61 Plane'
+  itemLore:
+   - '&7"The Black Widow"'
+   - '&6Price: &7150'
+parachute-shopsize: 9
+parachute-shoptitle: '&6Parachute Shop'
+parachute-shopslots:
+ '1':
+  parachuteType: 'PC1'
+  price: 50
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aLow Quality Parachute'
+  itemLore:
+   - '&7A low quality parachute'
+   - '&6Price: &750'
+ '4':
+  parachuteType: 'PC2'
+  price: 60
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eProfessional Parachute'
+  itemLore:
+   - '&7A professional parachute'
+   - '&6Price: &760'
+ '7':
+  parachuteType: 'PC3'
+  price: 80
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cWar Parachute'
+  itemLore:
+   - '&7A war parachute'
+   - '&6Price: &780'
+helicopter-shopsize: 9
+helicopter-shoptitle: '&6Helicopter Shop'
+helicopter-shopslots:
+ '1':
+  helicopterType: 'H1'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aTiger Helicopter'
+  itemLore:
+   - '&7European power'
+   - '&6Price: &770'
+ '4':
+  helicopterType: 'H2'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eKamov KA-52 Helicopter'
+  itemLore:
+   - '&7The "Black Shark"'
+   - '&6Price: &7100'
+ '7':
+  helicopterType: 'H3'
+  price: 150
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cApache Helicopter'
+  itemLore:
+   - '&7An US Advanced Attack Helicopter'
+   - '&6Price: &7150'
+tank-shopsize: 9
+tank-shoptitle: '&6Tank Shop'
+tank-shopslots:
+ '1':
+  tankType: 'T1'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&7Merkava Mk.4 Tank'
+  itemLore:
+   - '&7The latest Israeli development'
+   - '&6Price: &770'
+ '4':
+  tankType: 'T2'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&6Leopard 2A7 Tank'
+  itemLore:
+   - '&7A tank from Germany'
+   - '&6Price: &7100'
+ '7':
+  tankType: 'T3'
+  price: 150
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aArmata Tank'
+  itemLore:
+   - '&7Russian main battle tank of new generation'
+   - '&6Price: &7150'
+submarine-shopsize: 9
+submarine-shoptitle: '&6Submarine Shop'
+submarine-shopslots:
+ '1':
+  submarineType: 'S1'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aOhio Submarine'
+  itemLore:
+   - '&7Designed to carry intercontinental ballistic missiles.'
+   - '&6Price: &770'
+ '4':
+  submarineType: 'S2'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eYellow Submarine'
+  itemLore:
+   - '&7We all live in a yellow submarine...'
+   - '&6Price: &7100'
+ '7':
+  submarineType: 'S3'
+  price: 150
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cSierra II Submarine'
+  itemLore:
+   - '&7This submarine has strong titanium hulls.'
+   - '&6Price: &7150'
+broom-shopsize: 9
+broom-shoptitle: '&6Broom Shop'
+broom-shopslots:
+ '1':
+  broomType: 'B1'
+  price: 70
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&aComet 140'
+  itemLore:
+   - '&7It was the first broom to incorporate the Horton-Keitch Braking Charm.'
+   - '&6Price: &770'
+ '4':
+  broomType: 'B2'
+  price: 100
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&eNimbus 2001'
+  itemLore:
+   - "&7The top of the Nimbus Racing Broom Company's range."
+   - '&6Price: &7100'
+ '7':
+  broomType: 'B3'
+  price: 150
+  itemMaterial: 'CHEST'
+  itemByte: 0
+  itemDisplayName: '&cFirebolt'
+  itemLore:
+   - '&7The state-of-the-art racing broom.'
+   - '&6Price: &7150'
+bikes:
+ 'BLACK':
+  seatMaterial: 'STAINED_CLAY'
+  seatByte: 15
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  backMaterial: 'WOOD_STEP'
+  backByte: 5
+  maxSpeed: 1.2
+  acelerationValue: 0.006
+  displayName: '&7Black Bike'
+  permission: 'Bikes.type.BLACK'
+  maxHealth: 40
+ 'ORANGE':
+  seatMaterial: 'STAINED_CLAY'
+  seatByte: 1
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  backMaterial: 'STONE_SLAB2'
+  backByte: 0
+  maxSpeed: 1.4
+  acelerationValue: 0.006
+  displayName: '&6Orange Bike'
+  permission: 'Bikes.type.ORANGE'
+  maxHealth: 40
+ 'RED':
+  seatMaterial: 'STAINED_CLAY'
+  seatByte: 14
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  backMaterial: 'STEP'
+  backByte: 6
+  maxSpeed: 1.6
+  acelerationValue: 0.012
+  displayName: '&cRed Bike'
+  permission: 'Bikes.type.RED'
+  maxHealth: 40
+cars:
+ 'BLACK':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 15
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  frontLightsUrl: 'http://textures.minecraft.net/texture/59e9c9246f1ba5a41e53efa68b2bd56a70da308f393487dcf6fe756799b3c7'
+  backLightsUrl: 'http://textures.minecraft.net/texture/4636afc9ecb492722eda37eaab7f5c4acca8974bdc628e4273cbcebd45073ac'
+  steelUrl: 'http://textures.minecraft.net/texture/f0d3c96f8c183cf9415c437e4972827656abe7bee36d81d1e9c04466514b9e4'
+  maxSpeed: 1
+  maxBackSpeed: 0.5
+  acelerationValue: 0.006
+  displayName: '&7Black Car'
+  permission: 'Cars.type.BLACK'
+  maxHealth: 40
+ 'YELLOW':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 4
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  frontLightsUrl: 'http://textures.minecraft.net/texture/59e9c9246f1ba5a41e53efa68b2bd56a70da308f393487dcf6fe756799b3c7'
+  backLightsUrl: 'http://textures.minecraft.net/texture/4636afc9ecb492722eda37eaab7f5c4acca8974bdc628e4273cbcebd45073ac'
+  steelUrl: 'http://textures.minecraft.net/texture/f0d3c96f8c183cf9415c437e4972827656abe7bee36d81d1e9c04466514b9e4'
+  maxSpeed: 1.2
+  maxBackSpeed: 0.6
+  acelerationValue: 0.006
+  displayName: '&eYellow Car'
+  permission: 'Cars.type.YELLOW'
+  maxHealth: 40
+ 'MAGENTA':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 2
+  wheelsUrl: 'http://textures.minecraft.net/texture/444cd5d2fd2fe397ddb927e184f19ecbd0fe24af6ef68852c172ae447cd4'
+  frontLightsUrl: 'http://textures.minecraft.net/texture/59e9c9246f1ba5a41e53efa68b2bd56a70da308f393487dcf6fe756799b3c7'
+  backLightsUrl: 'http://textures.minecraft.net/texture/4636afc9ecb492722eda37eaab7f5c4acca8974bdc628e4273cbcebd45073ac'
+  steelUrl: 'http://textures.minecraft.net/texture/f0d3c96f8c183cf9415c437e4972827656abe7bee36d81d1e9c04466514b9e4'
+  maxSpeed: 2.1
+  maxBackSpeed: 0.7
+  acelerationValue: 0.015
+  displayName: '&dMagenta Car'
+  permission: 'Cars.type.MAGENTA'
+  maxHealth: 20
+trains:
+ 'T1':
+  wheelsUrl: 'http://textures.minecraft.net/texture/ff7becf1718e9a6096ee5f9cb7abeb6cfd9488c44a3116407c92ec33ad7d8521'
+  frontLightUrl: 'http://textures.minecraft.net/texture/533ecb558f21c918977987e974f2e6bd128eb9d9c05414e946dd786ebdb4'
+  chimneyUrl: 'http://textures.minecraft.net/texture/3058ec4d3920adbfa86550f5852422e1af55054a15afc9c2c922d58765faa5b'
+  maxSpeed: 0.7
+  acelerationValue: 0.005
+  displayName: '&7Slow Train'
+  permission: 'Trains.type.T1'
+  maxHealth: 40
+ 'T2':
+  wheelsUrl: 'http://textures.minecraft.net/texture/ff7becf1718e9a6096ee5f9cb7abeb6cfd9488c44a3116407c92ec33ad7d8521'
+  frontLightUrl: 'http://textures.minecraft.net/texture/533ecb558f21c918977987e974f2e6bd128eb9d9c05414e946dd786ebdb4'
+  chimneyUrl: 'http://textures.minecraft.net/texture/b394f8fb6d08d15e98542234a6f2d645cb30b7df19a1fc2d98a5a38b9a0b5'
+  maxSpeed: 0.9
+  acelerationValue: 0.006
+  displayName: '&eRegular Train'
+  permission: 'Trains.type.T2'
+  maxHealth: 40
+ 'T3':
+  wheelsUrl: 'http://textures.minecraft.net/texture/ff7becf1718e9a6096ee5f9cb7abeb6cfd9488c44a3116407c92ec33ad7d8521'
+  frontLightUrl: 'http://textures.minecraft.net/texture/533ecb558f21c918977987e974f2e6bd128eb9d9c05414e946dd786ebdb4'
+  chimneyUrl: 'http://textures.minecraft.net/texture/e452d7e8b9a8fe3df915584222846cf988548758b48556ab4c8683d084ca5fc9'
+  maxSpeed: 1.1
+  acelerationValue: 0.007
+  displayName: '&aFast Train'
+  permission: 'Trains.type.T3'
+  maxHealth: 40
+rafts:
+#
+# Colors: BLACK,BLUE,BROWN,CYAN,GRAY,GREEN,LIGHT_BLUE,LIME,MAGENTA,ORANGE,PINK,PURPLE,RED,SILVER,WHITE,YELLOW
+#
+# Layer types: BASE,BORDER,BRICKS,CIRCLE_MIDDLE,CREEPER,CROSS,CURLY_BORDER,DIAGONAL_LEFT,DIAGONAL_LEFT_MIRROR,
+# DIAGONAL_RIGHT,DIAGONAL_RIGHT_MIRROR,FLOWER,GRADIENT,GRADIENT_UP,HALF_HORIZONTAL,HALF_HORIZONTAL_MIRROR,HALF_VERTICAL,
+# HALF_VERTICAL_MIRROR,MOJANG,RHOMBUS_MIDDLE,SKULL,SQUARE_BOTTOM_LEFT,SQUARE_BOTTOM_RIGHT,SQUARE_TOP_LEFT,
+# SQUARE_TOP_RIGHT,STRAIGHT_CROSS,STRIPE_BOTTOM,STRIPE_CENTER,STRIPE_DOWNLEFT,STRIPE_DOWNRIGHT,
+# STRIPE_LEFT,STRIPE_MIDDLE,STRIPE_RIGHT,STRIPE_SMALL,STRIPE_TOP,TRIANGLE_BOTTOM,TRIANGLE_TOP,TRIANGLES_BOTTOM,
+# TRIANGLES_TOP
+ 'OLD':
+  bannerLayers:
+   - 'BROWN-BASE'
+   - 'LIME-MOJANG'
+  maxSpeed: 0.3
+  acelerationValue: 0.002
+  displayName: '&eOld Raft'
+  permission: 'Rafts.type.OLD'
+  maxHealth: 40
+ 'NETHER':
+  bannerLayers:
+   - 'RED-BASE'
+   - 'BLACK-STRAIGHT_CROSS'
+   - 'RED-STRIPE_TOP'
+   - 'RED-STRIPE_MIDDLE'
+   - 'BLACK-SKULL'
+   - 'BLACK-CREEPER'
+   - 'ORANGE-TRIANGLES_BOTTOM'
+  maxSpeed: 0.4
+  acelerationValue: 0.003
+  displayName: '&cNether Raft'
+  permission: 'Rafts.type.NETHER'
+  maxHealth: 40
+ 'PIRATE':
+  bannerBaseColor: 'BLACK'
+  bannerLayers:
+   - 'BLACK-BASE'
+   - 'WHITE-SKULL'
+  maxSpeed: 0.5
+  acelerationValue: 0.003
+  displayName: '&7Pirate Raft'
+  permission: 'Rafts.type.PIRATE'
+  maxHealth: 40
+planes:
+ 'P1':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 13
+  wheelsUrl: 'http://textures.minecraft.net/texture/7e873aa9cf76821da515fb7461e88b71759c1164908d8b2013145b58cfbf'
+  wingsMaterial: 'WOOD_PLATE'
+  wingsByte: 0
+  maxSpeed: 1
+  acelerationValue: 0.006
+  takeOffSpeed: 0.9
+  displayName: '&2Ki-61 Plane'
+  permission: 'Planes.type.P1'
+  bombPower: 2.6
+  maxHealth: 40
+ 'P2':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 12
+  wheelsUrl: 'http://textures.minecraft.net/texture/7e873aa9cf76821da515fb7461e88b71759c1164908d8b2013145b58cfbf'
+  wingsMaterial: 'STONE_PLATE'
+  wingsByte: 0
+  maxSpeed: 1.1
+  acelerationValue: 0.007
+  takeOffSpeed: 0.9
+  displayName: '&6YAK-3 Plane'
+  permission: 'Planes.type.P2'
+  bombPower: 2.8
+  maxHealth: 40
+ 'P3':
+  mainMaterial: 'STAINED_CLAY'
+  mainByte: 9
+  wheelsUrl: 'http://textures.minecraft.net/texture/7e873aa9cf76821da515fb7461e88b71759c1164908d8b2013145b58cfbf'
+  wingsMaterial: 'IRON_PLATE'
+  wingsByte: 0
+  maxSpeed: 1.2
+  acelerationValue: 0.008
+  takeOffSpeed: 0.8
+  displayName: '&7P-61 Plane'
+  permission: 'Planes.type.P3'
+  bombPower: 3.2
+  maxHealth: 200
+parachutes:
+#
+# Colors: BLACK,BLUE,BROWN,CYAN,GRAY,GREEN,LIGHT_BLUE,LIME,MAGENTA,ORANGE,PINK,PURPLE,RED,SILVER,WHITE,YELLOW
+#
+# Layer types: BASE,BORDER,BRICKS,CIRCLE_MIDDLE,CREEPER,CROSS,CURLY_BORDER,DIAGONAL_LEFT,DIAGONAL_LEFT_MIRROR,
+# DIAGONAL_RIGHT,DIAGONAL_RIGHT_MIRROR,FLOWER,GRADIENT,GRADIENT_UP,HALF_HORIZONTAL,HALF_HORIZONTAL_MIRROR,HALF_VERTICAL,
+# HALF_VERTICAL_MIRROR,MOJANG,RHOMBUS_MIDDLE,SKULL,SQUARE_BOTTOM_LEFT,SQUARE_BOTTOM_RIGHT,SQUARE_TOP_LEFT,
+# SQUARE_TOP_RIGHT,STRAIGHT_CROSS,STRIPE_BOTTOM,STRIPE_CENTER,STRIPE_DOWNLEFT,STRIPE_DOWNRIGHT,
+# STRIPE_LEFT,STRIPE_MIDDLE,STRIPE_RIGHT,STRIPE_SMALL,STRIPE_TOP,TRIANGLE_BOTTOM,TRIANGLE_TOP,TRIANGLES_BOTTOM,
+# TRIANGLES_TOP
+ 'PC1':
+  firstBannerLayers:
+   - 'LIME-BASE'
+   - 'WHITE-STRIPE_DOWNLEFT'
+   - 'WHITE-STRIPE_TOP'
+  secondBannerLayers:
+   - 'LIME-BASE'
+   - 'WHITE-STRIPE_DOWNLEFT'
+   - 'WHITE-STRIPE_TOP'
+  maxSpeed: 0.7
+  acelerationValue: 0.006
+  displayName: '&aLow Quality Parachute'
+  permission: 'Parachutes.type.PC1'
+  maxHealth: 40
+ 'PC2':
+  firstBannerLayers:
+   - 'ORANGE-BASE'
+   - 'YELLOW-CURLY_BORDER'
+  secondBannerLayers:
+   - 'ORANGE-BASE'
+   - 'YELLOW-CURLY_BORDER'
+  maxSpeed: 0.8
+  acelerationValue: 0.007
+  displayName: '&eProfessional Parachute'
+  permission: 'Parachutes.type.PC2'
+  maxHealth: 40
+ 'PC3':
+  firstBannerLayers:
+   - 'GREEN-BASE'
+   - 'BROWN-TRIANGLES_BOTTOM'
+  secondBannerLayers:
+   - 'GREEN-BASE'
+   - 'BROWN-TRIANGLES_BOTTOM'
+  maxSpeed: 1
+  acelerationValue: 0.008
+  displayName: '&cWar Parachute'
+  permission: 'Parachutes.type.PC3'
+  maxHealth: 40
+helicopters:
+#
+# Colors: BLACK,BLUE,BROWN,CYAN,GRAY,GREEN,LIGHT_BLUE,LIME,MAGENTA,ORANGE,PINK,PURPLE,RED,SILVER,WHITE,YELLOW
+#
+# Layer types: BASE,BORDER,BRICKS,CIRCLE_MIDDLE,CREEPER,CROSS,CURLY_BORDER,DIAGONAL_LEFT,DIAGONAL_LEFT_MIRROR,
+# DIAGONAL_RIGHT,DIAGONAL_RIGHT_MIRROR,FLOWER,GRADIENT,GRADIENT_UP,HALF_HORIZONTAL,HALF_HORIZONTAL_MIRROR,HALF_VERTICAL,
+# HALF_VERTICAL_MIRROR,MOJANG,RHOMBUS_MIDDLE,SKULL,SQUARE_BOTTOM_LEFT,SQUARE_BOTTOM_RIGHT,SQUARE_TOP_LEFT,
+# SQUARE_TOP_RIGHT,STRAIGHT_CROSS,STRIPE_BOTTOM,STRIPE_CENTER,STRIPE_DOWNLEFT,STRIPE_DOWNRIGHT,
+# STRIPE_LEFT,STRIPE_MIDDLE,STRIPE_RIGHT,STRIPE_SMALL,STRIPE_TOP,TRIANGLE_BOTTOM,TRIANGLE_TOP,TRIANGLES_BOTTOM,
+# TRIANGLES_TOP
+ 'H1':
+  mainMaterial: STAINED_CLAY
+  mainByte: 9
+  helixBanners:
+   - 'BLACK-BASE'
+  maxSpeed: 0.9
+  acelerationValue: 0.006
+  rotorSpeedValue: 0.1
+  displayName: '&aTiger Helicopter'
+  permission: 'Helicopters.type.H1'
+  missilePower: 2.9
+  maxHealth: 40
+ 'H2':
+  mainMaterial: STAINED_CLAY
+  mainByte: 12
+  helixBanners:
+   - 'SILVER-BASE'
+  maxSpeed: 0.95
+  acelerationValue: 0.0065
+  rotorSpeedValue: 0.1
+  displayName: '&eKamov KA-52 Helicopter'
+  permission: 'Helicopters.type.H2'
+  missilePower: 3.1
+  maxHealth: 40
+ 'H3':
+  mainMaterial: STAINED_CLAY
+  mainByte: 13
+  helixBanners:
+   - 'BLACK-BASE'
+  maxSpeed: 1.7
+  acelerationValue: 0.01
+  rotorSpeedValue: 0.08
+  displayName: '&cApache Helicopter'
+  permission: 'Helicopters.type.H3'
+  missilePower: 3.3
+  maxHealth: 150
+tanks:
+ 'T1':
+  mainMaterial: STAINED_CLAY
+  mainByte: 9
+  mainMaterial2: STAINED_CLAY
+  mainByte2: 9
+  firstChainsUrl: 'http://textures.minecraft.net/texture/d37220672d54c8704ff18b55b8b70ea3be9b186c3edf38d8a51e31a3e8c5'
+  secondChainsUrl: 'http://textures.minecraft.net/texture/cffbe6c428194b921995ee718aaacd24311fc894b9c3090f544f990cad65a'
+  thirdChainsUrl: 'http://textures.minecraft.net/texture/6a635322622762694971c3d1b279fe091b853f14b7522de72c7a5b9a803eb'
+  cannonUrl: 'http://textures.minecraft.net/texture/f895895a4087b7fedadc1e9ff21c5f2689147661e7dc3177ea46fcfd63a989'
+  maxSpeed: 0.25
+  acelerationValue: 0.0035
+  displayName: '&7Merkava Mk.4 Tank'
+  permission: 'Tanks.type.T1'
+  missilePower: 4.8
+  maxHealth: 40
+ 'T2':
+  mainMaterial: STAINED_CLAY
+  mainByte: 1
+  mainMaterial2: HARD_CLAY
+  mainByte2: 0
+  firstChainsUrl: 'http://textures.minecraft.net/texture/d37220672d54c8704ff18b55b8b70ea3be9b186c3edf38d8a51e31a3e8c5'
+  secondChainsUrl: 'http://textures.minecraft.net/texture/cffbe6c428194b921995ee718aaacd24311fc894b9c3090f544f990cad65a'
+  thirdChainsUrl: 'http://textures.minecraft.net/texture/6a635322622762694971c3d1b279fe091b853f14b7522de72c7a5b9a803eb'
+  cannonUrl: 'http://textures.minecraft.net/texture/f895895a4087b7fedadc1e9ff21c5f2689147661e7dc3177ea46fcfd63a989'
+  maxSpeed: 0.28
+  acelerationValue: 0.0037
+  displayName: '&6Leopard 2A7 Tank'
+  permission: 'Tanks.type.T2'
+  missilePower: 5.1
+  maxHealth: 40
+ 'T3':
+  mainMaterial: STAINED_CLAY
+  mainByte: 5
+  mainMaterial2: STAINED_CLAY
+  mainByte2: 13
+  firstChainsUrl: 'http://textures.minecraft.net/texture/d37220672d54c8704ff18b55b8b70ea3be9b186c3edf38d8a51e31a3e8c5'
+  secondChainsUrl: 'http://textures.minecraft.net/texture/cffbe6c428194b921995ee718aaacd24311fc894b9c3090f544f990cad65a'
+  thirdChainsUrl: 'http://textures.minecraft.net/texture/6a635322622762694971c3d1b279fe091b853f14b7522de72c7a5b9a803eb'
+  cannonUrl: 'http://textures.minecraft.net/texture/f895895a4087b7fedadc1e9ff21c5f2689147661e7dc3177ea46fcfd63a989'
+  maxSpeed: 0.3
+  acelerationValue: 0.004
+  displayName: '&aArmata Tank'
+  permission: 'Tanks.type.T3'
+  missilePower: 5.3
+  maxHealth: 40
+submarines:
+#
+# Colors: BLACK,BLUE,BROWN,CYAN,GRAY,GREEN,LIGHT_BLUE,LIME,MAGENTA,ORANGE,PINK,PURPLE,RED,SILVER,WHITE,YELLOW
+#
+# Layer types: BASE,BORDER,BRICKS,CIRCLE_MIDDLE,CREEPER,CROSS,CURLY_BORDER,DIAGONAL_LEFT,DIAGONAL_LEFT_MIRROR,
+# DIAGONAL_RIGHT,DIAGONAL_RIGHT_MIRROR,FLOWER,GRADIENT,GRADIENT_UP,HALF_HORIZONTAL,HALF_HORIZONTAL_MIRROR,HALF_VERTICAL,
+# HALF_VERTICAL_MIRROR,MOJANG,RHOMBUS_MIDDLE,SKULL,SQUARE_BOTTOM_LEFT,SQUARE_BOTTOM_RIGHT,SQUARE_TOP_LEFT,
+# SQUARE_TOP_RIGHT,STRAIGHT_CROSS,STRIPE_BOTTOM,STRIPE_CENTER,STRIPE_DOWNLEFT,STRIPE_DOWNRIGHT,
+# STRIPE_LEFT,STRIPE_MIDDLE,STRIPE_RIGHT,STRIPE_SMALL,STRIPE_TOP,TRIANGLE_BOTTOM,TRIANGLE_TOP,TRIANGLES_BOTTOM,
+# TRIANGLES_TOP
+ 'S1':
+  mainMaterial: STAINED_CLAY
+  mainByte: 9
+  helixBanners:
+   - 'WHITE-GRADIENT'
+   - 'WHITE-DIAGONAL_RIGHT'
+   - 'WHITE-STRIPE_RIGHT'
+   - 'WHITE-HALF_VERTICAL_MIRROR'
+   - 'WHITE-STRIPE_TOP'
+   - 'WHITE-DIAGONAL_RIGHT_MIRROR'
+  maxSpeed: 0.26
+  acelerationValue: 0.0036
+  rotorSpeedValue: 0.1
+  displayName: '&aOhio Submarine'
+  permission: 'Submarines.type.S1'
+  maxHealth: 40
+  viewPort1Url: 'http://textures.minecraft.net/texture/e274b7a2bb6d8ea7d36ace798ebed4f8226bd080bba5227285a5a67d595b9'
+  viewPort2Url: 'http://textures.minecraft.net/texture/2942eee3b8a877dfd3a67c6b76e12c63a574565b2792870e832cc72a61c0f0'
+  viewPort3Url: 'http://textures.minecraft.net/texture/83324a6046ab85269217afd57e1e61392951417b228c22391874f4e1e295d98'
+ 'S2':
+  mainMaterial: STAINED_CLAY
+  mainByte: 4
+  helixBanners:
+   - 'WHITE-GRADIENT'
+   - 'WHITE-DIAGONAL_RIGHT'
+   - 'WHITE-STRIPE_RIGHT'
+   - 'WHITE-HALF_VERTICAL_MIRROR'
+   - 'WHITE-STRIPE_TOP'
+   - 'WHITE-DIAGONAL_RIGHT_MIRROR'
+  maxSpeed: 0.28
+  acelerationValue: 0.0038
+  rotorSpeedValue: 0.1
+  displayName: '&eYellow Submarine'
+  permission: 'Submarines.type.S2'
+  maxHealth: 40
+  viewPort1Url: 'http://textures.minecraft.net/texture/e274b7a2bb6d8ea7d36ace798ebed4f8226bd080bba5227285a5a67d595b9'
+  viewPort2Url: 'http://textures.minecraft.net/texture/2942eee3b8a877dfd3a67c6b76e12c63a574565b2792870e832cc72a61c0f0'
+  viewPort3Url: 'http://textures.minecraft.net/texture/83324a6046ab85269217afd57e1e61392951417b228c22391874f4e1e295d98'
+ 'S3':
+  mainMaterial: IRON_BLOCK
+  mainByte: 0
+  helixBanners:
+   - 'WHITE-GRADIENT'
+   - 'WHITE-DIAGONAL_RIGHT'
+   - 'WHITE-STRIPE_RIGHT'
+   - 'WHITE-HALF_VERTICAL_MIRROR'
+   - 'WHITE-STRIPE_TOP'
+   - 'WHITE-DIAGONAL_RIGHT_MIRROR'
+  maxSpeed: 0.3
+  acelerationValue: 0.0038
+  rotorSpeedValue: 0.1
+  displayName: '&cSierra II Submarine'
+  permission: 'Submarines.type.S3'
+  maxHealth: 40
+  viewPort1Url: 'http://textures.minecraft.net/texture/e274b7a2bb6d8ea7d36ace798ebed4f8226bd080bba5227285a5a67d595b9'
+  viewPort2Url: 'http://textures.minecraft.net/texture/2942eee3b8a877dfd3a67c6b76e12c63a574565b2792870e832cc72a61c0f0'
+  viewPort3Url: 'http://textures.minecraft.net/texture/83324a6046ab85269217afd57e1e61392951417b228c22391874f4e1e295d98'
+brooms:
+ 'B1':
+  maxSpeed: 1.8
+  acelerationValue: 0.015
+  upSpeedValue: 0.35
+  displayName: '&aComet 140'
+  maxHealth: 40
+  permission: 'Brooms.type.B1'
+ 'B2':
+  maxSpeed: 1.9
+  acelerationValue: 0.017
+  upSpeedValue: 0.4
+  displayName: '&eNimbus 2001'
+  maxHealth: 40
+  permission: 'Brooms.type.B2'
+ 'B3':
+  maxSpeed: 2.0
+  acelerationValue: 0.019
+  upSpeedValue: 0.45
+  displayName: '&cFirebolt'
+  maxHealth: 40
+  permission: 'Brooms.type.B3'

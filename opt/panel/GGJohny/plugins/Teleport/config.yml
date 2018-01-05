@@ -1,0 +1,21 @@
+#  -----=============== SETTINGS ==================----- #
+#  request-timeout = Request will timeout in xxx seconds #
+#  teleport-delay = Teleport Delay in xxx Seconds #
+#  teleport-particle = Enable / Disable Particle Teleport #
+#  request-json = Request Teleport Text use JSON Format #
+#  Particle Model = Change the particle model
+#  ---------===================================--------- #
+#  -----=====[ Basic Teleport ]=====----- #
+request-timeout: 120
+teleport-delay: 5
+teleport-particle: true
+request-json: true
+disable-title: false
+
+#  -----=====[ Particle Teleport ]=====----- #
+#  Triple Circle / Halo
+Model: Triple Circle
+Custom Color: true
+Color-RGB1: 255
+Color-RGB2: 215
+Color-RGB3: 0

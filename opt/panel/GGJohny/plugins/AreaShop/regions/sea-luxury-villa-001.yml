@@ -1,0 +1,11 @@
+general:
+  name: sea-luxury-villa-001
+  world: world
+  type: rent
+  lastActive: 1514778906479
+rent:
+  rentedUntil: 1601216265364
+  renter: 595be0e3-2367-3055-86c2-8604cb3c81bc
+  renterName: GGJohny
+  timesExtended: 1
+  duration: 1000 day
