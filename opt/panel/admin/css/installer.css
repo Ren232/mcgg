@@ -1,0 +1,86 @@
+body {
+	background: #ebebeb;
+	font-family: 'Helvetica','Arial Narrow','Nimbus Sans L',sans-serif;
+	text-align: center;
+}
+#installer {
+    background: #fff;
+    margin: 50px auto;
+    text-align: left;
+	padding-bottom: 30px;
+    width: 500px;
+    overflow: show;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-bottom-left-radius: 6px;
+    -moz-border-bottom-right-radius: 6px;		    
+}
+h1#logo {
+	background: #972e2e url('../images/install_logo.png') no-repeat center;
+	text-indent: -9999px;
+	padding: 10px;
+	margin-top: -10px;
+}
+h2, p, label, table {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+table {
+	width: 90%;
+	text-align: left;
+	border-collapse: collapse;
+}
+a {
+	color: #144564;
+	text-decoration: none;
+}
+.breadcrumb {
+	color:#c6c6c6;
+}
+.active {
+	color:#000;
+}
+#errors {
+	color: #ff0000;
+	padding: 10px 0;
+	font-size: 16px;
+	text-align: center;
+}
+#steps ul, #steps li {
+	margin: -6px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+#steps, #steps li {
+	width: 500px;
+	overflow: hidden;
+}
+.input_text{
+	padding:3px;
+	padding-left:6px;
+	font-size:18px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	width:200px;
+	letter-spacing: 2px;
+	color:#000;
+	border-radius: 6px;
+	border:1px solid #e3e3e3;
+	background:#f6f6f6;
+	float:right;
+	margin-right: 20px;
+}
+#copy {
+	position: absolute;
+	color: #ccc;
+	text-shadow:#fff 0px 1px 0, #999 0 -1px 0;
+	margin-top: 40px;
+	left: 30%;
+}
+span#prevBtn {
+	padding-bottom: 10px;
+}
+span#nextBtn {
+	padding-bottom: 10px;
+	padding-right: 10px;
+}

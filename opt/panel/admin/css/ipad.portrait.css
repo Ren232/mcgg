@@ -1,0 +1,29 @@
+#menu-wrap {
+	display: none;
+}
+
+#output {
+	display: none;
+}
+
+#page_wrap {
+	display: none;
+}
+
+#footer {
+	display: none;
+}
+
+#ipad_warning {
+	display: block;
+	width: 768px;
+	height: 1024px;
+	text-align: center;
+}
+
+#ipad_warning p {
+	color: #ccc;
+	text-shadow:#fff 0px 1px 0, #999 0 -1px 0;
+	font-size: 48px;
+	margin-top: 424px;
+}
