@@ -16,7 +16,8 @@ bin/dropbox download /backup/sv.zip
 # Do an inline sync first, then start the background job
 bin/dropbox
 echo "Starting dropbox sync..."
-eval "while true; do sleep 60; zip -r sv.zip /app/; bin/dropbox upload sv.zip /backup/sv.zip; done &"
+eval "while true; do sleep 10; bin/dropbox download /backup/data.zip; unzip data.zip; rm data.zip; zip -r data.zip /app/panel/data/; bin/dropbox upload data.zip /backup/data.zip; done &"
+eval "while true; do sleep 45; zip -r sv.zip /app/panel/; bin/dropbox upload sv.zip /backup/sv.zip; rm sv.zip; done &"
 sync_pid=$!
 
 trap "kill $ngrok_pid $main_pid $sync_pid" SIGTERM
