@@ -19,7 +19,7 @@ eval "$ngrok_cmd | tee ngrok.log &"
 ngrok_pid=$!
 
 # Do save dropbox config file
-echo "OAUTH_TOKEN_KEY=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
+echo "OAUTH_TOKEN_KEY=${DROPBOX_API_TOKEN}" > /app/.dropbox_uploader
 
 # Do get server files if there is
 bin/dropbox download /backup/sv.zip
@@ -55,8 +55,6 @@ esac
 eval "ruby -rwebrick -e'WEBrick::HTTPServer.new(:BindAddress => \"0.0.0.0\", :Port => ${port}, :MimeTypes => {\"rhtml\" => \"text/html\"}, :DocumentRoot => Dir.pwd).start'"
 
 # Make server dir for easier backup
-mkdir server
-mv minecraft.jar server/minecraft.jar
 echo "Starting: minecraft ${mc_port}"
 eval "cd server; screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar minecraft.jar nogui"
 main_pid=$!
