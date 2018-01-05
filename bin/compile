@@ -68,7 +68,8 @@ minecraft_url="https://cdn.getbukkit.org/spigot/${spigot_version}.jar"
 echo -n "-----> Installing Minecraft ${spigot_version}... "
 curl -o minecraft.jar -s -L $minecraft_url
 mkdir server
-mv minecraft.jar $BUILD_DIR/server/minecraft.jar
+mv minecraft.jar $BUILD_DIR/minecraft.jar
+mv $BUILD_DIR/minecraft.jar $BUILD_DIR/server/minecraft.jar
 echo "done"
 
 if [ -n "${MINECRAFT_EULA:-""}" ]; then
