@@ -7,6 +7,10 @@ if [ -z "$NGROK_API_TOKEN" ]; then
   echo "You must set the NGROK_API_TOKEN config var to create a TCP tunnel!"
   exit 1
 fi
+if [ -z "$DROPBOX_API_TOKEN" ]; then
+  echo "Please specify your dropbox key to sync your data!"
+  exit 1
+fi
 
 # Start the TCP tunnel
 ngrok_cmd="bin/ngrok tcp -authtoken $NGROK_API_TOKEN -log stdout --log-level debug ${NGROK_OPTS} ${mc_port}"
