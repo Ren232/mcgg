@@ -34,10 +34,13 @@
   },
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-jvm-common"
+      "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/kr/heroku-buildpack-inline.git"
+      "url": "heroku/php"
+    },
+    {
+      "url": "https://github.com/GGJohny/heroku-buildpack-minecraft/"
     }
   ]
 }
