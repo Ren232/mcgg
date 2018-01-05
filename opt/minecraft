@@ -12,6 +12,8 @@ echo "OAUTH_ACCESS_TOKEN=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
 
 # Do get server files if there is
 ./dropbox download /backup/sv.zip
+unzip sv.zip
+rm sv.zip
 
 # Do an inline sync first, then start the background job
 echo "-----> Starting dropbox sync..."
