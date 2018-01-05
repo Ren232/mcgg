@@ -2,6 +2,10 @@
 
 cat <<EOF
 ---
+addons:
+  - jawsdb:kitefin
+  - scheduler:standard
+  - coralogix:free
 default_process_types:
   worker: bin/minecraft
 EOF
