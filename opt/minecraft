@@ -56,6 +56,8 @@ eval "ruby -rwebrick -e'WEBrick::HTTPServer.new(:BindAddress => \"0.0.0.0\", :Po
 
 # Make server dir for easier backup
 echo "Starting: minecraft ${mc_port}"
+mkdir server
+mv minecraft.jar server/minecraft.jar
 eval "screen -L -h 2048 -dmS minecraft java -Xmx${heap} -Xms${heap} -jar server/minecraft.jar nogui"
 main_pid=$!
 
