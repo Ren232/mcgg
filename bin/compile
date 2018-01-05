@@ -61,7 +61,7 @@ mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/dropbox ]     && cp $OPT_DIR/dropbox $BUILD_DIR/bin
 
 mv $OPT_DIR/panel $BUILD_DIR/panel
-mv $OPT_DIR/panel/index.php $BUILD_DIR/index.php
+mv $OPT_DIR/index.php $BUILD_DIR/index.php
 
 chmod +x $BUILD_DIR/bin/dropbox
 chmod +x $BUILD_DIR/bin/minecraft
