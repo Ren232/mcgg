@@ -19,7 +19,7 @@ eval "$ngrok_cmd | tee ngrok.log &"
 ngrok_pid=$!
 
 # Do save dropbox config file
-echo "OAUTH_TOKEN_KEY=$DROPBOX_API_TOKEN" >> /app/dbconfig
+echo "OAUTH_TOKEN_KEY=$DROPBOX_API_TOKEN" >> /app/.dropbox_uploader
 
 # Do get server files if there is
 bin/dropbox download /backup/sv.zip
