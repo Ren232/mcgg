@@ -11,10 +11,6 @@
       "description": "Do you accept the Minecraft EULA?",
       "value": "true"
     },
-    "NGROK_API_TOKEN": {
-      "description": "Your personal ngrok API token",
-      "required": true
-    },
     "DROPBOX_API_TOKEN": {
       "description": "Your personal dropbox API token",
       "required": true
