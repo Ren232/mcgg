@@ -323,8 +323,7 @@ if(isset($_POST['key'])) {
 						 		$banner_RemoveSpace = str_replace(" ","",$banner_Get);
 						 		$banner_RemoveSlash = str_replace(":","/",$banner_RemoveSpace);
 						 		$banner_Url = $banner_RemoveSlash;
-							?>
-							<img src="http://status.mclive.eu/Minecraft%20Server/<?php echo $banner_Url; ?>/banner.png"><br>
+						 		echo '<img src="http://status.mclive.eu/Minecraft%20Server/'.$banner_Url.'/banner.png">';?><br>
 						</p>
 						<div class="player-list"></div>
 					</div>
