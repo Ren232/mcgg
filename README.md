@@ -13,10 +13,8 @@ Create a [free dropbox account](https://dropbox.com/) and copy your Dev App toke
 ### Press the Button and WHOOsh! Your Server is on the GO!
 
 ## Warning
-If you run both server and website, they will cost quite a lost of free dyno hours
-
-Recommended to run both dynos only 16 hours a day (if account have visa)
-
-Also, Free dyno have max RAM of 1024MB (include swap), if you exceed over 512MB, it will send you an R14 error (Mem quota exceeded)
+Free dyno have max RAM of 1024MB (include swap), if you exceed over 512MB, it will send you an R14 error (Mem quota exceeded)
 
 If you reach the limit 1024MB, Error R15 will occur and reset all dynos, so.. be ware
+
+Mental note: F*ck the one name Bảo
