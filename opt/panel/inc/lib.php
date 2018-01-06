@@ -794,7 +794,7 @@ $user = user_info($name);
 		if(preg_match_all($pattern, $contents, $matches)){
 			$input_line = implode("\n", $matches[0]);
 			preg_match("/\/\/(.*):[0-9]* P/", $input_line, $ngrok);
-			echo str_replace("//",'',substr($ngrok[0], 0, -1));
+			return str_replace("//",'',substr($ngrok[0], 0, -1));
 		}
 	}
 }
