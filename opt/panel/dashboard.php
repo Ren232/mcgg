@@ -314,8 +314,11 @@ if(isset($_POST['key'])) {
 							<b>IP:</b> <?php echo KT_LOCAL_IP . ':' . $user['port']; ?><br>
 							<b>Ngrok: </b>
 							<span id="ngrok_stat"></span><br>
+							<b>Machine IP:</b> <?php echo shell_exec('curl ipinfo.io/ip')?><br>
 							<b>RAM:</b> <?php echo $user['ram'] . 'MB'; ?><br>
 							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span>
+							<b>Banner:</b><br>
+							<img src="http://status.mclive.eu/Minecraft%20Server/<?=str_replace(" ","",str_replace(":","/",ngrok_stat($user['user'])))?>/banner.png
 						</p>
 						<div class="player-list"></div>
 					</div>
