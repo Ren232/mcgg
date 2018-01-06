@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="navbar-inner">
-		<a class="brand" href="dashboard.php">MC<strong>Host</strong>Panel</a>
+		<a class="brand" href="dashboard.php"><strong>MCGG</strong> web panel</a>
 		<ul class="nav pull-right">
 			<?php if(!empty($_SESSION['is_admin']) || $user['role']=='admin') { ?>
 				<li><a href="admin.php">Admin Panel</a></li>
