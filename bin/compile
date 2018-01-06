@@ -57,14 +57,12 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
 done
 
 mkdir -p $BUILD_DIR/bin
-[ ! -f $BUILD_DIR/minecraft ]   && cp $OPT_DIR/minecraft $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/dropbox ]     && cp $OPT_DIR/dropbox $BUILD_DIR/
 
 mv $OPT_DIR/panel $BUILD_DIR/panel
 mv $OPT_DIR/index.php $BUILD_DIR/index.php
 
 chmod +x $BUILD_DIR/dropbox
-chmod +x $BUILD_DIR/bin/minecraft
 chmod 777 -R $BUILD_DIR/panel/
 chmod +x $BUILD_DIR/index.php
 
