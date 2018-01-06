@@ -319,12 +319,12 @@ if(isset($_POST['key'])) {
 							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span><br>
 							<b>Banner:</b><br>
 							<?php
-						 		$banner-Get = ngrok_stat($user['user']);
-						 		$banner-RemoveSpace = str_replace(" ","",$banner-Get);
-						 		$banner-RemoveSlash = str_replace(":","/",$banner-RemoveSpace);
-						 		$banner-Url = $banner-RemoveSlash;
+						 		$banner_Get = ngrok_stat($user['user']);
+						 		$banner_RemoveSpace = str_replace(" ","",$banner_Get);
+						 		$banner_RemoveSlash = str_replace(":","/",$banner_RemoveSpace);
+						 		$banner_Url = $banner_RemoveSlash;
 							?>
-							<img src="http://status.mclive.eu/Minecraft%20Server/<?php echo $banner-Url; ?>/banner.png"><br>
+							<img src="http://status.mclive.eu/Minecraft%20Server/<?php echo $banner_Url; ?>/banner.png"><br>
 						</p>
 						<div class="player-list"></div>
 					</div>
