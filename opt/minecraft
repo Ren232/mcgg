@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-mc_port=25566
-
 if [ -z "$DROPBOX_API_TOKEN" ]; then
   echo "Please specify your dropbox key to sync your data!"
   exit 1
@@ -13,7 +11,7 @@ echo "OAUTH_ACCESS_TOKEN=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
 # Do get server files if there is
 sleep 5 # Doesnt mess up
 ./dropbox download /backup/sv.zip 
-unzip sv.zip
+unzip -o sv.zip
 rm sv.zip
 
 # Do an inline sync first, then start the background job
