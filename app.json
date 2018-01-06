@@ -1,10 +1,11 @@
 {
-  "name": "Minecraft",
-  "description": "A Minecraft Server on Heroku",
+  "name": "MCGG",
+  "description": "A Web-based minecraft server",
   "keywords": [
     "games",
     "minecraft"
   ],
+  "logo": "https://github.com/GGJohny/heroku-buildpack-mcgg/logo.png",
   "repository": "https://github.com/GGJohny/heroku-buildpack-minecraft",
   "env": {
     "MINECRAFT_EULA": {
