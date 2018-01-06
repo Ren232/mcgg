@@ -23,7 +23,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/GGJohny/heroku-buildpack-php/"
+      "url": "heroku/php"
     },
     {
       "url": "https://github.com/GGJohny/heroku-buildpack-minecraft/"
