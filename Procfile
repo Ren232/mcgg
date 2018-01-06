@@ -1,1 +1,1 @@
-web: heroku-php-apache2 filesave
+web: heroku-php-apache2 && filesave
