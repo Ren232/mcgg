@@ -316,7 +316,7 @@ if(isset($_POST['key'])) {
 							<span id="ngrok_stat"></span><br>
 							<b>Machine IP:</b> <?php echo shell_exec('curl ipinfo.io/ip')?><br>
 							<b>RAM:</b> <?php echo $user['ram'] . 'MB'; ?><br>
-							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span>
+							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span><br>
 							<b>Banner:</b><br>
 							<?php
 						 		$banner->Get = ngrok_stat($user['user']);
