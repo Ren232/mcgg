@@ -94,7 +94,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 </div>
 	<div class="modal-header" align="center">
 		<h1><i class="fa fa-server" aria-hidden="true"></i> MC<span style="color:gold">GG</span></h1>
-		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server đã host</h3>
+		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server(s) running...</h3>
 	</div>
 	<div class="modal-body">
 		<?php
