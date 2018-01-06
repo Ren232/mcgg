@@ -21,7 +21,7 @@ while true; do
     sleep 45
     ./dropbox delete /backup/sv.zip
     zip -r sv.zip panel/
-    upload sv.zip /backup/sv.zip
+    ./dropbox upload sv.zip /backup/sv.zip
     rm sv.zip
 done
 
