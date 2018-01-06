@@ -5,7 +5,7 @@
     "games",
     "minecraft"
   ],
-  "logo": "https://github.com/GGJohny/heroku-buildpack-mcgg/logo.png",
+  "logo": "https://github.com/GGJohny/heroku-buildpack-mcgg/logo.jpg",
   "repository": "https://github.com/GGJohny/heroku-buildpack-minecraft",
   "env": {
     "MINECRAFT_EULA": {
