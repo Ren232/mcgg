@@ -11,7 +11,8 @@ fi
 echo "OAUTH_ACCESS_TOKEN=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
 
 # Do get server files if there is
-./dropbox download /backup/sv.zip /app/
+sleep 5 # Doesnt mess up
+./dropbox download /backup/sv.zip 
 unzip sv.zip
 rm sv.zip
 
