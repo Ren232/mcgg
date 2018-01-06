@@ -318,7 +318,13 @@ if(isset($_POST['key'])) {
 							<b>RAM:</b> <?php echo $user['ram'] . 'MB'; ?><br>
 							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span>
 							<b>Banner:</b><br>
-							<img src="http://status.mclive.eu/Minecraft%20Server/<?=str_replace(" ","",str_replace(":","/",ngrok_stat($user['user'])))?>/banner.png
+							<?php
+						 		$banner->Get = ngrok_stat($user['user']);
+						 		$banner->RemoveSpace = str_replace(" ","",$banner->Get);
+						 		$banner->RemoveSlash = str_replace(":","/",$banner->RemoveSpace);
+						 		$banner->Url = $banner->RemoveSlash;
+							?>
+							<img src="http://status.mclive.eu/Minecraft%20Server/<?php echo $banner->Url; ?>/banner.png"><br>
 						</p>
 						<div class="player-list"></div>
 					</div>
