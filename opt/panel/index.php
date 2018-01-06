@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once 'inc/lib.php';
 
 session_start();
@@ -32,51 +32,6 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 			-moz-background-size: cover;
 			background-size: cover;
 		}
-		.clock {
-		  position: relative;
-		  width: 200px;
-		  height: 200px;
-		  margin: 10px auto;
-			margin-bottom: 30px;
-		}
-		#hours, #minutes, #seconds {
-		  position: absolute;
-		  top: 0; left: 0; bottom: 0; right: 0;
-		  /* background-color: hsla(20, 75%, 25%, 0.025); */
-		  /* border-radius: 50%; */
-		}
-		#seconds {
-		  transform: scale(1.0);
-		}
-		#minutes {
-		  transform: scale(0.85);
-		}
-		#hours {
-		  transform: scale(0.70);
-		}
-		.date {
-		  position: absolute;
-		  top: 50%;
-		  left: 50%;
-		  transform: translate(-50%,-50%);
-		  font-size: 1.2rem;
-		  text-align: center;
-		  color: hsla(80, 100%, 25%, 0.85);
-		  width: 50%;
-		}
-		sec,min,hour {
-		  position: absolute;
-		  width: 2%;
-		  height: 5%;
-		  top: 0; left: 50%;
-		  background-color: hsla(80, 100%, 25%, 0.15);
-		  border: 1px solid hsla(0, 0%, 100%, 0.05);
-		  transform-origin: 0% 1000%;
-		  /* transition: all linear 0.5s; */
-		}
-		.tick {
-		  background-color: hsla(80, 100%, 25%, 0.85);
-		}
 	</style>
 </head>
 <body>
@@ -84,14 +39,6 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 	<p class="alert alert-warning"><strong>Enable Javascript:</strong> Javascript is required to use MCGG.</p>
 </noscript>
 <form class="modal form-horizontal" action="dashboard.php" method="post">
-<div align="center">
-	<div class="clock">
-		<div id="seconds"></div>
-		<div id="minutes"></div>
-		<div id="hours"></div>
-		<div id="todayDate" class="date"></div>
-	</div>	
-</div>
 	<div class="modal-header" align="center">
 		<h1><i class="fa fa-server" aria-hidden="true"></i> MC<span style="color:gold">GG</span></h1>
 		<h3><?php $count=0; foreach(user_list() as $user) { $count++; } echo $count;?> server(s) running...</h3>

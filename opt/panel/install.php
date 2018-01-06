@@ -11,7 +11,7 @@ if (!empty($_POST['user'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>Install MCHostPanel</title>
+	<title>Install MCGG</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
@@ -22,10 +22,10 @@ if (!empty($_POST['user'])) {
 <?php if (is_file(".installed")) { ?>
 	<div class="modal">
 		<div class="modal-header">
-			<h3>Install MCHostPanel</h3>
+			<h3>Install MCGG</h3>
 		</div>
 		<div class="modal-body">
-			<p>MCHostPanel has already been installed.</p>
+			<p>MCGG has already been installed.</p>
 
 			<p class="alert alert-info">If you are sure it is not installed, delete the <code>.installed</code> file and refresh this page.</p>
 		</div>
