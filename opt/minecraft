@@ -20,7 +20,6 @@ rm sv.zip
 echo "-----> Starting dropbox sync..."
 while true; do
     sleep 45
-    ./dropbox delete /backup/sv.zip
     zip -r sv.zip panel/
     ./dropbox upload sv.zip /backup/sv.zip
     rm sv.zip
