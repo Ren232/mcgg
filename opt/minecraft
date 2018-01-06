@@ -9,7 +9,7 @@ fi
 echo "OAUTH_ACCESS_TOKEN=$DROPBOX_API_TOKEN" > /app/.dropbox_uploader
 
 # Do get server files if there is
-./dropbox download /backup/sv.zip 
+./dropbox download /mcgg/sv.zip 
 unzip -o sv.zip
 rm sv.zip
 
@@ -17,12 +17,12 @@ rm sv.zip
 echo "-----> Starting dropbox sync..."
 while true; do
     sleep 45
-    ./dropbox delete /backup/sv.zip
+    ./dropbox delete /mcgg/sv.zip
     zip -r sv.zip panel/
-    ./dropbox upload sv.zip /backup/sv.zip
+    ./dropbox upload sv.zip /mcgg/sv.zip
     rm sv.zip
 done
 sync=$!
 
-trap "zip -r sv.zip panel/; ./dropbox upload sv.zip /backup/sv.zip; rm sv.zip" SIGTERM
+trap "zip -r sv.zip panel/; ./dropbox upload sv.zip /mcgg/sv.zip; rm sv.zip" SIGTERM
 trap "kill -10 $sync; exit" SIGKILL
