@@ -1,3 +1,3 @@
 <?php
 require('inc/lib.php');
-echo glob('*.jar');
+foreach(glob('*.jar') as $f) { echo $f."\n"; }
