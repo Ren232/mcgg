@@ -613,8 +613,10 @@ log_level: debug \n
 log_format: logfmt \n
 log: ".$_POST['dir']."/ngrok.log \n
 ");
-	
+	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
+	// Copy spigot
+	copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
 }
 
 // Delete a user
