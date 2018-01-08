@@ -8,6 +8,7 @@ if(file_exists('.installed')) {
     if($ext == 'json') {
       $json = json_decode('data/users/'.$user);
       // Start the server
+      echo "-----> Starting server for user".$json->user."...";
       server_start($json->user);
     }
   }
