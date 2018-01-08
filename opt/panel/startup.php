@@ -13,8 +13,9 @@ if(file_exists('.installed')) {
     }
   }
 } else {
-  echo "-----> Warning: '.installed' not found! Shutting down... "
+  echo "-----> Warning: '.installed' not found! Shutting down... ";
   exit();
 }
-    
+// Exit screen
+exit();
       
