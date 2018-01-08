@@ -10,10 +10,10 @@ if(file_exists('.installed')) {
       // Start the server
       server_start($json->user);
     }
-  } else {
-    echo "-----> Warning: '.installed' not found! Shutting down... "
-    exit();
   }
+} else {
+  echo "-----> Warning: '.installed' not found! Shutting down... "
+  exit();
 }
 ?>
     
