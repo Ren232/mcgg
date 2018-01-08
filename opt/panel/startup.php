@@ -1,5 +1,5 @@
 <?php
-require dirname(__FILE__).'/inc/lib.php');
+require dirname(__FILE__).'/inc/lib.php';
 if(file_exists(dirname(__FILE__)."/.installed")) {
   $users = scandir(dirname(__FILE__).'/data/users');
   foreach($users as $user) {
