@@ -1,6 +1,20 @@
 <?php
 require('inc/lib.php');
-$dir = scandir(dirname(__FILE__));
-foreach($dir as $f) {
-  echo $f;
+if(file_exists('.installed')) {
+  $users = scandir('data/users');
+  foreach($users as $user) {
+    $array = explode('.', $user);
+    $ext = end($array);
+    if($ext == 'json') {
+      $json = json_decode('data/users/'.$user);
+      // Start the server
+      server_start($json->user);
+    }
+  } else {
+    echo "-----> Warning: '.installed' not found! Shutting down... "
+    exit();
+  }
 }
+?>
+    
+      
