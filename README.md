@@ -1,4 +1,5 @@
 # Heroku MCGG Buildpack
+### Chạy - Quản lý server minecraft qua giao diện web + free VPS!!!
 
 This is a [Heroku Buildpack](https://devcenter.heroku.com/articles/buildpacks)
 for running a Minecraft server in a [dyno](https://devcenter.heroku.com/articles/dynos).
@@ -8,7 +9,9 @@ for running a Minecraft server in a [dyno](https://devcenter.heroku.com/articles
 ## Usage
 
 Tạo [tài khoản ngrok](https://ngrok.com/) và copy cái API Token
+
 Tạo [tài khoản dropbox](https://dropbox.com/) và copy OAUTH Token từ trang developers
+
 Tạo [tài khoản UptimeRobot](https://uptimerobot.com/) request HTTP tên miền của cái app của bạn (nhằm để giữ app không ngủ - nếu app không nhận được request HTTP nào sau 30p, nó sẽ ngủ)
 
 ### Xong rồi nhấp vào cái nút trên!
