@@ -16,8 +16,5 @@ if(file_exists('.installed')) {
   echo "-----> Warning: '.installed' not found! Shutting down... "
   exit();
 }
-// Exit process
-exit();
-?>
     
       
