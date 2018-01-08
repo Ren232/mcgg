@@ -1,3 +1,6 @@
 <?php
 require('inc/lib.php');
-foreach(glob('*.jar') as $f) { echo $f."\n"; }
+$dir = scandir(dirname(__FILE__));
+foreach($dir as $f) {
+  echo $f;
+}
