@@ -19,12 +19,15 @@
     },
     "DYNU_DNS": {
       "description": "Your personal dynu DNS hostname",
+      "required": false
     },
     "DYNU_USER": {
       "description": "Your DYNU Username",
+      "required": false
     },
     "DYNU_HASH": {
-      "description": "Your DYNU PAssword (hash MD5, SHA1, SHA256, SHA512 are accepted)",
+      "description": "Your DYNU Password (hash MD5, SHA1, SHA256, SHA512 are accepted)",
+      "required": false
     }
   },
   "buildpacks": [
