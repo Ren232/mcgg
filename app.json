@@ -16,6 +16,15 @@
     "DROPBOX_API_TOKEN": {
       "description": "Your personal dropbox API token",
       "required": true
+    },
+    "DYNU_DNS": {
+      "description": "Your personal dynu DNS hostname",
+    },
+    "DYNU_USER": {
+      "description": "Your DYNU Username",
+    },
+    "DYNU_HASH": {
+      "description": "Your DYNU PAssword (hash MD5, SHA1, SHA256, SHA512 are accepted)",
     }
   },
   "buildpacks": [
