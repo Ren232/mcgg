@@ -25,7 +25,7 @@
       "description": "Your DnsExit Username",
       "required": false
     },
-    "DNS_PASS": {
+    "DNS_EXIT_PASS": {
       "description": "Your DnsExit User password)",
       "required": false
     }
