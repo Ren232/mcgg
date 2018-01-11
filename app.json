@@ -17,15 +17,15 @@
       "description": "Your personal dropbox API token",
       "required": true
     },
-    "DNS_EXIT_DNS": {
-      "description": "Your personal dynu DNS hostname",
+    "DNSEXIT_DNS": {
+      "description": "Your personal DnsExit DNS hostname",
       "required": false
     },
-    "DNS_EXIT_USER": {
+    "DNSEXIT_USER": {
       "description": "Your DnsExit Username",
       "required": false
     },
-    "DNS_EXIT_PASS": {
+    "DNSEXIT_PASS": {
       "description": "Your DnsExit User password)",
       "required": false
     }
