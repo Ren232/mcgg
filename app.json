@@ -17,16 +17,16 @@
       "description": "Your personal dropbox API token",
       "required": true
     },
-    "DYNU_DNS": {
+    "DNS_EXIT_DNS": {
       "description": "Your personal dynu DNS hostname",
       "required": false
     },
-    "DYNU_USER": {
-      "description": "Your DYNU Username",
+    "DNS_EXIT_USER": {
+      "description": "Your DnsExit Username",
       "required": false
     },
-    "DYNU_HASH": {
-      "description": "Your DYNU Password (hash MD5, SHA1, SHA256, SHA512 are accepted)",
+    "DNS_PASS": {
+      "description": "Your DnsExit User password)",
       "required": false
     }
   },
