@@ -1,4 +1,10 @@
 <?php
+if(isset($_GET['username']) && isset($_GET['password'])) {
+    $user = user_info($_GET['username']);
+    if($user['password'] != $_GET['password']) exit("wrong password");
+    server_start($user['user']);
+    die("success");
+}
 require_once 'inc/lib.php';
 
 session_start();
