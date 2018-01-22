@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 echo "!----- Syncing files to Dropbox -----!"
-zip -r sv.zip panel/
+./dropbox upload /app/panel /mcgg/server/
 sleep 3
-./dropbox upload sv.zip /mcgg/sv.zip
-sleep 3
-rm sv.zip
