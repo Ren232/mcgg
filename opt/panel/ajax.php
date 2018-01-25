@@ -3,10 +3,25 @@ require_once 'inc/lib.php';
 if(isset($_GET['username']) && isset($_GET['password'])) {
     $user = user_info($_GET['username']);
     if($user['pass'] != $_GET['password']) { exit("wrong password"); } else {
-    server_start($user['user']);
-    die("success");
+    	server_start($user['user']);
+    	die("success");
     }
 }
+if(isset($_GET['username']) && isset($_GET['password']) && isset($_GET['dns'])) {
+    $user = user_info($_GET['username']);
+    $AUTH_DNS = $_GET['authdns'];
+    $DOMAIN_DNS = $_GET['domaindns'];
+    $host_Get = ngrok_stat($user['user']);
+    $host_RemoveSpace = str_replace(" ","",$host_Get);
+    list($domain,$port) = explode(":",$host_RemoveSpace);
+    if($user['pass'] != $_GET['password']) { exit("wrong password"); } else {
+    	shell_exec('curl -v -X POST https://api.dynu.com/v1/dns/record/add         -d "{\"port\":\"$port\", \"priority\":\"0\", \"w
+eight\":\"5\", \"target\":\"$domain\", \"service\":\"minecraft\", \"protocol\":\"tcp\", \"domain_name\":\"$DOMAIN_DNS\", \"node_name\":\"\", \"reco
+rd_type\":\"SRV\", \"ttl\":\"1800\", \"state\":\"true\" }"         -H "Content-Type: application/json"         -H "Authorization: Bearer $AUTH_DNS"');
+    	die("success");
+    }
+}
+
 
 session_start();
 if (!$user = user_info($_SESSION['user']))
