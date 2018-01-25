@@ -18,7 +18,11 @@ if(isset($_GET['username']) && isset($_GET['password']) && isset($_GET['dns'])) 
     	shell_exec('curl -v -X POST https://api.dynu.com/v1/dns/record/add         -d "{\"port\":\"$port\", \"priority\":\"0\", \"w
 eight\":\"5\", \"target\":\"$domain\", \"service\":\"minecraft\", \"protocol\":\"tcp\", \"domain_name\":\"$DOMAIN_DNS\", \"node_name\":\"\", \"reco
 rd_type\":\"SRV\", \"ttl\":\"1800\", \"state\":\"true\" }"         -H "Content-Type: application/json"         -H "Authorization: Bearer $AUTH_DNS"');
-    	die("success");
+    	echo $port.'<br>';
+	    echo $domain.'<br>';
+	    echo $DOMAIN_DNS.'<br>';
+	    echo $AUTH_DNS;
+	    die("success");
     }
 }
 
