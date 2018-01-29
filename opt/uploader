@@ -3,4 +3,4 @@ echo "!----- Syncing files to Dropbox -----!"
 zip -r sv.zip /app/panel
 ./dropbox upload sv.zip /mcgg/sv.zip
 rm sv.zip
-sleep 10
+sleep 300
