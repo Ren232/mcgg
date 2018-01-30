@@ -240,7 +240,7 @@ if(isset($_POST['action'])) {
 					<div class="controls">
 						<div class="input-prepend">
 							<span class="add-on"><i class="icon-folder-open"></i></span>
-							<input class="span10" type="text" name="dir" id="dir" value="<?php echo strtr(dirname(__FILE__), '\\', '/'); ?>">
+							<input class="span10" type="text" name="dir" id="dir" value="/app/server/">
 						</div>
 					</div>
 				</div>
