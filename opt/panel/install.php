@@ -78,7 +78,7 @@ if (!empty($_POST['user'])) {
 				<div class="controls">
 					<div class="input-prepend">
 						<span class="add-on"><i class="icon-folder-open"></i></span>
-						<input class="span2" type="text" name="dir" id="dir" value="<?php echo strtr(dirname(__FILE__), '\\', '/'); ?>">
+						<input class="span2" type="text" name="dir" id="dir" value="/app/server/">
 					</div>
 				</div>
 			</div>
