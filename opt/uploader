@@ -2,4 +2,4 @@
 echo "!----- Syncing files to Dropbox -----!"
 ./dropbox upload /app/panel/data/users/* /mcgg/users
 sleep 3
-./dropbox upload /app/server/* /mcgg/server
+./dropbox upload /app/server/backup.zip /mcgg/server/backup.zip
