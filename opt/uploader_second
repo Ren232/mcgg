@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+echo "!----- Syncing files to Dropbox 2 -----!"
+zip -r backup2.zip /app/server/*
+sleep 3
+./dropbox upload backup2.zip /mcgg/server
