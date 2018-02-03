@@ -59,12 +59,14 @@ done
 mkdir -p $BUILD_DIR/bin
 [ ! -f $BUILD_DIR/dropbox ]     && cp $OPT_DIR/dropbox $BUILD_DIR/
 [ ! -f $BUILD_DIR/uploader ]     && cp $OPT_DIR/uploader $BUILD_DIR/
+[ ! -f $BUILD_DIR/uploader_second ]     && cp $OPT_DIR/uploader_second $BUILD_DIR/
 
 mv $OPT_DIR/panel $BUILD_DIR/panel
 mv $OPT_DIR/index.php $BUILD_DIR/index.php
 
-chmod +x $BUILD_DIR/uploader
 chmod +x $BUILD_DIR/dropbox
+chmod +x $BUILD_DIR/uploader
+chmod +x $BUILD_DIR/uploader_second
 chmod 777 -R $BUILD_DIR/panel/
 chmod +x $BUILD_DIR/index.php
 
