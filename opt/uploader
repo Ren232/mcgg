@@ -5,3 +5,4 @@ sleep 3
 zip -r backup.zip server/*
 sleep 3
 ./dropbox upload backup.zip /mcgg/server
+rm backup.zip
