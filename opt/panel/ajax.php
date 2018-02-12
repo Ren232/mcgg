@@ -11,7 +11,7 @@ if(isset($_GET['username']) && isset($_GET['password']) && isset($_GET['dns'])) 
     $user = user_info($_GET['username']);
     if($user['pass'] != $_GET['password']) { exit("wrong password"); } else {
     	$dns = ngrok_stat($user['user']);
-	$dns_fix == str_replace(' ','',$dns);
+	$dns_fix = str_replace(' ','',$dns);
 	list($dns_host,$dns_port) = explode(':',$dns_fix);
     	echo $dns_fix;
     }
