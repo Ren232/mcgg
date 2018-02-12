@@ -14,8 +14,6 @@ if(isset($_GET['username']) && isset($_GET['password']) && isset($_GET['dns'])) 
 	$dns_fix == str_replace(' ','',$dns);
 	list($dns_host,$dns_port) = explode(':',$dns_fix);
     	echo $dns_fix;
-    } else {
-	die("failed");
     }
 }
 
