@@ -76,7 +76,7 @@ $datetime_format = 'd.m.y H:i';
 $upload_extensions = 'zip,tar.gz,jar,php,html,js,css,gif,png,jpg,txt,md'; // 'gif,png,jpg'
 
 // show or hide the left side tree view
-$show_tree_view = true;
+$show_tree_view = false;
 
 //Array of folders excluded from listing
 $GLOBALS['exclude_folders'] = array(
