@@ -378,7 +378,6 @@ function server_start($name) {
 
 	// Get user details
 	$user = user_info($name);
-		unlink($user['home'].'/ngrok.log');
 
 	// Make sure server isn't already running
 	if(server_running($user['user']))
@@ -472,6 +471,7 @@ function server_cmd($name,$cmd) {
  */
 function server_stop($name) {
 	$user = user_info($name);
+	unlink($user['home'].'/ngrok.log');
 	shell_exec(
 		// "stop" command
 		sprintf(
