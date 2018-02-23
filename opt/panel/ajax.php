@@ -19,6 +19,13 @@ if(isset($_GET['username']) && isset($_GET['password']) && isset($_GET['dns'])) 
 }
 
 session_start();
+if(isset($_GET['user']) && isset($_GET['pass'])) {
+    $user = user_info($_GET['user']);
+    if($user['pass'] != $_GET['password']) { exit("wrong password"); } else {
+	$_SESSION['user'] = $user['user'];
+    	die($_SESSION['user']);
+    }
+}
 if (!$user = user_info($_SESSION['user']))
 	exit();
 
