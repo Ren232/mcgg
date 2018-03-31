@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "!----- Syncing files to Dropbox -----!"
-./dropbox upload /app/panel/data/users/* /mcgg/users
+./dropbox upload /app/panel/data/users/* /mcgg/users/
 sleep 3
 zip -r backup.zip server/*
 sleep 3
