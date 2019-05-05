@@ -24,7 +24,6 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/smooth.css" id="smooth-css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="author" content="Alan Hardman (http://phpizza.com)">
 	<style type="text/css">
 		body {
 			background-image: url(img/bg.jpg);
@@ -46,10 +45,10 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 	<div class="modal-body">
 		<?php
 		if (!empty($_GET['error']) && $_GET['error'] == 'badlogin')
-			echo '<p class="alert alert-error">Thông tin đăng nhập không đúng.</p>';
+			echo '<p class="alert alert-error">Login information is incorrect.</p>';
 		?>
 		<div class="control-group">
-			<label class="control-label" for="user">Tên đăng nhập</label>
+			<label class="control-label" for="user">Username:</label>
 
 			<div class="controls">
 				<div class="input-prepend">
@@ -59,7 +58,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="pass">Mật khẩu</label>
+			<label class="control-label" for="pass">Password:</label>
 
 			<div class="controls">
 				<div class="input-prepend">
@@ -70,10 +69,9 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 		</div>
 	</div>
 	<div class="modal-footer">
-		<button class="btn btn-primary" type="submit">Đăng nhập</button>
+		<button class="btn btn-primary" type="submit">Login</button>
 	</div>
 </form>
-<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;">&copy; <?php echo date('Y'); ?> <a href="https://phpizza.com/">Alan Hardman</a>
- - Re-edit bởi GGJohny<br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> - Time: <?=date('d/m/Y') ?></small>
+<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;">&copy; <br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> - Time: <?=date('d/m/Y') ?></small>
 	<script src="js/header.js"></script>
 </body>
