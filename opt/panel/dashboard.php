@@ -304,7 +304,7 @@ if(isset($_POST['key'])) {
 						<div class="input-append">
 							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="Enter your ngrok key." value="<?=$user['key']?>">
 						</div>
-						<span class="text-info">Get the key<a href="//dashboard.ngrok.com/">ngrok Dashboard</a></span>
+						<span class="text-info">Get the key<a href="//dashboard.ngrok.com/">Ngrok Dashboard</a></span>
 					</div>
 				</div>
 					</div>
