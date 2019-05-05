@@ -19,7 +19,7 @@
 </div>
 <ul class="nav nav-tabs" id="myTab">
 	<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "dashboard.php" ? 'class="active"' : ""; ?>>
-		<a href="dashboard.php">Dashboard</a>
+		<a href="dashboard.php">User </a>
 	</li>
 	<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "files.php" ? 'class="active"' : ""; ?>>
 		<a href="files.php">File Manager</a>
