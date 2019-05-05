@@ -49,7 +49,7 @@ if(isset($_POST['key'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>Bảng điều khiển | MCHostPanel</title>
+	<title>Dashboard | MCHostPanel</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
