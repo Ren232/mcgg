@@ -17,7 +17,7 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 ?><!doctype html>
 <html>
 <head>
-	<title>MCHostPanel</title>
+	<title>MCHostPanel | Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -72,6 +72,6 @@ if (!empty($_SESSION['user']) && $user = user_info($_SESSION['user'])) {
 		<button class="btn btn-primary" type="submit">Login</button>
 	</div>
 </form>
-<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;">&copy; <br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> - Time: <?=date('d/m/Y') ?></small>
+<small class="muted pull-left" style="position:absolute;bottom:15px;left:15px;"> <br>Guest: <?=$_SERVER['REMOTE_ADDR'] ?> <br>Time: <?=date('d/m/Y') ?></small>
 	<script src="js/header.js"></script>
 </body>
