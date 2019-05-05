@@ -38,7 +38,7 @@
       "url": "https://github.com/GGJohny/heroku-buildpack-minecraft/"
     },
     {
-      "url": "https://github.com/GGJohny/heroku-buildpack-php"
+      "url": "https://github.com/heroku/heroku-buildpack-php"
     }
   ]
 }
