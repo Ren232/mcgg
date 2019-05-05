@@ -298,7 +298,7 @@ if(isset($_POST['key'])) {
 							?>
 						</select>
 				<div class="control-group">
-					<label class="control-label" for="ram">NGROK Key:<?php if(empty($user['key']) || $user['key']==1234567890) { echo '- Please enter a valid ngrok key.'; } ?></label>
+					<label class="control-label" for="ram">ngrok key:<?php if(empty($user['key']) || $user['key']==1234567890) { echo ' - To make the server work you need a ngrok key.'; } ?></label>
 
 					<div class="controls">
 						<div class="input-append">
@@ -312,7 +312,7 @@ if(isset($_POST['key'])) {
 						<legend>Server information</legend>
 						<p><b>Status:</b> <span class="label" id="lbl-status">Checking&hellip;</span><br>
 							<b>IP:</b> <?php echo KT_LOCAL_IP . ':' . $user['port']; ?><br>
-							<b>Ngrok: </b>
+							<b>Ngrok IP: </b>
 							<span id="ngrok_stat"></span><br>
 							<b>Machine IP:</b> <?php echo shell_exec('curl ipinfo.io/ip')?><br>
 							<b>RAM:</b> <?php echo $user['ram'] . 'MB'; ?><br>
