@@ -35,7 +35,7 @@
       "url": "heroku/jvm"
     },
     {
-      "url": "https://github.com/GGJohny/heroku-buildpack-minecraft/"
+      "url": "https://github.com/Ren232/mcgg/"
     },
     {
       "url": "https://github.com/heroku/heroku-buildpack-php"
