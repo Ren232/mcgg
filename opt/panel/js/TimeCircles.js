@@ -827,22 +827,22 @@
         time: {
             Days: {
                 show: true,
-                text: "Ngày",
+                text: "Days",
                 color: "#FC6"
             },
             Hours: {
                 show: true,
-                text: "Giờ",
+                text: "Hours",
                 color: "#9CF"
             },
             Minutes: {
                 show: true,
-                text: "Phút",
+                text: "Minutes",
                 color: "#BFB"
             },
             Seconds: {
                 show: true,
-                text: "Giây",
+                text: "Seconds",
                 color: "#F99"
             }
         }
