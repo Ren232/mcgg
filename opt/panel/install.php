@@ -16,7 +16,6 @@ if (!empty($_POST['user'])) {
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="css/smooth.css" id="smooth-css">
-	<meta name="author" content="Alan Hardman (http://phpizza.com)">
 </head>
 <body>
 <?php if (is_file(".installed")) { ?>
