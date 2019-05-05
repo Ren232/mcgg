@@ -100,7 +100,7 @@ if(isset($_POST['key'])) {
 		function modify(key) {
     		jQuery(document).ready(function($){
 			var $key = key
-			alert("The ngrok key has been set to - "+$key)
+			alert("The ngrok key has been set to "+$key)
 	          $.ajax({
 	                url: 'ajax.php', //window.location points to the current url. change is needed.
 	                type: 'POST',
@@ -298,13 +298,13 @@ if(isset($_POST['key'])) {
 							?>
 						</select>
 				<div class="control-group">
-					<label class="control-label" for="ram">Ngrok key <?php if(empty($user['key']) || $user['key']==1234567890) { echo '- Key not available'; } ?></label>
+					<label class="control-label" for="ram">NGROK Key:<?php if(empty($user['key']) || $user['key']==1234567890) { echo '- Please enter a valid ngrok key.'; } ?></label>
 
 					<div class="controls">
 						<div class="input-append">
-							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="Enter your ngrok key." value="<?=$user['key']?>">
+							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="Enter your ngrok key..." value="<?=$user['key']?>">
 						</div>
-						<span class="text-info">Get the key<a href="//dashboard.ngrok.com/">Ngrok Dashboard</a></span>
+						<span class="text-info">Get a ngrok key: <a href="//dashboard.ngrok.com/">Ngrok Dashboard</a></span>
 					</div>
 				</div>
 					</div>
