@@ -298,7 +298,7 @@ if(isset($_POST['key'])) {
 							?>
 						</select>
 				<div class="control-group">
-					<label class="control-label" for="ram">Ngrok key <?php if(empty($user['key']) || $user['key']==1234567890) { echo '- KEY CHƯA CÓ SẴN'; } ?></label>
+					<label class="control-label" for="ram">Ngrok key <?php if(empty($user['key']) || $user['key']==1234567890) { echo '- Key not available'; } ?></label>
 
 					<div class="controls">
 						<div class="input-append">
@@ -331,7 +331,7 @@ if(isset($_POST['key'])) {
 				<div class="span7">
 					<pre id="log" class="well well-small"></pre>
 					<form id="frm-cmd">
-						<input type="text" id="cmd" name="cmd" maxlength="250" placeholder="Nhập câu lệnh..." autofocus>
+						<input type="text" id="cmd" name="cmd" maxlength="250" placeholder="Enter command..." autofocus>
 					</form>
 				</div>
 			</div>
