@@ -14,7 +14,7 @@
       "required": true
     },
     "DROPBOX_API_TOKEN": {
-      "description": "Your personal dropbox API token",
+      "description": "Your personal dropbox API token (https://www.dropbox.com/developers/apps Click on create app, Select Dropbox API & App folder, Name the app & create it, Get the API Key.)",
       "required": true
     },
     "DNSEXIT_DNS": {
@@ -26,7 +26,7 @@
       "required": false
     },
     "DNSEXIT_PASS": {
-      "description": "Your DnsExit User password)",
+      "description": "Your DnsExit User password ",
       "required": false
     }
   },
