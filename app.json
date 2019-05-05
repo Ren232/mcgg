@@ -36,9 +36,6 @@
     },
     {
       "url": "https://github.com/GGJohny/heroku-buildpack-mcgg"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-php"
     }
   ]
 }
