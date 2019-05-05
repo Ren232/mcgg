@@ -7,7 +7,7 @@
 				<li><a href="admin.php">Admin Panel</a></li>
 			<?php } ?>
 
-			<li><a href='profile.php'>Dashboard<strong><?php echo $user['user']; ?></strong></a></li>
+			<li><a href='profile.php'>User <strong><?php echo $user['user']; ?></strong></a></li>
 
 			<?php if($user['user']) { ?>
 				<li><img width="40" height="40" src="//minotar.net/avatar/<?php echo urlencode($user['user']); ?>" alt="<?php echo $user['user']; ?>"></li>
@@ -19,7 +19,7 @@
 </div>
 <ul class="nav nav-tabs" id="myTab">
 	<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "dashboard.php" ? 'class="active"' : ""; ?>>
-		<a href="dashboard.php">User </a>
+		<a href="dashboard.php">Dashboard<a>
 	</li>
 	<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "files.php" ? 'class="active"' : ""; ?>>
 		<a href="files.php">File Manager</a>
