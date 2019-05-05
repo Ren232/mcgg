@@ -293,7 +293,7 @@ if(isset($_POST['key'])) {
 										} else {
 											echo "<option value=\"$file\">$file</option>";
 										}
-									} else echo 'Không phát hiện file JAR';
+									} else echo 'No jar file detected.';
 								}
 							?>
 						</select>
