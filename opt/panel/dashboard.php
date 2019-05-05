@@ -2,7 +2,6 @@
 require_once 'inc/lib.php';
 
 session_start();
-
 if (!empty($_SESSION['user'])) {
 
 	if (!$user = user_info($_SESSION['user'])) {
@@ -316,7 +315,7 @@ if(isset($_POST['key'])) {
 							<span id="ngrok_stat"></span><br>
 							<b>Machine IP:</b> <?php echo shell_exec('curl ipinfo.io/ip')?><br>
 							<b>RAM:</b> <?php echo $user['ram'] . 'MB'; ?><br>
-							<b>Online:</b> <span id="lbl-players">Checking&hellip;</span><br>
+							<b>Players:</b> <span id="lbl-players">Checking&hellip;</span><br>
 							<b>Banner:</b><br>
 							<?php
 						 		$banner_Get = ngrok_stat($user['user']);
