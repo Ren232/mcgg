@@ -161,7 +161,7 @@ if ($use_auth) {
         ?>
         <div class="text-center">
             <form class="form-signin" action="" method="post" autocomplete="off">
-                <img class="mb-4" src="https://image.ibb.co/k92AFQ/h3k_logo_dark.png" alt="H3K File Manager">
+                <img class="mb-4" src="https://image.ibb.co/k92AFQ/h3k_logo_dark.png" alt="MCHostPanel">
                 <h1 class="h3 mb-3 font-weight-normal">File Manager</h1>
                 <label for="fm_usr" class="sr-only">Username</label>
                 <input type="text" id="fm_usr" name="fm_usr" class="form-control" placeholder="Username" required="" autofocus="">
@@ -863,7 +863,8 @@ if (isset($_GET['view'])) {
     $is_text = false;
     $is_onlineViewer = false;
 
-    $view_title = 'File';
+    $view_
+	    = 'File';
     $filenames = false; // for zip
     $content = ''; // for text
 
@@ -2173,7 +2174,7 @@ global $lang;
     <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
-    <title>H3K | Tiny File Manager</title>
+    <title>MCHostPanel | File Manager</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <style>
         .form-signin {
@@ -2262,11 +2263,9 @@ global $lang;
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Tiny File Manager">
-    <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
-    <title>H3K | Tiny File Manager</title>
+    <title>MCHostPanel | File Manager</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <?php if (isset($_GET['view']) && FM_USE_HIGHLIGHTJS): ?>
