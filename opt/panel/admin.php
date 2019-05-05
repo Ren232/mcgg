@@ -119,7 +119,7 @@ if(isset($_POST['action'])) {
 	<div class="clearfix"></div>
 	<div class="row-fluid">
 		<div class="span8">
-			<legend>Dung lượng</legend>
+			<legend>Capacity</legend>
 			<pre><?php echo `df -h` ?></pre>
 			<legend>Ram (MB)</legend>
 			<pre><?php echo `free -mtl` ?></pre>
