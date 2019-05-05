@@ -100,7 +100,7 @@ if(isset($_POST['key'])) {
 		function modify(key) {
     		jQuery(document).ready(function($){
 			var $key = key
-			alert("Key đã được đặt - "+$key)
+			alert("The ngrok key has been set to - "+$key)
 	          $.ajax({
 	                url: 'ajax.php', //window.location points to the current url. change is needed.
 	                type: 'POST',
@@ -152,7 +152,7 @@ if(isset($_POST['key'])) {
 					} else {
 						$('#lbl-players').text(data.players.length + '/' + data.info.MaxPlayers);
 						$('#lbl-players').append('<br/><br/>');
-						$('#lbl-players').append('<legend>Danh sách online</legend>');
+						$('#lbl-players').append('<legend>Players online:</legend>');
 					}
 					$.each(data.players, function (i, val) {
 						console.log(val);
@@ -267,7 +267,7 @@ if(isset($_POST['key'])) {
 			<div class="row-fluid">
 				<div class="span5">
 					<div class="well">
-						<legend>Bảng điều khiển</legend>
+						<legend>Dashboard</legend>
 						<div class="btn-toolbar">
 							<div class="btn-group">
 								<button class="btn btn-large btn-primary ht" id="btn-srv-start" title="Start" disabled><i class="icon-play"></i></button>
@@ -309,8 +309,8 @@ if(isset($_POST['key'])) {
 				</div>
 					</div>
 					<div class="well">
-						<legend>Thông tin Server</legend>
-						<p><b>Trạng thái:</b> <span class="label" id="lbl-status">Checking&hellip;</span><br>
+						<legend>Server information</legend>
+						<p><b>Status:</b> <span class="label" id="lbl-status">Checking&hellip;</span><br>
 							<b>IP:</b> <?php echo KT_LOCAL_IP . ':' . $user['port']; ?><br>
 							<b>Ngrok: </b>
 							<span id="ngrok_stat"></span><br>
