@@ -72,10 +72,10 @@
 
     var allUnits = ["Days", "Hours", "Minutes", "Seconds"];
     var nextUnits = {
-        Seconds: "Minutes",
-        Minutes: "Hours",
-        Hours: "Days",
-        Days: "Years"
+        Seconds: "Sec",
+        Minutes: "Min",
+        Hours: "Hours",
+        Days: "Days"
     };
     var secondsIn = {
         Seconds: 1,
