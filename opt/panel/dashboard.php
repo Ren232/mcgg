@@ -12,7 +12,7 @@ if (!empty($_SESSION['user'])) {
 		}
 		// User does not exist, redirect to login page
 		header('Location: .');
-		exit('Chưa đăng nhập!');
+		exit('Not logged in!');
 	}
 
 } elseif (!empty($_POST['user']) && !empty($_POST['pass'])) {
@@ -26,7 +26,7 @@ if (!empty($_SESSION['user'])) {
 	if (!$user || ($_POST['pass'] != $user['pass'])) {
 		// Login failure, redirect to login page
 		header('Location: ./?error=badlogin');
-		exit('Chưa đăng nhập!');
+		exit('Not logged in!');
 	}
 
 	// Current user is valid
@@ -36,7 +36,7 @@ if (!empty($_SESSION['user'])) {
 
 	// Not logged in, redirect to login page
 	header('Location: .');
-	exit('Chưa đăng nhập!');
+	exit('Not logged in!');
 
 }
 
@@ -141,7 +141,7 @@ if(isset($_POST['key'])) {
 				req: 'players'
 			}, function (data) {
 				if (data.error) {
-					$('#lbl-players').text('Server Offline').attr('title', 'Hãy cho phép query trong server.properties để nhận thông tin về server.').tooltip();
+					$('#lbl-players').text('Server Offline').attr('title', 'Please allow the query in server.properties to receive server information.').tooltip();
 				} else {
 					try{
 						console.log(data);
@@ -160,7 +160,7 @@ if(isset($_POST['key'])) {
 					});
 				}
 			}, 'json').error(function(){
-				$('#lbl-players').text('Lỗi');
+				$('#lbl-players').text('Error');
 			});
 		}
 		function server_start() {
@@ -302,9 +302,9 @@ if(isset($_POST['key'])) {
 
 					<div class="controls">
 						<div class="input-append">
-							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="nhập key ngrok..." value="<?=$user['key']?>">
+							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="Enter your ngrok key." value="<?=$user['key']?>">
 						</div>
-						<span class="text-info">Lấy được từ <a href="//dashboard.ngrok.com/">ngrok dashboard</a></span>
+						<span class="text-info">Get the key<a href="//dashboard.ngrok.com/">ngrok Dashboard</a></span>
 					</div>
 				</div>
 					</div>
@@ -327,7 +327,6 @@ if(isset($_POST['key'])) {
 						</p>
 						<div class="player-list"></div>
 					</div>
-					<footer class="muted">&copy; <?php echo date('Y'); ?> Alan Hardman - Re-edit bởi GGJohny</footer>
 				</div>
 				<div class="span7">
 					<pre id="log" class="well well-small"></pre>
@@ -339,8 +338,7 @@ if(isset($_POST['key'])) {
 		<?php
 		} else
 			echo '
-			<p class="alert alert-info">Tài khoản của bạn không có server.</p>
-			<footer class="muted">&copy; ' . date('Y') . ' Alan Hardman - Re-edit bởi GGJohny</footer>
+			<p class="alert alert-info">Your account does not have a server.</p>
 ';
 		?>
 	</div>
