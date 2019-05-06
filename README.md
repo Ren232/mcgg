@@ -20,7 +20,7 @@ Translated to English & Updated by Ren232.
 
 3. Paste your ngrok key on the Dashboard page.
 
-4. Goto https://kaffeine.herokuapp.com and register your website there.
+4. Goto https://wakemydyno.com and register your website there.
 
 5. Done!
 
