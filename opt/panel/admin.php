@@ -35,7 +35,7 @@ if(isset($_POST['action'])) {
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
 
 	if ($_POST['action'] == 'user-delete')
-		user_delete($_POST['deluser'], $_POST['dirserver']);
+		user_delete($_POST['user'], $_POST['dir']);
 
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
@@ -280,11 +280,11 @@ if(isset($_POST['action'])) {
 			<form action="admin.php" method="post" autocomplete="off">
 				<div class="deletion">
 					<legend>User Management</legend>
-					<input type="hidden" name="action" value="deluser">
+					<input type="hidden" name="action" value="user">
 						<select name="user" style="vertical-align: top;">
 					</select>
-					<input class="span10" type="text" name="Directory" id="dirserver" value="/app/server/">
-						<span class="add-on"><i class="icon-folder-open"></i></span>
+					<span class="add-on"><i class="icon-folder-open"></i></span>
+					<input class="span4" type="text" name="Directory" id="dir" value="/app/server/">
 						<span class="text-info">Blank = No Server Deletion</span>
 					</select>
 					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
