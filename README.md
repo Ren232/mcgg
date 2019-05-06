@@ -16,6 +16,7 @@ Translated to English & Updated by Ren232.
 <h1> Setup </h1>
 
 1. Click on the button below, Give the app a name (This is also going to be your panel's subdomain), Paste your Dropbox API key, and click on deploy.
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 2. Now goto https://APP_NAME.herokuapp.com/panel/install.php to create an account and server (Please notice that the total server ram is limited to 1024 mb.)
 
