@@ -1,0 +1,19 @@
+			<form action="admin.php" method="post" autocomplete="off">
+				<div class="deletion">
+					<legend>User Deletion</legend>
+					<label class="control-label" for="dir">User</label>
+					<select name="user" style="vertical-align: top;">
+						<?php
+						$ul = user_list();
+						foreach ($ul as $u)
+							if($u != "empty")
+								echo '<option value="' . $u . '">' . $u . '</option>';
+						?>
+					</select>
+					<label class="control-label" for="dir">User Directory</label>
+					<span class="add-on"><i class="icon-folder-open"></i></span>
+					<input class="span6" type="text" name="Directory" id="dir" value="/app/server/">
+						<span class="text-info">Blank = No Server Deletion</span>
+					</select>
+					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
+			</form>
