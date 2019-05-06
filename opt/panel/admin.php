@@ -27,9 +27,6 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-	// Delete a user
-	if ($_POST['action'] == 'user-delete')
-		user_delete($_POST['user'], $_POST['dir']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -260,28 +257,6 @@ if(isset($_POST['action'])) {
 					</div>
 				</div>
 				<button type="submit" class="btn btn-primary">Add User</button>
-				
-				<div class="deletion">
-					<br>
-					<legend>User Deletion</legend>
-					<br>
-					<label class="userlabel" for="dir">User</label>
-					<select name="user" style="vertical-align: top;">
-						<?php
-						$ul = user_list();
-						foreach ($ul as $u)
-							if($u != "empty")
-								echo '<option value="' . $u . '">' . $u . '</option>';
-						?>
-					</select>
-					<br>
-					<label class="dir-label" for="dir">User Directory</label>
-					<span class="add-on"><i class="icon-folder-open"></i></span>
-					<input class="span10" type="text" name="Directory" id="dir" value="/app/server/">
-						<br>
-						<span class="text-info">Blank = No Server Deletion</span>
-					</select>
-					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
 			</form>
 		</div>
 	</div>
