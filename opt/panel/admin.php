@@ -27,7 +27,31 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-
+		if ($_POST['version'] == 'SG1.14'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.13.2'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.12.2'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.11.2'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.10.2'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.9.4'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'SG1.8.8'):
+			$url = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar"
+			file_download($url, $dir)
+		else if ($_POST['version'] == 'BC'):
+			$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
+			file_download($url, $dir)
+}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -262,13 +286,13 @@ if(isset($_POST['action'])) {
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="SG1x14" selected>Spigot 1.14</option>
-							<option value="SG1x13x2">Spigot 1.13.2</option>							
-							<option value="SG1x12x2">Spigot 1.12.2</option>
-							<option value="SG1x11x2">Spigot 1.11.2</option>
-							<option value="SG1x10x2">Spigot 1.10.2</option>
-							<option value="SG1x9x4">Spigot 1.9.4</option>
-							<option value="SG1x8x8">Spigot 1.8.8</option>
+							<option value="SG1.14" selected>Spigot 1.14</option>
+							<option value="SG1.13.2">Spigot 1.13.2</option>							
+							<option value="SG1.12.2">Spigot 1.12.2</option>
+							<option value="SG1.11.2">Spigot 1.11.2</option>
+							<option value="SG1.10.2">Spigot 1.10.2</option>
+							<option value="SG1.9.4">Spigot 1.9.4</option>
+							<option value="SG1.8.8">Spigot 1.8.8</option>
 							<option value="BC">Bungeecord</option>
 						</select>
 					</div>
