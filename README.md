@@ -1,9 +1,8 @@
 Translated to English & Updated by Ren232.
 
 <h1> Features </h1>
-- You can access the file manager of the server.
-- Console
-- Admin panel with account registration
+- You can access the file manager of the server.<br>
+- Console<br> Admin panel with account registration<br>
 - Trial users & Premium users
 - Player list
 - And more
