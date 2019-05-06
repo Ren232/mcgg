@@ -10,11 +10,9 @@
  *
  * ...or I could just use Ctrl+R. Sublime Text rocks.
  */
-
 require_once 'data/config.php';
 require_once 'inc/mclogparse.inc.php';
 date_default_timezone_set('Asia/Bangkok');
-
 /*
 8888888888 d8b 888                                     888
 888        Y8P 888                                     888
@@ -28,7 +26,6 @@ date_default_timezone_set('Asia/Bangkok');
                                      Y8b d88P
                                       "Y88P"
 */
-
 /**
  * Rename a user's file
  * @param  string $path
@@ -39,7 +36,6 @@ date_default_timezone_set('Asia/Bangkok');
 function file_rename($path,$newname,$home) {
 	return rename($home.$path,$home.rtrim($path,basename($path)).$newname);
 }
-
 /**
  * Download a user's file
  * @param  string  $path
@@ -64,7 +60,6 @@ function download($path,$home,$force = true) {
 			echo 'The requested file is not available.';
 	}
 }
-
 /**
  * Get a file's mime type by file name
  * @param  string $filename
@@ -119,7 +114,6 @@ function mimetype($filename) {
 		'odt' => 'application/vnd.oasis.opendocument.text',
 		'ods' => 'application/vnd.oasis.opendocument.spreadsheet',
 	);
-
 	$ext = strtolower(array_pop(explode('.',$filename)));
 	if(array_key_exists($ext, $mime_types)) {
 		return $mime_types[$ext];
@@ -131,7 +125,6 @@ function mimetype($filename) {
 	} else
 		return 'application/octet-stream';
 }
-
 /**
  * Get a file size using native methods when possible
  * This allows file sizes greater than 4GB to work properly on a 32-bit environment
@@ -150,7 +143,6 @@ function getsize($file) {
 		}
 	return $size;
 }
-
 /**
  * Helper for file_backread function
  * @param  string $haystack
@@ -163,7 +155,6 @@ function __file_backread_helper(&$haystack,$needle,$x) {
     while($cnt < $x && ($pos=strpos($haystack,$needle,$pos))!==false){$pos++;$cnt++;}
     return $pos==false ? false:substr($haystack,$pos,strlen($haystack));
 }
-
 /**
  * Read n lines from the end of a file
  * @param  string $file
@@ -174,39 +165,28 @@ function __file_backread_helper(&$haystack,$needle,$x) {
 function file_backread($file,$lines,&$fsize=0){
     $f=fopen($file,'r');
     if(!$f)return Array();
-
-
     $splits=$lines*50;
     if($splits>10000)$splits=10000;
-
     $fsize=filesize($file);
     $pos=$fsize;
-
     $buff1=Array();
     $cnt=0;
-
     while($pos)
     {
         $pos=$pos-$splits;
-
         if($pos<0){ $splits+=$pos; $pos=0;}
-
         fseek($f,$pos);
         $buff=fread($f,$splits);
         if(!$buff)break;
-
         $lines -= substr_count($buff, "\n");
-
         if($lines <= 0) {
             $buff1[] = __file_backread_helper($buff,"\n",abs($lines)+1);
             break;
         }
         $buff1[] = $buff;
     }
-
     return str_replace("\r",'',implode('',array_reverse($buff1)));
 }
-
 /**
  * Force download of a file to the browser
  * @param  string $url
@@ -223,45 +203,14 @@ function file_download($url,$path) {
 		else
 			return false;
 	}
-
 	if($file)
 		fclose($file);
 	else
 		return false;
-
 	if($newf)
 		fclose($newf);
-
 	return $path;
 }
-
-function download_version($version, $dir) {
-	if $version = "SG1.14":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.13.2":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.12.2":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.11.2":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.10.2":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.9.4":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
-		file_download($url, $dir)
-	elif $version = "SG1.8.8":
-		$url = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar"
-		file_download($url, $dir)
-	elif $version = "BC":
-		$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
-		file_download($url, $dir)
-}
-
 /**
  * Delete a folder and it's contents
  * (stack algorithm, faster than a recursive function)
@@ -272,11 +221,9 @@ function rmdirr($dirname) {
 	// Sanity check
 	if(!file_exists($dirname))
 		return false;
-
 	// Simple delete for a file
 	if(is_file($dirname) || is_link($dirname))
 		return unlink($dirname);
-
 	// Create and iterate stack
 	$stack = array($dirname);
 	while($entry = array_pop($stack)) {
@@ -285,11 +232,9 @@ function rmdirr($dirname) {
 			unlink($entry);
 			continue;
 		}
-
 		// Attempt to remove the directory
 		if(@rmdir($entry))
 		continue;
-
 		// Otherwise add it to the stack
 		$stack[] = $entry;
 		$dh = opendir($entry);
@@ -297,7 +242,6 @@ function rmdirr($dirname) {
 			// Ignore pointers
 			if($child === '.' || $child === '..')
 				continue;
-
 			// Unlink files and add directories to stack
 			$child = $entry . DIRECTORY_SEPARATOR . $child;
 			if(is_dir($child) && !is_link($child))
@@ -308,11 +252,8 @@ function rmdirr($dirname) {
 		closedir($dh);
 		print_r($stack);
 	}
-
 	return true;
 }
-
-
 /*
  .d8888b.
 d88P  Y88b
@@ -323,7 +264,6 @@ d88P  Y88b
 Y88b  d88P 888    Y88..88P 888  888
  "Y8888P"  888     "Y88P"  888  888
 */
-
 /**
  * Creates a MCHostPanel cron job
  * @param string $job A fully formatted cron job
@@ -333,7 +273,6 @@ function create_cron($job) {
 	file_put_contents("/tmp/crontab.txt", $output . $job . PHP_EOL);
 	echo exec("crontab /tmp/crontab.txt");
 }
-
 /**
  * Deletes a MCHostPanel cron job
  * @param string $name
@@ -341,11 +280,9 @@ function create_cron($job) {
 function delete_cron($name) {
 	$output = shell_exec('crontab -l');
 	$output = preg_replace("/^.*backup-run\.php " . preg_quote(escapeshellarg($name)) . "(.*)[\r\n]/mi", "", $output);
-
 	file_put_contents("/tmp/crontab.txt", $output);
 	echo exec("crontab /tmp/crontab.txt");
 }
-
 /**
  * Checks if a cron job already exists for this user
  * @param string $name
@@ -355,7 +292,6 @@ function check_cron_exists($name) {
 	$output = shell_exec('crontab -l');
 	return (preg_match("/backup-run\.php " . preg_quote(escapeshellarg($name)) . "/i", $output));
 }
-
 /**
  * Checks if a cron job already exists and return data about it
  * @param string $name
@@ -364,28 +300,20 @@ function check_cron_exists($name) {
 function get_cron($name) {
 	if(check_cron_exists($name)) {
 		$output = shell_exec('crontab -l');
-
 		preg_match("/^.*backup-run\.php " . preg_quote(escapeshellarg($name)) . "(.*)/mi", $output, $matches);
-
 		$parts = explode(" ", $matches[0]);
-
 		//Spooky stuff
 		$freq = explode("/", $parts[1]); //Grab the cron job date stuff
 		$freq = (isset($freq[1]) ? $freq[1] : 1); //freq 1 will have numbers greater than 2 for intervals
-
 		$delete = $parts[9];
-
 		$ret = array();
 		$ret["hrFreq"] = $freq;
 		$ret['hrDeleteAfter'] = $delete;
-
 		return $ret;
 	} else {
 		return array();
 	}
 }
-
-
 /*
  .d8888b.
 d88P  Y88b
@@ -396,20 +324,16 @@ Y88b.
 Y88b  d88P Y8b.     888      Y8bd8P  Y8b.     888          X88
  "Y8888P"   "Y8888  888       Y88P    "Y8888  888      88888P'
 */
-
 /**
  * Start a server with a given username
  * @param string $name
  */
 function server_start($name) {
-
 	// Get user details
 	$user = user_info($name);
-
 	// Make sure server isn't already running
 	if(server_running($user['user']))
 		return false;
-
 	// Check that server has a .jar, selecting the first .jar in the directory if one has not been set
 	if(empty($user['jar'])) {
 		$files = scandir($user['home']);
@@ -422,13 +346,10 @@ function server_start($name) {
 	} else {
 		$jar = $user['jar'];
 	}
-
 	if(is_file($user['home'].'/'.$jar)) {
-
 		// Verify server.properties (Prevent user from modifying port)
 		if(is_file($user['home'].'/server.properties')) {
 			$prop = file($user['home'].'/server.properties',FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
-
 			// Remove any port setting
 			foreach($prop as $i=>$p) {
 				if(strpos($p,'server-port')!==false) {
@@ -436,13 +357,10 @@ function server_start($name) {
 					continue;
 				}
 			}
-
 			// Add user's port
 			$prop[] = 'server-port='.intval($user['port']);
-
 			// Save properties file
 			file_put_contents($user['home'].'/server.properties',implode("\n",$prop));
-
 		} else {
 			// File doesn't exist, use template from ./serverbase
 			file_put_contents(
@@ -461,7 +379,6 @@ function server_start($name) {
 			if($file !='.' && $file !='..');
 			if($file != 'lastest.log') unlink($user['home'].'/logs/'.$file);
 		}
-
 		// Launch server process in a detached GNU Screen
 		shell_exec(
 			// this will start the ngrok
@@ -476,7 +393,6 @@ function server_start($name) {
 		);
 	}
 }
-
 /**
  * Pass a command to a running server
  * @param string $name
@@ -491,7 +407,6 @@ function server_cmd($name,$cmd) {
 		)
 	);
 }
-
 /**
  * Safely shut down a server
  * @param string $name
@@ -506,10 +421,8 @@ function server_stop($name) {
 			KT_SCREEN_NAME_PREFIX.$name, // Screen Name
 			'stop' // Server command
 		).';'.
-
 		// wait 5 seconds to ensure server has saved
 		'sleep 5;'.
-
 		// kill process
 		sprintf(
 			KT_SCREEN_CMD_KILL, // Base command
@@ -522,7 +435,6 @@ function server_stop($name) {
 		'rm'. $user['home'].'/ngrok.log; rm'. $user['home'] .'/logs/'
 	);
 }
-
 /**
  * Immediately kill a server with a given username (does not save anything!)
  * @param string $name
@@ -541,14 +453,12 @@ function server_kill($name) {
 		'rm'. $user['home'].'/ngrok.log'
 	);
 }
-
 /**
  * Kill ALL RUNNING GNU-SCREENS (under the web server user)
  */
 function server_kill_all() {
 	shell_exec(KT_SCREEN_CMD_KILLALL);
 }
-
 /**
  * Check if a server is running
  * @param  string $name
@@ -557,7 +467,6 @@ function server_kill_all() {
 function server_running($name) {
 	return !!strpos(`screen -ls`, KT_SCREEN_NAME_PREFIX . $name);
 }
-
 /**
  * Creates and deletes CRON jobs that manage the server backups
  * @param string $name The users / servers name
@@ -570,19 +479,14 @@ function server_manage_backup($name, $action, $freq, $deleteAfter) {
 	if(!$user = user_info($name)) {
 		exit("Invalid user");
 	}
-
 	switch($action) {
 		case "create":
 			if(!check_cron_exists($name)) {
-
 				$freq = ($freq == 1 ? "*" : "*/" . $freq);
-
 				// A secret passed to the cron job to prevent people from guessing jobs on improper setups
 				$secret = hash("sha256", $user['pass']);
-
 				$jobFile = "php " .$_SERVER['DOCUMENT_ROOT'] . "/backup-run.php " . escapeshellarg($user['user']) . " " . escapeshellarg($secret) . " " . escapeshellarg($deleteAfter);
 				$job = "0 " . $freq . " * * * " . $jobFile;
-
 				create_cron($job);
 			}
 			break;
@@ -591,8 +495,6 @@ function server_manage_backup($name, $action, $freq, $deleteAfter) {
 			break;
 	}
 }
-
-
 /*
 888     888
 888     888
@@ -603,15 +505,12 @@ function server_manage_backup($name, $action, $freq, $deleteAfter) {
 Y88b. .d88P      X88 Y8b.     888          X88
  "Y88888P"   88888P'  "Y8888  888      88888P'
 */
-
 // Add a new user
 function user_add($user,$pass,$role,$home,$ram=512,$port=25565) {
-
 	// Prevent overwriting an existing user
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 		return false;
 	}
-
 	// Create user array
 	$user = array(
 		'user' => clean_alphanum($user),
@@ -623,10 +522,8 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565) {
 		'key'  => '1234567890',
 		'active'=>'null'
 	);
-
 	// Write to file
 	file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
-
 	//check users home directory exists. if it doesn't we create it.
 	if (!file_exists($_POST['dir'])) {
     mkdir($_POST['dir'], 0777, true);
@@ -645,7 +542,6 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Copy spigot
 	copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
 }
-
 // Delete a user
 function user_delete($user,$user_dir) {
 	// Delete user file if it exists
@@ -657,7 +553,6 @@ function user_delete($user,$user_dir) {
 		return false;
 	}
 }
-
 // Get user data
 function user_info($user) {
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
@@ -666,13 +561,10 @@ function user_info($user) {
 		return false;
 	}
 }
-
 // Update user data
 function user_modify($user,$pass,$role,$home,$ram,$port,$jar='craftbukkit.jar',$key,$time) {
-
 	// check user existence
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-
 		// Create user array
 		$user = array(
 			'user' => clean_alphanum($user),
@@ -685,7 +577,6 @@ function user_modify($user,$pass,$role,$home,$ram,$port,$jar='craftbukkit.jar',$
 			'key'  => $key,
 			'active'=> $time,
 		);
-
 		// Write to file
 		file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
 		return true;
@@ -697,7 +588,6 @@ function user_modify($user,$pass,$role,$home,$ram,$port,$jar='craftbukkit.jar',$
 		unlink($user['home'].'/ngrok.yml');
 	}
 }
-
 // List users
 function user_list() {
 	$h = scandir('data/users/');
@@ -707,7 +597,6 @@ function user_list() {
 			$users[] = preg_replace("/\.json$/", "", $f);
 	return $users;
 }
-
 /*
 8888888888 d8b 888 888                    d8b
 888        Y8P 888 888                    Y8P
@@ -721,28 +610,22 @@ function user_list() {
                                                        Y8b d88P
                                                         "Y88P"
 */
-
 // Remove non-alphanumeric characters from a string
 function clean_alphanum($s) {
 	return preg_replace('/([^A-Za-z0-9])/','',$s);
 }
-
 // Remove non-alphabetic characters from a string
 function clean_alpha($s) {
 	return preg_replace('/([^A-Za-z0-9])/','',$s);
 }
-
 // Remove non-numeric characters from a string
 function clean_digit($s) {
 	return preg_replace('/([^0-9])/','',$s);
 }
-
 // Verify email address syntax
 function check_email($email) {
 	return filter_var($email,FILTER_VALIDATE_EMAIL);
 }
-
-
 /*
  .d8888b.                            888                                              888
 d88P  Y88b                           888                                              888
@@ -756,7 +639,6 @@ Y88b  d88P 888     Y88b 888 888 d88P Y88b. Y88..88P Y88b 888 888    888  888 888
                    Y8b d88P 888                     Y8b d88P                 888               Y8b d88P
                     "Y88P"  888                      "Y88P"                  888                "Y88P"
 */
-
 // Generate a Base-64 salt string
 function base64_salt($len = 22) {
 	$characterList = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/';
@@ -765,7 +647,6 @@ function base64_salt($len = 22) {
 		$salt.= $characterList{mt_rand(0,(strlen($characterList)-1))};
 	return $salt;
 }
-
 // Securely encrypt a password
 function bcrypt($str) {
 	$salt = strtr(base64_salt(22),'+','.');
@@ -777,13 +658,10 @@ function bcrypt($str) {
 	else
 		return false;
 }
-
 // Verify a bcrypt-encyrpted string
 function bcrypt_verify($str,$hash) {
 	return (crypt($str,$hash) === $hash);
 }
-
-
 /*
 8888888888 888                   
 888        888                   
@@ -803,7 +681,6 @@ function pre_more_ram($ram,$name) {
 		return false;
 	}
 }
-
 function set_key($name,$dir,$keyOLD,$keyNEW) {
 	$user = user_info($name);
 	$get = file_get_contents($dir);
@@ -812,7 +689,6 @@ function set_key($name,$dir,$keyOLD,$keyNEW) {
 	// remodify .json file
 	
 }
-
 function ngrok_stat($name) {
 $user = user_info($name);
 	if(file_exists($user['home'].'/ngrok.log')) {
@@ -827,7 +703,6 @@ $user = user_info($name);
 		}
 	}
 }
-
 // Redirect to HTTPS
 /** 
 if (!(isset($_SERVER['HTTPS']) && ($_SERVER['HTTPS'] == 'on' || 
