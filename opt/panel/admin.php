@@ -30,28 +30,28 @@ if(isset($_POST['action'])) {
 		sleep(5)
 		if ($_POST['version'] == 'SG1.14')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
-			file_download($url, $_POST['dir'])
-		else if ($_POST['version'] == 'SG1.13.2')
+			file_download($url, $_POST['dir']);
+		else if ($_POST['version'] == 'SG1.13.2');
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'SG1.12.2')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'SG1.11.2')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'SG1.10.2')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'SG1.9.4')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'SG1.8.8')
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 		else if ($_POST['version'] == 'BC')
 			$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
-			file_download($url, $_POST['dir'])
+			file_download($url, $_POST['dir']);
 }
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
