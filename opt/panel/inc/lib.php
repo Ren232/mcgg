@@ -235,6 +235,33 @@ function file_download($url,$path) {
 	return $path;
 }
 
+function download_version($version, $dir) {
+	if $version = "SG1.14":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.13.2":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.12.2":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.11.2":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.10.2":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.9.4":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
+		file_download($url, $dir)
+	elif $version = "SG1.8.8":
+		$url = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar"
+		file_download($url, $dir)
+	elif $version = "BC":
+		$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
+		file_download($url, $dir)
+}
+
 /**
  * Delete a folder and it's contents
  * (stack algorithm, faster than a recursive function)
