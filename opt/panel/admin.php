@@ -1,6 +1,5 @@
 <?php
 require_once 'inc/lib.php';
-
 session_start();
 if ((!$user = user_info($_SESSION['user'])) && !$_SESSION['user']) {
 	// Not logged in, redirect to login page
@@ -11,7 +10,6 @@ if ((!$user = user_info($_SESSION['user'])) && !$_SESSION['user']) {
 	header('Location: .');
 	exit('Not Authorized');
 }
-
 // Switch users
 if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'user-switch' && $_POST['user']) {
@@ -20,37 +18,27 @@ if(isset($_POST['action'])) {
 		header('Location: .');
 		exit('Switching Users');
 	}
-
-	//Manage a cron job
+	//Manage a backup cron job
 	if($_POST['action'] == 'backup-manage' && $_POST['user']) {
-
 		//Determine which button (create or delete) was pressed and pass it as an action
 		$action = (isset($_POST['create']) ? "create" : (isset($_POST['delete']) ? "delete" : exit("Action error")));
-
 		server_manage_backup($_POST['user'], $action, intvaL($_POST["hrFreq"]), intval($_POST["hrDeleteAfter"]));
 	}
-
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-
-	if ($_POST['action'] == 'user-delete')
-		user_delete($_POST['user'], $_POST['dir']);
-
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
 		if (!server_running($stu['user']))
 			server_start($stu['user']);
 	}
-
 	// Kill a server
 	if ($_POST['action'] == 'server-stop')
 		if ($_POST['user'] == 'ALL')
 			server_kill_all();
 		else
 			server_kill($_POST['user']);
-
 }
 ?><!doctype html>
 <html>
@@ -67,14 +55,12 @@ if(isset($_POST['action'])) {
 	<script type="text/javascript">
 		$(document).ready(function () {
 			check_cron();
-
 			window.setTimeout(function () {
 				$('.alert-success,.alert-error').fadeOut();
 			}, 3000);
 			$('#frm-killall').submit(function () {
 				return confirm('Are you sure you want to KILL EVERY SERVER?\nServers will not save any new data, and all connected players will be disconnected!');
 			});
-
 			function check_cron() {
 				$.post('ajax.php', {
 					req: 'get_cron',
@@ -84,27 +70,21 @@ if(isset($_POST['action'])) {
 					if(enabled) {
 						$("#backup-create").prop("disabled",true);
 						$("#backup-delete").removeAttr("disabled");
-
 						$("#hrDeleteAfter").prop("disabled",true);
 						$("#hrFreq").prop("disabled",true);
-
 						$("#hrDeleteAfter").val(data.hrDeleteAfter);
 						$("#hrFreq").val(data.hrFreq);
 					} else {
 						$("#backup-create").removeAttr("disabled");
 						$("#backup-delete").prop("disabled",true);
-
 						$("#hrDeleteAfter").removeAttr("disabled");
 						$("#hrFreq").removeAttr("disabled");
-
 						$("#hrDeleteAfter").val(0);
 						$("#hrFreq").val(1);
 					}
 				});
 			}
-
 			$("#backup-user").change(check_cron);
-
 		});
 	</script>
 <?php require 'inc/top.php'; ?>
@@ -274,12 +254,13 @@ if(isset($_POST['action'])) {
 							<option value="premium">Premium</option>
 							<option value="admin">Administrator</option>
 						</select>
-						<button type="submit" class="btn btn-primary">Add User</button>
 					</div>
 				</div>
-			<form action="admin.php" method="post" autocomplete="off">
+				<button type="submit" class="btn btn-primary">Add User</button>
+				
 				<div class="deletion">
 					<legend>User Deletion</legend>
+					<label class="control-label" for="dir">User</label>
 					<select name="user" style="vertical-align: top;">
 						<?php
 						$ul = user_list();
@@ -288,14 +269,14 @@ if(isset($_POST['action'])) {
 								echo '<option value="' . $u . '">' . $u . '</option>';
 						?>
 					</select>
-					<label class="control-label" for="dir">Directory</label>
+					<label class="control-label" for="dir">User Directory</label>
 					<span class="add-on"><i class="icon-folder-open"></i></span>
 					<input class="span6" type="text" name="Directory" id="dir" value="/app/server/">
 						<span class="text-info">Blank = No Server Deletion</span>
 					</select>
 					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
 			</form>
-		</div>	
+		</div>
 	</div>
 </div>
 </body>
