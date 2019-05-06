@@ -260,12 +260,12 @@ if(isset($_POST['action'])) {
 				</div>
 				<div class="control-group">
 					<label class="control-label" for="version">Server Version</label>
-
+					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="SG1.14">Spigot 1.14</option>
+							<option value="SG1.14" selected>Spigot 1.14</option>
 							<option value="SG1.13.2">Spigot 1.13.2</option>							
-							<option value="SG1.12.2" selected>Spigot 1.12.2</option>
+							<option value="SG1.12.2">Spigot 1.12.2</option>
 							<option value="SG1.11.2">Spigot 1.11.2</option>
 							<option value="SG1.10.2">Spigot 1.10.2</option>
 							<option value="SG1.9.4">Spigot 1.9.4</option>
