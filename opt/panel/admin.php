@@ -27,6 +27,9 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
+	// Delete a user
+	if ($_POST['action'] == 'user-delete')
+		user_delete($_POST['user'], $_POST['dir']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
