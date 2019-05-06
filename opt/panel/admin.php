@@ -265,7 +265,7 @@ if(isset($_POST['action'])) {
 					<br>
 					<legend>User Deletion</legend>
 					<br>
-					<label class="control-label" for="dir">User</label>
+					<label class="userlabel" for="dir">User</label>
 					<select name="user" style="vertical-align: top;">
 						<?php
 						$ul = user_list();
@@ -275,7 +275,7 @@ if(isset($_POST['action'])) {
 						?>
 					</select>
 					<br>
-					<label class="control-label" for="dir">User Directory</label>
+					<label class="dir-label" for="dir">User Directory</label>
 					<span class="add-on"><i class="icon-folder-open"></i></span>
 					<input class="span10" type="text" name="Directory" id="dir" value="/app/server/">
 						<br>
