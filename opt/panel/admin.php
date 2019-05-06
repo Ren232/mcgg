@@ -279,10 +279,11 @@ if(isset($_POST['action'])) {
 				</div>
 			<form action="admin.php" method="post" autocomplete="off">
 				<div class="deletion">
-					<legend>User Management</legend>
-					<input type="hidden" name="action" value="user">
-						<select name="user" style="vertical-align: top;">
+					<legend>User Deletion</legend>
+					<select name="user" style="vertical-align: top;">
+						<input type="hidden" name="action" value="user">
 					</select>
+					<label class="control-label" for="role">User Role</label>
 					<span class="add-on"><i class="icon-folder-open"></i></span>
 					<input class="span4" type="text" name="Directory" id="dir" value="/app/server/">
 						<span class="text-info">Blank = No Server Deletion</span>
