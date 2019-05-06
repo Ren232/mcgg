@@ -281,11 +281,16 @@ if(isset($_POST['action'])) {
 				<div class="deletion">
 					<legend>User Deletion</legend>
 					<select name="user" style="vertical-align: top;">
-						<input type="hidden" name="action" value="user">
+						<?php
+						$ul = user_list();
+						foreach ($ul as $u)
+							if($u != "empty")
+								echo '<option value="' . $u . '">' . $u . '</option>';
+						?>
 					</select>
-					<label class="control-label" for="role">User Role</label>
+					<label class="control-label" for="dir">Directory</label>
 					<span class="add-on"><i class="icon-folder-open"></i></span>
-					<input class="span4" type="text" name="Directory" id="dir" value="/app/server/">
+					<input class="span6" type="text" name="Directory" id="dir" value="/app/server/">
 						<span class="text-info">Blank = No Server Deletion</span>
 					</select>
 					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
