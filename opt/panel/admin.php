@@ -263,13 +263,13 @@ if(isset($_POST['action'])) {
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="SG1.14" selected>Spigot 1.14</option>
-							<option value="SG1.13.2">Spigot 1.13.2</option>							
-							<option value="SG1.12.2">Spigot 1.12.2</option>
-							<option value="SG1.11.2">Spigot 1.11.2</option>
-							<option value="SG1.10.2">Spigot 1.10.2</option>
-							<option value="SG1.9.4">Spigot 1.9.4</option>
-							<option value="SG1.8.8">Spigot 1.8.8</option>
+							<option value="SG1x14" selected>Spigot 1.14</option>
+							<option value="SG1x13x2">Spigot 1.13.2</option>							
+							<option value="SG1x12x2">Spigot 1.12.2</option>
+							<option value="SG1x11x2">Spigot 1.11.2</option>
+							<option value="SG1x10x2">Spigot 1.10.2</option>
+							<option value="SG1x9x4">Spigot 1.9.4</option>
+							<option value="SG1x8x8">Spigot 1.8.8</option>
 							<option value="BC">Bungeecord</option>
 						</select>
 					</div>
