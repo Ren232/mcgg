@@ -262,7 +262,9 @@ if(isset($_POST['action'])) {
 				<button type="submit" class="btn btn-primary">Add User</button>
 				
 				<div class="deletion">
+
 					<legend>User Deletion</legend>
+
 					<label class="control-label" for="dir">User</label>
 					<select name="user" style="vertical-align: top;">
 						<?php
@@ -272,6 +274,7 @@ if(isset($_POST['action'])) {
 								echo '<option value="' . $u . '">' . $u . '</option>';
 						?>
 					</select>
+
 					<label class="control-label" for="dir">User Directory</label>
 					<span class="add-on"><i class="icon-folder-open"></i></span>
 					<input class="span6" type="text" name="Directory" id="dir" value="/app/server/">
