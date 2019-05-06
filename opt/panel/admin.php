@@ -21,7 +21,7 @@ if(isset($_POST['action'])) {
 		exit('Switching Users');
 	}
 
-	//Manage a backup cron job
+	//Manage a cron job
 	if($_POST['action'] == 'backup-manage' && $_POST['user']) {
 
 		//Determine which button (create or delete) was pressed and pass it as an action
@@ -33,6 +33,9 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
+
+	if ($_POST['action'] == 'user-delete')
+		user_delete($_POST['deluser'], $_POST['dirserver']);
 
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
@@ -271,11 +274,22 @@ if(isset($_POST['action'])) {
 							<option value="premium">Premium</option>
 							<option value="admin">Administrator</option>
 						</select>
+						<button type="submit" class="btn btn-primary">Add User</button>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-primary">Add User</button>
+			<form action="admin.php" method="post" autocomplete="off">
+				<div class="deletion">
+					<legend>User Management</legend>
+					<input type="hidden" name="action" value="deluser">
+						<select name="user" style="vertical-align: top;">
+					</select>
+					<input class="span10" type="text" name="Directory" id="dirserver" value="/app/server/">
+						<span class="add-on"><i class="icon-folder-open"></i></span>
+						<span class="text-info">Blank = No Server Deletion</span>
+					</select>
+					<button type="submit" class="btn btn-danger" id="user-delete">Delete User</button>
 			</form>
-		</div>
+		</div>	
 	</div>
 </div>
 </body>
