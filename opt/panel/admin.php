@@ -27,6 +27,7 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
+		
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -243,6 +244,22 @@ if(isset($_POST['action'])) {
 					<div class="controls">
 						<input class="span3" type="number" name="port" id="port" value="<?php echo rand(1000,65535)?>">
 						<span class="text-info">0 = No Server</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="role">Server Version</label>
+
+					<div class="controls">
+						<select name="version" id="version" class="span4">
+							<option value="SG1.14">Spigot 1.14</option>
+							<option value="SG1.13.2">Spigot 1.13.2</option>							
+							<option value="SG1.12.2" selected>Spigot 1.12.2</option>
+							<option value="SG1.11.2">Spigot 1.11.2</option>
+							<option value="SG1.10.2">Spigot 1.10.2</option>
+							<option value="SG1.9.4">Spigot 1.9.4</option>
+							<option value="SG1.8.8">Spigot 1.8.8</option>
+							<option value="BC">Bungeecord</option>
+						</select>
 					</div>
 				</div>
 				<div class="control-group">
