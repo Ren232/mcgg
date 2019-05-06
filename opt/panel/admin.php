@@ -27,6 +27,7 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add')
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
+		sleep(5)
 		if ($_POST['version'] == 'SG1.14'):
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
 			file_download($url, $dir)
