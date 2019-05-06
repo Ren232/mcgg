@@ -248,7 +248,18 @@ if(isset($_POST['action'])) {
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label" for="role">Server Version</label>
+					<label class="control-label" for="role">User Role</label>
+
+					<div class="controls">
+						<select name="role" id="role" class="span4">
+							<option value="user" selected>User</option>
+							<option value="premium">Premium</option>
+							<option value="admin">Administrator</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="version">Server Version</label>
 
 					<div class="controls">
 						<select name="version" id="version" class="span4">
@@ -260,17 +271,6 @@ if(isset($_POST['action'])) {
 							<option value="SG1.9.4">Spigot 1.9.4</option>
 							<option value="SG1.8.8">Spigot 1.8.8</option>
 							<option value="BC">Bungeecord</option>
-						</select>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label" for="role">User Role</label>
-
-					<div class="controls">
-						<select name="role" id="role" class="span4">
-							<option value="user" selected>User</option>
-							<option value="premium">Premium</option>
-							<option value="admin">Administrator</option>
 						</select>
 					</div>
 				</div>
