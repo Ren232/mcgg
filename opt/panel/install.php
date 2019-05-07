@@ -98,6 +98,22 @@ if (!empty($_POST['user'])) {
 					<input class="span3" type="number" name="port" id="port" value="25565">
 					<span class="text-info">0 = No Server</span>
 				</div>
+			<div class="control-group">
+				<label class="control-label" for="version">Server Version</label>
+					
+				<div class="controls">
+					<select name="version" id="version" class="span4">
+						<option value="1.14" selected>Spigot 1.14</option>
+						<option value="1.13.2">Spigot 1.13.2</option>							
+						<option value="1.12.2">Spigot 1.12.2</option>
+						<option value="1.11.2">Spigot 1.11.2</option>
+						<option value="1.10.2">Spigot 1.10.2</option>
+						<option value="1.9.4">Spigot 1.9.4</option>
+						<option value="1.8.8">Spigot 1.8.8</option>
+						<option value="BC">Bungeecord</option>
+						<option value="NONE">None</option>
+					</select>
+				</div>
 			</div>
 		</div>
 		<div class="modal-footer">
