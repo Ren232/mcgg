@@ -1,4 +1,12 @@
 <?php
+$SG1.14 = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar";
+$SG1.13.2 = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar";
+$SG1.12.2 = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar";
+$SG1.11.2 = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar";
+$SG1.10.2 = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar";
+$SG1.9.4 = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar";
+$SG1.8.8 = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar";
+$BC = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
 require_once 'inc/lib.php';
 session_start();
 if ((!$user = user_info($_SESSION['user'])) && !$_SESSION['user']) {
@@ -27,31 +35,10 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-		if ($_POST['ram'] == 0)
-		else if ($_POST['version'] == 'SG1.14') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.13.2') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.12.2') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.11.2') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.10.2') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar"
-			file_download($url, $_POST['dir']);
-             	else if ($_POST['version'] == 'SG1.9.4') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.8.8') 
-			$url == "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar"
-			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'BC') 
-			$url == "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
-			file_download($url, $_POST['dir']);
+		if ($_POST['ram'] != 0)
+			if ($_POST['version'] != 'NONE')
+				$txt = $_POST['version']
+				file_download($txt, $_POST['dir']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
