@@ -261,14 +261,14 @@ if(isset($_POST['action'])) {
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.14.jar" selected>Spigot 1.14</option>
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar">Spigot 1.13.2</option>							
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar">Spigot 1.12.2</option>
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar">Spigot 1.11.2</option>
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar">Spigot 1.10.2</option>
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar">Spigot 1.9.4</option>
-							<option value="https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar">Spigot 1.8.8</option>
-							<option value="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar">Bungeecord</option>
+							<option value="1.14" selected>Spigot 1.14</option>
+							<option value="1.13.2">Spigot 1.13.2</option>							
+							<option value="1.12.2">Spigot 1.12.2</option>
+							<option value="1.11.2">Spigot 1.11.2</option>
+							<option value="1.10.2">Spigot 1.10.2</option>
+							<option value="1.9.4">Spigot 1.9.4</option>
+							<option value="1.8.8">Spigot 1.8.8</option>
+							<option value="BC">Bungeecord</option>
 							<option value="NONE">None</option>
 						</select>
 					</div>
