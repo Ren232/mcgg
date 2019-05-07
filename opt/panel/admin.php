@@ -36,11 +36,12 @@ if(isset($_POST['action'])) {
 			server_start($stu['user']);
 	}
 	// Kill a server
-	if ($_POST['action'] == 'server-stop')
+	if ($_POST['action'] == 'server-stop') {
 		if ($_POST['user'] == 'ALL')
 			server_kill_all();
 		else
 			server_kill($_POST['user']);
+	}		
 }
 ?><!doctype html>
 <html>
