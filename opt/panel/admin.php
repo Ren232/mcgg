@@ -26,8 +26,7 @@ if(isset($_POST['action'])) {
 	}
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
-		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-		file_download($_POST['version'], $_POST['dir']);
+		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
