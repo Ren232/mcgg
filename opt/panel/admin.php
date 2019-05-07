@@ -1,12 +1,4 @@
 <?php
-$SG1x14 = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar";
-$SG1x13x2 = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar";
-$SG1x12x2 = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar";
-$SG1x11x2 = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar";
-$SG1x10x2 = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar";
-$SG1x9x4 = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar";
-$SG1x8x8 = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar";
-$BC = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar";
 require_once 'inc/lib.php';
 session_start();
 if ((!$user = user_info($_SESSION['user'])) && !$_SESSION['user']) {
@@ -35,10 +27,7 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-		if ($_POST['ram'] != 0)
-			if ($_POST['version'] != 'NONE')
-				$txt = $_POST['version']
-				file_download($txt, $_POST['dir']);
+		file_download($_POST['version'], $_POST['dir']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -273,15 +262,14 @@ if(isset($_POST['action'])) {
 					
 					<div class="controls">
 						<select name="version" id="version" class="span4">
-							<option value="SG1x14" selected>Spigot 1.14</option>
-							<option value="SG1x13x2">Spigot 1.13.2</option>							
-							<option value="SG1x12x2">Spigot 1.12.2</option>
-							<option value="SG1x11x2">Spigot 1.11.2</option>
-							<option value="SG1x10x2">Spigot 1.10.2</option>
-							<option value="SG1x9x4">Spigot 1.9.4</option>
-							<option value="SG1x8x8">Spigot 1.8.8</option>
-							<option value="BC">Bungeecord</option>
-							<option value="NONE">None</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.14.jar" selected>Spigot 1.14</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar">Spigot 1.13.2</option>							
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar">Spigot 1.12.2</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar">Spigot 1.11.2</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar">Spigot 1.10.2</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar">Spigot 1.9.4</option>
+							<option value="https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar">Spigot 1.8.8</option>
+							<option value="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar">Bungeecord</option>
 						</select>
 					</div>
 				</div>
