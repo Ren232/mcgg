@@ -506,7 +506,7 @@ Y88b. .d88P      X88 Y8b.     888          X88
  "Y88888P"   88888P'  "Y8888  888      88888P'
 */
 // Add a new user
-function user_add($user,$pass,$role,$home,$ram=512,$port=25565) {
+function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 	// Prevent overwriting an existing user
 	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 		return false;
@@ -540,7 +540,11 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
 	// Copy spigot
-	copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
+	if (isset($_POST['version'])) {
+		file_download($_POST['version'], $_POST['dir']);
+	} else {
+		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
+	}
 }
 // Delete a user
 function user_delete($user,$user_dir) {
