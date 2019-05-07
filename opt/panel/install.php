@@ -3,7 +3,7 @@ require_once 'inc/lib.php';
 
 if (!empty($_POST['user'])) {
 	session_start();
-	user_add($_POST['user'], $_POST['pass'], 'admin', $_POST['dir'], $_POST['ram'], $_POST['port']);
+	user_add($_POST['user'], $_POST['pass'], 'admin', $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	file_put_contents(".installed", "");
 	$_SESSION['user'] = clean_alphanum($_POST['user']);
 }
@@ -100,6 +100,21 @@ if (!empty($_POST['user'])) {
 					<span class="text-info">0 = No Server</span>
 				</div>
 			</div>
+				<label class="control-label" for="version">Server Version</label>
+					
+				<div class="controls">
+					<select name="version" id="version" class="span4">
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.14.jar" selected>Spigot 1.14</option>
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar">Spigot 1.13.2</option>							
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar">Spigot 1.12.2</option>
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar">Spigot 1.11.2</option>
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar">Spigot 1.10.2</option>
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar">Spigot 1.9.4</option>
+						<option value="https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar">Spigot 1.8.8</option>
+						<option value="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar">Bungeecord</option>
+						<option value="NONE">None</option>
+					</select>
+				</div>
 		</div>
 		<div class="modal-footer">
 			<button class="btn btn-primary" type="submit">Install and Log In</button>
