@@ -28,33 +28,29 @@ if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'user-add') {
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
 		sleep(5)
-		if ($_POST['version'] == 'SG1.14') {
+                if ($_POST['ram'] < 1) {
+		} else if ($_POST['version'] == 'SG1.14') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar";
 			file_download($url, $_POST['dir']);
-                }
-		else if ($_POST['version'] == 'SG1.13.2') {
+		} else if ($_POST['version'] == 'SG1.13.2') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.13.2.jar";
 			file_download($url, $_POST['dir']);
-                }
-		else if ($_POST['version'] == 'SG1.12.2') {
+		} else if ($_POST['version'] == 'SG1.12.2') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.12.2.jar";
 			file_download($url, $_POST['dir']);
-                }
-		else if ($_POST['version'] == 'SG1.11.2') {
+		} else if ($_POST['version'] == 'SG1.11.2') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar";
 			file_download($url, $_POST['dir']);
-                }
-		else if ($_POST['version'] == 'SG1.10.2') {
+		} else if ($_POST['version'] == 'SG1.10.2') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar";
 			file_download($url, $_POST['dir']);
-                }
-             		else if ($_POST['version'] == 'SG1.9.4') {
+             	} else if ($_POST['version'] == 'SG1.9.4') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar"
 			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'SG1.8.8') {
+		} else if ($_POST['version'] == 'SG1.8.8') {
 			$url = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar";
 			file_download($url, $_POST['dir']);
-		else if ($_POST['version'] == 'BC') {
+		} else if ($_POST['version'] == 'BC') {
 			$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar";
 			file_download($url, $_POST['dir']);
 }
