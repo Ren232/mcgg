@@ -6,7 +6,7 @@ $SG1.11.2 = "https://cdn.getbukkit.org/spigot/spigot-1.11.2.jar";
 $SG1.10.2 = "https://cdn.getbukkit.org/spigot/spigot-1.10.2.jar";
 $SG1.9.4 = "https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar";
 $SG1.8.8 = "https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar";
-$BC = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar"
+$BC = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar";
 require_once 'inc/lib.php';
 session_start();
 if ((!$user = user_info($_SESSION['user'])) && !$_SESSION['user']) {
