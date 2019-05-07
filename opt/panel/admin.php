@@ -27,6 +27,7 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
+		sleep(3)
 		file_download($_POST['version'], $_POST['dir']);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
@@ -270,6 +271,7 @@ if(isset($_POST['action'])) {
 							<option value="https://cdn.getbukkit.org/spigot/spigot-1.9.4.jar">Spigot 1.9.4</option>
 							<option value="https://cdn.getbukkit.org/spigot/spigot-1.8.8.jar">Spigot 1.8.8</option>
 							<option value="https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar">Bungeecord</option>
+							<option value="NONE">None</option>
 						</select>
 					</div>
 				</div>
