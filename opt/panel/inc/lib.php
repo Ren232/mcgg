@@ -540,8 +540,18 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
 	// Copy spigot
-	// copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
-	file_download($_POST['version'], $_POST['dir']);
+	if ($_POST['version'] == '1.10.2') {
+		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
+	} else if ($_POST['version'] == '1.11.2') {
+		copy('serverbase/spigot-1.11.2.jar',$_POST['dir'].'/spigot-1.11.2.jar');
+	} else if ($_POST['version'] == '1.9.4') {
+		copy('serverbase/spigot-1.9.4.jar',$_POST['dir'].'/spigot-1.9.4.jar');
+	} else if ($_POST['version'] == '1.8.8') {
+		copy('serverbase/spigot-1.8.8.jar',$_POST['dir'].'/spigot-1.8.8.jar');
+	} else if ($_POST['version'] == 'BC') {
+		copy('serverbase/BungeeCord.jar',$_POST['dir'].'/BungeeCord.jar');
+	}
+		
 }
 // Delete a user
 function user_delete($user,$user_dir) {
