@@ -95,7 +95,9 @@ if (!empty($_POST['user'])) {
 				<label class="control-label" for="port">Server Port</label>
 
 				<div class="controls">
-					<input class="span2" type="number" name="port" id="port" value="25565">
+					<div class="input-prepend">
+						<input class="span2" type="number" name="port" id="port" value="25565">
+				 	</div>
 					<span class="text-info">0 = No Server</span>
 				</div>
 			</div>
