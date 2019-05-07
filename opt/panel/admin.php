@@ -53,7 +53,7 @@ if(isset($_POST['action'])) {
 		} else if ($_POST['version'] == 'BC') {
 			$url = "https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar";
 			file_download($url, $_POST['dir']);
-}
+	}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -296,6 +296,7 @@ if(isset($_POST['action'])) {
 							<option value="SG1.9.4">Spigot 1.9.4</option>
 							<option value="SG1.8.8">Spigot 1.8.8</option>
 							<option value="BC">Bungeecord</option>
+							<option value="NONE">None</option>
 						</select>
 					</div>
 				</div>
