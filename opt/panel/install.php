@@ -98,7 +98,7 @@ if (!empty($_POST['user'])) {
 					<input class="span2" type="number" name="port" id="port" value="25565">
 					<span class="text-info">0 = No Server</span>
 				</div>
-				
+			</div>
 			<div class="control-group">
 				<label class="control-label" for="version">Server Version</label>
 					
