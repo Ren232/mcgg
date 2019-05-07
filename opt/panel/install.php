@@ -85,7 +85,7 @@ if (!empty($_POST['user'])) {
 
 				<div class="controls">
 					<div class="input-append">
-						<input class="span3" type="number" name="ram" id="ram" value="512">
+						<input class="span2" type="number" name="ram" id="ram" value="512">
 						<span class="add-on">MB</span>
 					</div>
 					<span class="text-info">0 MB = No Server</span>
@@ -95,14 +95,14 @@ if (!empty($_POST['user'])) {
 				<label class="control-label" for="port">Server Port</label>
 
 				<div class="controls">
-					<input class="span3" type="number" name="port" id="port" value="25565">
+					<input class="span2" type="number" name="port" id="port" value="25565">
 					<span class="text-info">0 = No Server</span>
 				</div>
 			<div class="control-group">
 				<label class="control-label" for="version">Server Version</label>
 					
 				<div class="controls">
-					<select name="version" id="version" class="span3">
+					<select name="version" id="version" class="span2">
 						<option value="1.11.2">Spigot 1.11.2</option>
 						<option value="1.10.2">Spigot 1.10.2</option>
 						<option value="1.9.4">Spigot 1.9.4</option>
