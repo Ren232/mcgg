@@ -2,7 +2,7 @@
 require_once 'inc/lib.php';
 if (!empty($_POST['user'])) {
 	session_start();
-	user_add($_POST['user'], $_POST['pass'], 'admin', $_POST['dir'], $_POST['ram'], $_POST['port']);
+	user_add($_POST['user'], $_POST['pass'], 'admin', $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	file_put_contents(".installed", "");
 	$_SESSION['user'] = clean_alphanum($_POST['user']);
 }
