@@ -5,7 +5,8 @@ Translated to English & Updated by Ren232.
 - Console<br>- Admin panel with account registration<br>
 - Trial users & Premium users<br>
 - Player list<br>
-- And more
+- Version Selector<br>
+- And more!
 
 
 <h1> Requirements </h1>
