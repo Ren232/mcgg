@@ -105,7 +105,7 @@ if (!empty($_POST['user'])) {
 				<label class="control-label" for="version">Server Version</label>
 					
 				<div class="controls">
-					<select name="version" id="version" class="span2">
+					<select name="version" id="version" class="span3">
 						<option value="1.11.2">Spigot 1.11.2</option>
 						<option value="1.10.2">Spigot 1.10.2</option>
 						<option value="1.9.4">Spigot 1.9.4</option>
