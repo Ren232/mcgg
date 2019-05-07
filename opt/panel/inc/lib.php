@@ -540,10 +540,10 @@ log: ".$_POST['dir']."/ngrok.log \n
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
 	// Copy spigot
-	if (isset($_POST['version'])) {
-		file_download($_POST['version'], $_POST['dir']);
-	} else {
+	if (!empty($_POST['version'])) {
 		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
+	} else {
+		file_download($_POST['version'], $_POST['dir']);
 	}
 }
 // Delete a user
