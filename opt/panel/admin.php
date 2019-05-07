@@ -28,10 +28,6 @@ if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'user-add') {
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
 		sleep(5)
-                if ($_POST['ram'] < 1) {
-		} else if ($_POST['version'] == 'SG1.14') 
-			$url = "https://cdn.getbukkit.org/spigot/spigot-1.14.jar"
-			file_download($url, $_POST['dir']);
 	}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
