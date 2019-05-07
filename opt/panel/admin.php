@@ -25,10 +25,8 @@ if(isset($_POST['action'])) {
 		server_manage_backup($_POST['user'], $action, intvaL($_POST["hrFreq"]), intval($_POST["hrDeleteAfter"]));
 	}
 	// Add new user
-	if ($_POST['action'] == 'user-add') {
+	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port']);
-		sleep(5)
-	}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -36,12 +34,11 @@ if(isset($_POST['action'])) {
 			server_start($stu['user']);
 	}
 	// Kill a server
-	if ($_POST['action'] == 'server-stop') {
+	if ($_POST['action'] == 'server-stop') 
 		if ($_POST['user'] == 'ALL')
 			server_kill_all();
 		else
-			server_kill($_POST['user']);
-	}		
+			server_kill($_POST['user']);		
 }
 ?><!doctype html>
 <html>
