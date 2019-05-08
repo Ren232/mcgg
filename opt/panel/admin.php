@@ -281,7 +281,7 @@ if(isset($_POST['action'])) {
 		<div class="span4">
 			<form action="admin.php" method="post">
 				<legend>Suspending</legend>
-				<input type="hidden" name="action" value="suspend">
+				<input type="hidden" name="action" value="suspending">
 				<select name="user" style="vertical-align: top;">
 					<?php
 					$ul = user_list();
