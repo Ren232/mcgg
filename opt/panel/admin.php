@@ -28,7 +28,7 @@ if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	// Server Suspension
-	if ($_POST['action'] == 'suspend') 
+	if ($_POST['action'] == 'suspending') 
 		$action = (isset($_POST['suspend']) ? "suspend" : (isset($_POST['unsuspend']) ? "unsuspend" : exit("Action error")));
 		suspending($_POST['user'], $action);
 	// Start a server
@@ -290,8 +290,8 @@ if(isset($_POST['action'])) {
 							echo '<option value="' . $u . '">' . $u . '</option>';
 					?>
 				</select>
-				<button type="submit" id="suspend" class="btn btn-danger">Suspend</button>
-				<button type="submit" id="unsuspend" class="btn btn-success">Unsuspend</button>
+				<button type="submit" name="suspend" id="suspend" class="btn btn-danger">Suspend</button>
+				<button type="submit" name="suspend" id="unsuspend" class="btn btn-success">Unsuspend</button>
 			</form>
 		</div>
 	</div>
