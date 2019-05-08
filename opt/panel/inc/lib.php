@@ -561,6 +561,13 @@ function suspending($user, $txt) {
 	if ($txt == 'suspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Create user array
+			$pass = $user['pass']
+			$role = $user['role']
+			$home = $user['home']
+			$ram = $user['ram']
+			$port = $user['port']
+			$jar = $user['jar']
+			$key = $user['key']
 			$user = array(
 				'suspended'=>'true'
 			);
@@ -574,7 +581,22 @@ function suspending($user, $txt) {
 	} else if ($txt == 'unsuspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Create user array
+			$pass = $user['pass']
+			$role = $user['role']
+			$home = $user['home']
+			$ram = $user['ram']
+			$port = $user['port']
+			$jar = $user['jar']
+			$key = $user['key']
 			$user = array(
+				'user' => clean_alphanum($user),
+				'pass' => $pass,
+				'role' => $role,
+				'home' => $home,
+				'ram'  => intval($ram),
+				'port' => intval($port),
+				'jar'  => $jar,
+				'key'  => $key,
 				'suspended'=>'false'
 			);
 			// Write to file
