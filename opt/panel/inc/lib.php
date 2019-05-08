@@ -520,7 +520,8 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 		'ram'  => intval($ram),
 		'port' => intval($port),
 		'key'  => '1234567890',
-		'active'=>'null'
+		'active'=>'null',
+		'suspended' => 'false'
 	);
 	// Write to file
 	file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -555,6 +556,51 @@ log: ".$_POST['dir']."/ngrok.log \n
 	}
 		
 }
+
+function suspend($user)
+	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
+		// Create user array
+		$user = array(
+			'user' => clean_alphanum($user),
+			'pass' => $user['pass'],
+			'role' => $user['role'],
+			'home' => $user['home'],
+			'ram'  => $user['ram'],
+			'port' => $user['port'],
+			'jar'  => $user['jar'],
+			'key'  => $user['key'],
+			'suspended' => 'true'
+		);
+		// Write to file
+		file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function unsuspend($user)
+	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
+		// Create user array
+		$user = array(
+			'user' => clean_alphanum($user),
+			'pass' => $user['pass'],
+			'role' => $user['role'],
+			'home' => $user['home'],
+			'ram'  => $user['ram'],
+			'port' => $user['port'],
+			'jar'  => $user['jar'],
+			'key'  => $user['key'],
+			'suspended' => 'false'
+		);
+		// Write to file
+		file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
+		return true;
+	} else {
+		return false;
+	}
+}
+
 // Delete a user
 function user_delete($user,$user_dir) {
 	// Delete user file if it exists
