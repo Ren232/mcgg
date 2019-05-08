@@ -29,7 +29,8 @@ if(isset($_POST['action'])) {
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	// Server Suspension
 	if ($_POST['action'] == 'suspend') 
-		
+		$action = (isset($_POST['suspend']) ? "suspend" : (isset($_POST['unsuspend']) ? "unsuspend" : exit("Action error")));
+		suspending($_POST['user'], $action);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -275,6 +276,22 @@ if(isset($_POST['action'])) {
 					</div>
 				</div>
 				<button type="submit" class="btn btn-primary">Add User</button>
+			</form>
+		</div>
+		<div class="span4">
+			<form action="admin.php" method="post">
+				<legend>Suspending</legend>
+				<input type="hidden" name="action" value="suspend">
+				<select name="user" style="vertical-align: top;">
+					<?php
+					$ul = user_list();
+					foreach ($ul as $u)
+						if($u != "empty")
+							echo '<option value="' . $u . '">' . $u . '</option>';
+					?>
+				</select>
+				<button type="submit" id="suspend" class="btn btn-danger">Suspend</button>
+				<button type="submit" id="unsuspend" class="btn btn-success">Unsuspend</button>
 			</form>
 		</div>
 	</div>
