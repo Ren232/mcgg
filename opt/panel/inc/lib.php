@@ -557,7 +557,7 @@ log: ".$_POST['dir']."/ngrok.log \n
 		
 }
 
-function suspending($user, $txt)
+function suspending($user, $txt) {
 	if ($txt == 'suspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Create user array
