@@ -575,14 +575,6 @@ function suspending($user, $txt) {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Create user array
 			$user = array(
-				'user' => clean_alphanum($user),
-				'pass' => $user['pass'],
-				'role' => $user['role'],
-				'home' => $user['home'],
-				'ram'  => $user['ram'],
-				'port' => $user['port'],
-				'jar'  => $user['jar'],
-				'key'  => $user['key'],
 				'suspended'=>'false'
 			);
 			// Write to file
