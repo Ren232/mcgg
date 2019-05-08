@@ -105,9 +105,9 @@ if(isset($_POST['action'])) {
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'suspending') {
 			if (isset($_POST['suspend']) { ?>
 				<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Suspended.</p>
-		  <?php } elseif (isset($_POST['unsuspend'] { ?>
+		  	<?php } elseif (isset($_POST['unsuspend'] { ?>
 				<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Unsuspended.</p>	
-		  <?php } ?>
+			<?php } ?>
 	<?php } ?>
 	<div class="clearfix"></div>
 	<div class="row-fluid">
