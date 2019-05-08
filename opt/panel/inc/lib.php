@@ -521,7 +521,7 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 		'port' => intval($port),
 		'key'  => '1234567890',
 		'active'=>'null',
-		'suspended' => 'false'
+		'suspended'=>'false'
 	);
 	// Write to file
 	file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -570,7 +570,7 @@ function suspending($user, $txt) {
 				'port' => $user['port'],
 				'jar'  => $user['jar'],
 				'key'  => $user['key'],
-				'suspended' => 'true'
+				'suspended'=>'true'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -591,7 +591,7 @@ function suspending($user, $txt) {
 				'port' => $user['port'],
 				'jar'  => $user['jar'],
 				'key'  => $user['key'],
-				'suspended' => 'false'
+				'suspended'=>'false'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
