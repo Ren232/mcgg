@@ -102,8 +102,8 @@ if(isset($_POST['action'])) {
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server started.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
-	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'suspending') {
-			if (isset($_POST['suspend']) { ?>
+	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'suspending') { ?>
+			<?php if (isset($_POST['suspend']) { ?>
 				<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Suspended.</p>
 		  	<?php } elseif (isset($_POST['unsuspend'] { ?>
 				<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Unsuspended.</p>	
