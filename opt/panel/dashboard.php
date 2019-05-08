@@ -335,7 +335,11 @@ if(isset($_POST['key'])) {
 				</div>
 			</div>
 		<?php
-		} else
+		} else if ($user['suspended'] == 'true') {
+			echo '
+			<p class="alert alert-danger">Your server got suspended.</p>
+';
+		} else 
 			echo '
 			<p class="alert alert-info">Your account does not have a server.</p>
 ';
