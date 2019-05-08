@@ -557,47 +557,48 @@ log: ".$_POST['dir']."/ngrok.log \n
 		
 }
 
-function suspend($user)
-	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-		// Create user array
-		$user = array(
-			'user' => clean_alphanum($user),
-			'pass' => $user['pass'],
-			'role' => $user['role'],
-			'home' => $user['home'],
-			'ram'  => $user['ram'],
-			'port' => $user['port'],
-			'jar'  => $user['jar'],
-			'key'  => $user['key'],
-			'suspended' => 'true'
-		);
-		// Write to file
-		file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
-		return true;
-	} else {
-		return false;
-	}
-}
+function suspending($user, $txt)
+	if ($txt == 'suspend') {
+		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
+			// Create user array
+			$user = array(
+				'user' => clean_alphanum($user),
+				'pass' => $user['pass'],
+				'role' => $user['role'],
+				'home' => $user['home'],
+				'ram'  => $user['ram'],
+				'port' => $user['port'],
+				'jar'  => $user['jar'],
+				'key'  => $user['key'],
+				'suspended' => 'true'
+			);
+			// Write to file
+			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
+			return true;
+		} else {
+			return false;
+		}
 
-function unsuspend($user)
-	if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-		// Create user array
-		$user = array(
-			'user' => clean_alphanum($user),
-			'pass' => $user['pass'],
-			'role' => $user['role'],
-			'home' => $user['home'],
-			'ram'  => $user['ram'],
-			'port' => $user['port'],
-			'jar'  => $user['jar'],
-			'key'  => $user['key'],
-			'suspended' => 'false'
-		);
-		// Write to file
-		file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
-		return true;
-	} else {
-		return false;
+	} else if ($txt == 'unsuspend') {
+		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
+			// Create user array
+			$user = array(
+				'user' => clean_alphanum($user),
+				'pass' => $user['pass'],
+				'role' => $user['role'],
+				'home' => $user['home'],
+				'ram'  => $user['ram'],
+				'port' => $user['port'],
+				'jar'  => $user['jar'],
+				'key'  => $user['key'],
+				'suspended' => 'false'
+			);
+			// Write to file
+			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 
