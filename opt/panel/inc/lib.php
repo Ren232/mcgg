@@ -521,7 +521,7 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 		'port' => intval($port),
 		'key'  => '1234567890',
 		'active'=>'null',
-		'suspended'=>'false'
+		'suspended' => 'false'
 	);
 	// Write to file
 	file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -562,7 +562,7 @@ function suspending($user, $txt) {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Edit user array
 			$user = array(
-				'user' => ['user'],
+				'user' => $user,
 				'pass' => ['pass'],
 				'role' => ['role'],
 				'home' => ['home'],
