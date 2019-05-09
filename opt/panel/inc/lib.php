@@ -560,24 +560,9 @@ log: ".$_POST['dir']."/ngrok.log \n
 function suspending($user, $txt) {
 	if ($txt == 'suspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-			// Create user array
-			$pass = $user['pass'];
-			$role = $user['role'];
-			$home = $user['home'];
-			$ram = $user['ram'];
-			$port = $user['port'];
-			$jar = $user['jar'];
-			$key = $user['key'];
+			// Edit user array
 			$user = array(
-				'user' => clean_alphanum($user),
-				'pass' => $pass,
-				'role' => $role,
-				'home' => $home,
-				'ram'  => $ram,
-				'port' => $port,
-				'jar'  => $jar,
-				'key'  => $key,
-				'suspended' => 'false'
+				'suspended' => 'true'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -588,23 +573,8 @@ function suspending($user, $txt) {
 
 	} else if ($txt == 'unsuspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-			// Create user array
-			$pass = $user['pass'];
-			$role = $user['role'];
-			$home = $user['home'];
-			$ram = $user['ram'];
-			$port = $user['port'];
-			$jar = $user['jar'];
-			$key = $user['key'];
+			// Edit user array
 			$user = array(
-				'user' => clean_alphanum($user),
-				'pass' => $pass,
-				'role' => $role,
-				'home' => $home,
-				'ram'  => $ram,
-				'port' => $port,
-				'jar'  => $jar,
-				'key'  => $key,
 				'suspended' => 'false'
 			);
 			// Write to file
