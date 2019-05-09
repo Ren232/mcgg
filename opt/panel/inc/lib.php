@@ -557,65 +557,6 @@ log: ".$_POST['dir']."/ngrok.log \n
 		
 }
 
-function suspending($user, $txt) {
-	if ($txt == 'suspend') {
-		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-			// Edit user array
-			role = $user['role'];
-			pass = $user['pass'];
-			home = $user['home'];
-			ram = $user['ram'];
-			port = $user['port'];
-			jar = $user['jar'];
-			keyy = $user['key'];
-			$user = array(
-				'user' => $user,
-				'pass' => $pass,
-				'role' => $key,
-				'home' => $home,
-				'ram'  => $ram,
-				'port' => $port,
-				'jar'  => $jar,
-				'key'  => $keyy,
-				'suspended' => 'true'
-			);
-			// Write to file
-			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
-			return true;
-		} else {
-			return false;
-		}
-
-	} else if ($txt == 'unsuspend') {
-		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
-			// Edit user array
-			role = $user['role'];
-			pass = $user['pass'];
-			home = $user['home'];
-			ram = $user['ram'];
-			port = $user['port'];
-			jar = $user['jar'];
-			keyy = $user['key'];
-			$user = array(
-				'user' => $user,
-				'pass' => $pass,
-				'role' => $key,
-				'home' => $home,
-				'ram'  => $ram,
-				'port' => $port,
-				'jar'  => $jar,
-				'key'  => $keyy,
-				'suspended' => 'true'
-			);
-			// Write to file
-			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
-			return true;
-		} else {
-			return false;
-		}
-	}
-}
-
 // Delete a user
 function user_delete($user,$user_dir) {
 	// Delete user file if it exists
