@@ -561,15 +561,22 @@ function suspending($user, $txt) {
 	if ($txt == 'suspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Edit user array
+			role = $user['role'];
+			pass = $user['pass'];
+			home = $user['home'];
+			ram = $user['ram'];
+			port = $user['port'];
+			jar = $user['jar'];
+			key = $user['key'];
 			$user = array(
 				'user' => $user,
-				'pass' => ['pass'],
-				'role' => ['role'],
-				'home' => ['home'],
-				'ram'  => ['ram'],
-				'port' => ['port'],
-				'jar'  => ['jar'],
-				'key'  => ['key'],
+				'pass' => $pass,
+				'role' => $key,
+				'home' => $home,
+				'ram'  => $ram,
+				'port' => $port,
+				'jar'  => $jar,
+				'key'  => $key,
 				'suspended' => 'true'
 			);
 			// Write to file
@@ -582,8 +589,23 @@ function suspending($user, $txt) {
 	} else if ($txt == 'unsuspend') {
 		if(is_file('data/users/' . strtolower(clean_alphanum($user)) . '.json')) {
 			// Edit user array
+			role = $user['role'];
+			pass = $user['pass'];
+			home = $user['home'];
+			ram = $user['ram'];
+			port = $user['port'];
+			jar = $user['jar'];
+			key = $user['key'];
 			$user = array(
-				'suspended' => 'false'
+				'user' => $user,
+				'pass' => $pass,
+				'role' => $key,
+				'home' => $home,
+				'ram'  => $ram,
+				'port' => $port,
+				'jar'  => $jar,
+				'key'  => $key,
+				'suspended' => 'true'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
