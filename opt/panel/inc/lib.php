@@ -569,7 +569,15 @@ function suspending($user, $txt) {
 			$jar = $user['jar']
 			$key = $user['key']
 			$user = array(
-				'suspended'=>'true'
+				'user' => clean_alphanum($user),
+				'pass' => $pass,
+				'role' => $role,
+				'home' => $home,
+				'ram'  => $ram,
+				'port' => $port,
+				'jar'  => $jar,
+				'key'  => $key,
+				'suspended'=>'false'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -593,8 +601,8 @@ function suspending($user, $txt) {
 				'pass' => $pass,
 				'role' => $role,
 				'home' => $home,
-				'ram'  => intval($ram),
-				'port' => intval($port),
+				'ram'  => $ram,
+				'port' => $port,
 				'jar'  => $jar,
 				'key'  => $key,
 				'suspended'=>'false'
