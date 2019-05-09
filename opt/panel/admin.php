@@ -282,23 +282,6 @@ if(isset($_POST['action'])) {
 				<button type="submit" class="btn btn-primary">Add User</button>
 			</form>
 		</div>
-		<div class="span4">
-			<form action="admin.php" method="post">
-				<legend>Server Suspending</legend>
-				<input type="hidden" name="action" value="suspending">
-				<select name="user" style="vertical-align: top;">
-					<?php
-					$ul = user_list();
-					foreach ($ul as $u)
-						if($u != "empty")
-							echo '<option value="' . $u . '">' . $u . '</option>';
-					?>
-				</select>
-				<button type="submit" name="suspend" id="suspend" class="btn btn-danger">Suspend</button>
-				<button type="submit" name="suspend" id="unsuspend" class="btn btn-success">Unsuspend</button>
-				<span class="text-danger">This will lock the user's server (Does not delete files.)</span>
-			</form>
-		</div>
 	</div>
 </div>
 </body>
