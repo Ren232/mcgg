@@ -577,7 +577,7 @@ function suspending($user, $txt) {
 				'port' => $port,
 				'jar'  => $jar,
 				'key'  => $key,
-				'suspended'=>'false'
+				'suspended' => 'false'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
@@ -605,7 +605,7 @@ function suspending($user, $txt) {
 				'port' => $port,
 				'jar'  => $jar,
 				'key'  => $key,
-				'suspended'=>'false'
+				'suspended' => 'false'
 			);
 			// Write to file
 			file_put_contents('data/users/' . strtolower(clean_alphanum($user['user'])) . '.json', json_encode($user));
