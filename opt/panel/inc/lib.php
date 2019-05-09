@@ -499,7 +499,7 @@ function server_manage_backup($name, $action, $freq, $deleteAfter) {
 888     888
 888     888
 888     888
-888     888 .d8888b   .d88b.  888d888 .d8888b
+888     888 .d8888 b   .d88b.  888d888 .d8888b
 888     888 88K      d8P  Y8b 888P"   88K
 888     888 "Y8888b. 88888888 888     "Y8888b.
 Y88b. .d88P      X88 Y8b.     888          X88
@@ -567,7 +567,7 @@ function suspending($user, $txt) {
 			ram = $user['ram'];
 			port = $user['port'];
 			jar = $user['jar'];
-			key = $user['key'];
+			keyy = $user['key'];
 			$user = array(
 				'user' => $user,
 				'pass' => $pass,
@@ -576,7 +576,7 @@ function suspending($user, $txt) {
 				'ram'  => $ram,
 				'port' => $port,
 				'jar'  => $jar,
-				'key'  => $key,
+				'key'  => $keyy,
 				'suspended' => 'true'
 			);
 			// Write to file
@@ -595,7 +595,7 @@ function suspending($user, $txt) {
 			ram = $user['ram'];
 			port = $user['port'];
 			jar = $user['jar'];
-			key = $user['key'];
+			keyy = $user['key'];
 			$user = array(
 				'user' => $user,
 				'pass' => $pass,
@@ -604,7 +604,7 @@ function suspending($user, $txt) {
 				'ram'  => $ram,
 				'port' => $port,
 				'jar'  => $jar,
-				'key'  => $key,
+				'key'  => $keyy,
 				'suspended' => 'true'
 			);
 			// Write to file
