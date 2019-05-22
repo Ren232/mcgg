@@ -11,7 +11,7 @@ Translated to English & Updated by Ren232.
 
 <h1> Requirements </h1>
 - A Heroku Account (https://dashboard.heroku.com/)
-<br>- A dropbox account + API key (Goto https://www.dropbox.com/developers/apps Click on create app, Select Dropbox API, Name the app & create it, Click on the app, Goto App Secret, Click on Show and Copy the key.)
+<br>- A dropbox account + API key (Goto https://www.dropbox.com/developers/apps Click on create app, Select Dropbox API, Name the app & create it, Click on the app, Goto Generated access token, Click on Generate and Copy the key.)
 <br>- A Ngrok account (https://dashboard.ngrok.com/)
 
 <h1> Setup </h1>
