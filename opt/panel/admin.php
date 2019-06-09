@@ -27,10 +27,6 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
-	// Server Suspension
-	if ($_POST['action'] == 'suspending') 
-		$action = (isset($_POST['suspend']) ? "suspend" : (isset($_POST['unsuspend']) ? "unsuspend" : exit("Action error")));
-		suspending($_POST['user'], $action);
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -102,10 +98,6 @@ if(isset($_POST['action'])) {
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server started.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
-	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'suspend') { ?>
-		<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Suspended.</p>
-	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'suspend') { ?>
-		<p class="alert alert-success pull-right"><i class="icon-ok"></i> User Unsuspended.</p>	
 	<?php } ?>
 	<div class="clearfix"></div>
 	<div class="row-fluid">
