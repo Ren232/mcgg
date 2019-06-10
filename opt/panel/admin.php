@@ -30,7 +30,7 @@ if(isset($_POST['action'])) {
 	// Delete user
 	if ($_POST['action'] == 'user-delete')
 		if (!$_POST['user'] = user_info($_SESSION['user']) {
-			$stu = user_info($_POST['user']);
+			$stu = user_info($_POST['user'])
 			user_delete($_POST['user'], $stu['dir']);
 		} else {
 		   	return;
