@@ -6,6 +6,7 @@ Translated to English & Updated by Ren232.
 - Trial users & Premium users<br>
 - Player list<br>
 - Version Selector<br>
+- User deletion<br>
 - And more!
 
 
