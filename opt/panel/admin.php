@@ -107,12 +107,6 @@ if(isset($_POST['action'])) {
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server started.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
-	<?php if (isset($_POST['action']) && $_POST['action'] == 'user-delete') { 
-		if (!$_POST['user'] == $user) { ?>
-			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
-		<?php } else { ?>
-			<p class="alert alert-success pull-right"><i class="icon-ok"></i> You can't delete your own account!</p>
-		<?php } ?>
 	<?php } ?>
 	<div class="clearfix"></div>
 	<div class="row-fluid">
