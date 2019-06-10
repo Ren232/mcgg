@@ -29,7 +29,7 @@ if(isset($_POST['action'])) {
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	// Delete user
 	if ($_POST['action'] == 'user-delete') {
-		if (!$user = user_info($_SESSION['$_POST['user']']) {
+		if (!$user = user_info($_SESSION[$_POST['user']]) {
 			$stu = user_info($_POST['user']);
 			user_delete($_POST['user'], $stu['dir']);
 		} else
