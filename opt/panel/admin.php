@@ -30,7 +30,7 @@ if(isset($_POST['action'])) {
 	// Delete user
 	if ($_POST['action'] == 'user-delete') {
 		$stu = user_info($_POST['user']);
-		if (!$_SESSION['user'] == $_POST['user'])
+		if (!$user_info('user') == $stu)
 			user_delete($_POST['user'], $stu['dir']);
 	}
 	// Start a server
@@ -105,7 +105,7 @@ if(isset($_POST['action'])) {
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'user-delete') {
-		if (!$_SESSION['user'] == $_POST['user']) { ?>
+		if (!$user_info('user') == $user_info($_POST['user'])) { ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
 		<?php } else { ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> You can't delete your own account!</p>
