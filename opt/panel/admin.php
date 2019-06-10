@@ -27,6 +27,14 @@ if(isset($_POST['action'])) {
 	// Add new user
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
+	// Delete user
+	if ($_POST['action'] == 'user-delete')
+		if ($_POST['user'] == $user) {
+			return;
+		} else {
+			$stu = user_info($_POST['user']);
+			user_delete($_POST['user'], $stu['dir'])
+		}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
@@ -98,6 +106,12 @@ if(isset($_POST['action'])) {
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server started.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
+	<?php if (isset($_POST['action']) && $_POST['action'] == 'user-delete') { 
+		if (!$_POST['user'] == $user) { ?>
+			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
+		<?php } else { ?>
+			<p class="alert alert-success pull-right"><i class="icon-ok"></i> You can't delete your own account!</p>
+		<?php } ?>
 	<?php } ?>
 	<div class="clearfix"></div>
 	<div class="row-fluid">
@@ -273,6 +287,20 @@ if(isset($_POST['action'])) {
 				</div>
 				<button type="submit" class="btn btn-primary">Add User</button>
 			</form>
+			<form action="admin.php" method="post">
+				<legend>Delete a User</legend>
+				<input type="hidden" name="action" value="user-delete">
+				<select name="user" style="vertical-align: top;">
+					<?php
+					$ul = user_list();
+					foreach ($ul as $u)
+						if($u != "empty")
+							echo '<option value="' . $u . '">' . $u . '</option>';
+					?>
+				</select>
+				<button type="submit" class="btn btn-danger">Delete user</button>
+			</form>
+
 		</div>
 	</div>
 </div>
