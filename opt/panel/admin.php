@@ -28,9 +28,10 @@ if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'user-add') 
 		user_add($_POST['user'], $_POST['pass'], $_POST['role'], $_POST['dir'], $_POST['ram'], $_POST['port'], $_POST['version']);
 	// Delete user
-	if ($_POST['action'] == 'user-delete') 
+	if ($_POST['action'] == 'user-delete') {
 		$stu = user_info($_POST['user']);
 		user_delete($_POST['user'], $stu['dir'])
+	}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
 		$stu = user_info($_POST['user']);
