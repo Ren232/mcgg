@@ -107,9 +107,8 @@ if(isset($_POST['action'])) {
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'user-delete') { ?>
 		<?php if (!$user = $_POST['user']) { ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
-		<?php } else { ?>
+		<?php } else ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> You can't delete your own account!</p>
-		<?php } ?>
 	<?php } ?>
 	<div class="clearfix"></div>
 	<div class="row-fluid">
