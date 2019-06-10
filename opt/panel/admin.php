@@ -105,7 +105,7 @@ if(isset($_POST['action'])) {
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'server-stop') { ?>
 		<p class="alert alert-success pull-right"><i class="icon-ok"></i> Server killed.</p>
 	<?php } elseif (isset($_POST['action']) && $_POST['action'] == 'user-delete') {
-                <?php $stu = $user_info($_POST['user']); ?>
+                $stu = $user_info($_POST['user']);
 		if (!$user_info('user') == $stu) { ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
 		<?php } else { ?>
