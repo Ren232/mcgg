@@ -30,9 +30,8 @@ if(isset($_POST['action'])) {
 	// Delete user
 	if ($_POST['action'] == 'user-delete' && $_POST['user']) {
 		$stu = user_info($_POST['user']);
-		if (!$_SESSION['user'] == $_POST['user']) {
+		if (!$_SESSION['user'] == $_POST['user'])
 			user_delete($_POST['user'], $stu['dir']);
-		}
 	}
 	// Start a server
 	if ($_POST['action'] == 'server-start') {
