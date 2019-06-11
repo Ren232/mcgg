@@ -108,7 +108,7 @@ if(isset($_POST['action'])) {
 		if (!$_SESSION['user'] == $_POST['user']) { ?>
 			<p class="alert alert-success pull-right"><i class="icon-ok"></i> User deleted successfully.</p>
 		<?php } else { ?>
-			<p class="alert alert-danger pull-right"></i> You can't delete your own account!</p>
+			<p class="alert alert-danger pull-right">You can't delete your own account!</p>
 		<?php } ?>
 	<?php } ?>
 	<div class="clearfix"></div>
