@@ -4,6 +4,7 @@ Translated to English & Updated by Ren232.
 - You can access the file manager of the server.<br>
 - Console<br>- Admin panel with account registration<br>
 - Trial users & Premium users<br>
+- Server Map (Dynmap required)
 - Player list<br>
 - Version Selector<br>
 - User deletion<br>
