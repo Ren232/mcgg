@@ -36,7 +36,7 @@ if (empty($_SESSION['user']) || !$user = user_info($_SESSION['user'])) {
 						<div class="input-append">
 							<input class="span6" type="text" name="ngrok" id="ngrok" onchange="modify(this.value)" placeholder="ngrok key.." value="<?=$user['key']?>">
 						</div>
-						<span class="text-info">Ngrok Dashboard<a href="//dashboard.ngrok.com/">ngrok dashboard</a></span>
+						<span class="text-info"><a href="//dashboard.ngrok.com/">Ngrok Dashboard</a></span>
 					</div>
 				</div>
 </div>
