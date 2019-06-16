@@ -7,7 +7,7 @@ Translated to English & Updated by Ren232.
 - Player list<br>
 - Version Selector<br>
 - User deletion<br>
-- Easy to install
+- Easy to install<br>
 - And more!
 
 
