@@ -12,7 +12,7 @@ if (empty($_SESSION['user']) || !$user = user_info($_SESSION['user'])) {
 if(isset($_POST['action'])) {
 	if ($_POST['action'] == 'dynmap') {
 		$stu = user_info($user);
-		copy('serverbase/dynmap.jar',$stu[dir].'/plugins/dynmap.jar');
+		copy('serverbase/dynmap.jar',$stu[dir],'/plugins/dynmap.jar');
 	}
 }
 
