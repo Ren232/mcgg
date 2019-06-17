@@ -9,6 +9,12 @@ if (empty($_SESSION['user']) || !$user = user_info($_SESSION['user'])) {
 	exit('Not Authorized');
 }
 
+if(isset($_POST['action'])) {
+	if ($_POST['action'] == 'dynmap' && $_POST['user']) {
+		copy('serverbase/dynmap.jar',$_POST['dir'].'/plugins/dynmap.jar');
+	}
+}
+
 ?><!doctype html>
 <html>
 <head>
