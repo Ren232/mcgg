@@ -36,5 +36,9 @@
 		<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "map.php" ? 'class="active"' : ""; ?>>
 			<a href="//<?php echo $_SERVER['HTTP_HOST']; ?>:<?php echo $port; ?>">Map&ensp;</a>
 		</li>
+	<?php } else { ?>
+		<li <?php echo basename($_SERVER["SCRIPT_NAME"]) == "map.php" ? 'class="active"' : ""; ?>>
+			<a href="map.php">Map</a>
+		</li>
 	<?php } ?>
 </ul>
