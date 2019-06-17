@@ -43,7 +43,7 @@ if(isset($_POST['action'])) {
 				<iframe id="map" style="width: 100%; height: 600px; border: none;" frameborder="0" src="http://<?php echo $_SERVER['HTTP_HOST']; ?>:<?php echo $port; ?>/"></iframe>
 			<?php } else { ?>
 				<p class="alert alert-danger">No dynmap configuration found.</p>
-				<form action="admin.php" method="post">
+				<form action="map.php" method="post">
 					<input type="hidden" name="action" value="dynmap">
 					<button type="submit" class="btn btn-primary">Install Dynmap</button>
 				</form>
