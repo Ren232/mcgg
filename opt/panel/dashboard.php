@@ -155,7 +155,7 @@ if(isset($_POST['key'])) {
 					}
 					$.each(data.players, function (i, val) {
 						console.log(val);
-						$('#lbl-players').append('<img src="//minotar.net/avatar/' + val + '/24/"> ' + val + '<br>');
+						$('#lbl-players').append('<img src="//minotar.net/avatar/' + val + '/24"> ' + val + '<br>');
 					});
 				}
 			}, 'json').error(function(){
