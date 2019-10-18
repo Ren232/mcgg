@@ -44,9 +44,6 @@ if(isset($_POST['key'])) {
 	user_modify($user['user'],$user['pass'],$user['role'],$user['home'],$user['ram'],$user['port'],$user['jar'],$_POST['key']);
 	set_key($user['user'],$user['home'].'/ngrok.yml',$user['key'],$_POST['key']);
 	user_modify($user['user'],$user['pass'],$user['role'],$user['home'],$user['ram'],$user['port'],$user['jar'],$_POST['key']);
-} 
-if(isset($_POST['kick'])) {
-	server_cmd($user['user'], '/kick ' + $_POST['username']);
 }
 ?><!doctype html>
 <html>
