@@ -46,7 +46,7 @@ if(isset($_POST['key'])) {
 	user_modify($user['user'],$user['pass'],$user['role'],$user['home'],$user['ram'],$user['port'],$user['jar'],$_POST['key']);
 } 
 if(isset($_POST['kick'])) {
-	server_cmd($user['user'], '/kick ' + $_POST['kick']);
+	server_cmd($user['user'], '/kick ' + $_POST['user']);
 }
 ?><!doctype html>
 <html>
