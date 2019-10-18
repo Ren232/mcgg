@@ -283,7 +283,7 @@ if(isset($_POST['kick'])) {
 						<div id="DateCountdown" data-date="<?=date('Y-m-d H:i:s',$user['active'])?>" style="height: 100%; padding: 0px; box-sizing: border-box; "></div>
 						<?php } ?>
 						<text id="DateCountdownTxt"></text>
-						<p>File JAR</p>
+						<p>JAR File</p>
 						<select id="server-jar">
 							<?php
 								$jars = scandir($user['home']);
