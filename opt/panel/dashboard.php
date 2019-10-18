@@ -157,7 +157,8 @@ if(isset($_POST['kick'])) {
 					}
 					$.each(data.players, function (i, val) {
 						console.log(val);
-						$('#lbl-players').append('<img src="//minotar.net/avatar/' + val + '/24"> ' + val + '<form id="kick' + val +'" action="kick" method="post">' + '<input type="hidden" name="username" value="' + val + '"/> <a href="javascript:()" onclick="document.getElementById(""kick' + val + '"").submit();">Kick</a>' + '</form>' + '<br>');
+						var id = "kick" + val
+						$('#lbl-players').append('<img src="//minotar.net/avatar/' + val + '/24"> ' + val + '<form id="' + id + '" action="kick" method="post">' + '<input type="hidden" name="username" value="' + val + '"/> <a href="javascript:document.getElementById("' + id + '").submit()">Kick</a>' + '</form>' + '<br>');
 					});
 				}
 			}, 'json').error(function(){
