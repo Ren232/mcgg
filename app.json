@@ -1,4 +1,5 @@
 {
+  "stack": "heroku-18"
   "name": "MCGG",
   "description": "A Web-based minecraft server",
   "keywords": [
