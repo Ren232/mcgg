@@ -19,4 +19,4 @@ define('KT_SCREEN_CMD_KILLALL_USER','for session in $(screen -ls | /bin/grep -o 
 
 // ngrok commands
 define('NGROK_ID','mc.scid-');
-define('NGROK_START','screen -dmS %s ./ngrok tcp -config=%s/ngrok.yml %s');
+define('NGROK_START','screen -dmS %s ./ngrok tcp -region ap -config=%s/ngrok.yml %s');
