@@ -532,7 +532,7 @@ function user_add($user,$pass,$role,$home,$ram=512,$port=25565,$version) {
 	
 	// make a ngrok config file
 	file_put_contents($_POST['dir'] . '/ngrok.yml',
-"authtoken: 1234567890 \n
+"authtoken: 1q3kf1vZxqNUpJLrba54zJk9oTE_5YgsnTxWSb5e5Fvib4pq \n
 region: ap \n
 log_level: debug \n
 log_format: logfmt \n
@@ -549,6 +549,10 @@ log: ".$_POST['dir']."/ngrok.log \n
 		copy('serverbase/spigot-1.12.2.jar',$_POST['dir'].'/spigot-1.12.2.jar');
 	} else if ($_POST['version'] == '1.14.4') {
 		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.14.4.jar');
+	}else if ($_POST['version'] == '1.16.4') {
+		copy('serverbase/spigot-1.16.4.jar',$_POST['dir'].'/spigot-1.16.4.jar');
+	}else if ($_POST['version'] == '1.16.5') {
+		copy('serverbase/paper-1.16.5-562.jar',$_POST['dir'].'/paper-1.16.5-562.jar');
 	} else if ($_POST['version'] == '1.9.4') {
 		copy('serverbase/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar',$_POST['dir'].'/spigot-1.9.4.jar');
 	} else if ($_POST['version'] == '1.8.8') {
