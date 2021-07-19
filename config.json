@@ -4,7 +4,7 @@
     "public_ip": "127.0.0.1"
   },
   "jar_updates": [
-    "http://s3.amazonaws.com/MinecraftDownload/launcher/minecraft_server.jar",
+    "https://launcher.mojang.com/v1/objects/1b557e7b033b583cd9f66746b7a9ab1ec1673ced/server.jar",
     "http://dl.bukkit.org/latest-rb/craftbukkit.jar"
   ],
   "commands": {
