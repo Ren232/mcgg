@@ -1,4 +1,5 @@
-Translated to English & Updated by Ren232.
+Translated to English & Updated by Ren232. This project has been discontinued.<br>
+Built on: [MCHostPanel](https://github.com/Alanaktion/MCHostPanel)<br>
 
 <h1> Features </h1>
 - You can access the file manager of the server.<br>
